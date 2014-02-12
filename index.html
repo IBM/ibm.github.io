@@ -172,7 +172,7 @@
 	    	desc = repoDescription(repo);
 	        var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 " + (repo.language || '').toLowerCase() + " "+repo.name.toLowerCase());
 	        var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
-	        $link.append($("<h4>").html(repo.name + "<div class='org'><a href='"+repo.owner.url+"'>("+repo.owner.login+")"));
+	        $link.append($("<h4>").html(repo.name + "<div class='org'><a href='"+repo.owner.html_url+"'>("+repo.owner.login+")"));
 	        $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
 	        $item.append($("<p>").text(desc));
 	    	htag = "#allrepos";
