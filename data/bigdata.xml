@@ -1,0 +1,2678 @@
+<?xml version="1.0"?>
+
+ 
+<rss version="2.0" xmlns:dw="http://www.ibm.com/developerworks/feeds/">
+<channel>
+<title>IBM developerWorks : Big data</title>
+<link>http://www.ibm.com/developerworks/</link>
+<description>The latest content from IBM developerWorks</description>
+<pubDate>17 Sep 2013 08:02:58 +0000</pubDate>
+<language>en</language>
+<copyright>Copyright 2004 IBM Corporation.</copyright>
+<image>
+<title>developerWorks</title>
+<url>http://www.ibm.com/developerworks/i/dwlogo-small.gif</url>
+<link>http://www.ibm.com/developerworks/</link>
+</image>
+
+	<item>
+		
+		
+		<title><![CDATA[Getting started with real-time stream computing]]></title>
+		
+		<description><![CDATA[Use InfoSphere Streams to turn volumes of data into information that
+            helps predict trends, gain competitive advantage, gauge customer sentiment,
+            monitor energy consumption, and more. InfoSphere Streams acts on data in
+            motion for real-time analytics. Get familiar with the
+            product and find out where to go for tips and tricks that speed
+            implementation.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-getstartedstreams/index.html?ca=drs-]]></link> 
+		<pubDate>10 Sep 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Do I need to learn R?]]></title>
+		
+		<description><![CDATA[R is a flexible programming language designed to facilitate
+            exploratory data analysis, classical statistical tests, and high-level
+            graphics. With its rich and ever-expanding library of packages, R is on the
+            leading edge of development in statistics, data analytics, and data mining. R
+            has proven itself a useful tool within the growing field of big data and has
+            been integrated into several commercial packages, such as IBM SPSS and
+            InfoSphere, as well as Mathematica. This article offers a statistician&apos;s
+            perspective on the value of R.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/opensource/library/bd-learnr/index.html?ca=drs-]]></link> 
+		<pubDate>03 Sep 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+			
+			<category>opensource</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[ZooKeeper fundamentals, deployment, and applications]]></title>
+		
+		<description><![CDATA[Apache ZooKeeper is a high-performance coordination server for
+            distributed applications. It exposes common services -- such as naming and
+            configuration management, synchronization, and group services -- in a simple
+            interface, relieving the user from the need to program from scratch.
+            It comes with off-the-shelf support for implementing consensus, group
+            management, leader election, and presence protocols. In this article, we will
+            explore the fundamentals of ZooKeeper, then walk through a guide to set up and
+            deploy a  ZooKeeper cluster in a simulated
+            miniature distributed environment. We will conclude with
+            examples of how ZooKeeper is used in popular projects.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-zookeeper/index.html?ca=drs-]]></link> 
+		<pubDate>27 Aug 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Managing your InfoSphere Streams cluster with IBM Platform Computing]]></title>
+		
+		<description><![CDATA[Today, the challenge for many organizations is extracting value from the
+            imposing volumes of data available to them. Tackling the big data
+            challenge can fundamentally improve how an organization does business and
+            makes decisions. But managing your big data infrastructure doesn&apos;t have to be
+            challenging. With the appropriate management strategy and tools, multiple
+            large environments can be set up and managed efficiently and effectively. This
+            article describes how to use IBM Platform Computing to set up and manage IBM
+            InfoSphere Streams environments that will analyze big data in real time.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-streamsclusterplatform/index.html?ca=drs-]]></link> 
+		<pubDate>20 Aug 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Deploying and managing scalable web services with Flume]]></title>
+		
+		<description><![CDATA[Machine-generated log data is valuable in locating causes of
+            various hardware and software failures. The information derived from it can
+            provide feedback in improving system architecture, reducing system
+            degradation, and  improving up-time. Recently, businesses have started
+            using this log data for deriving business insight. Using a fault-tolerant
+            architecture, Flume is a distributed,
+            service for efficiently collecting, aggregating, and
+            moving large amounts of log data. In this
+            article, we will learn how to deploy and use Flume with a Hadoop cluster and a
+            simple distributed web service.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/opensource/library/bd-flumews/index.html?ca=drs-]]></link> 
+		<pubDate>13 Aug 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>opensource</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Data science and open source]]></title>
+		
+		<description><![CDATA[Data science combines mathematics and computer science for the purpose of extracting value from data. This article introduces data science and surveys prominent open source tools in this rapidly growing field.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/opensource/library/os-datascience/index.html?ca=drs-]]></link> 
+		<pubDate>09 Aug 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>opensource</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Sqoop: Big data conduit between NoSQL and RDBMS]]></title>
+		
+		<description><![CDATA[Sqoop is an integral part of the Hadoop ecosystem, helping transfer the
+            data between NoSQL data storage and the traditional RDBMS. Numerous technical
+            articles have been published featuring the Sqoop command-line interface usage. However, as of
+            Sqoop 1.4.3, there is not much insight publicly available on the
+            usage of the Sqoop Java API. This article covers the usage of the Sqoop CLI
+            with additional emphasis on the Sqoop Java API, using an example of data from
+            the Bombay Stock Exchange. The article is intended to provide preliminary exposure
+            to technical architects, solution architects, technical managers, consultants,
+            data scientists, technical leads, and developers interested in and working in
+            the big data space.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-sqoopconduit/index.html?ca=drs-]]></link> 
+		<pubDate>06 Aug 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Analyzing large datasets with Hive]]></title>
+		
+		<description><![CDATA[Every 24 hours, the big data industry gathers and logs terabytes of
+            data. There is a growing need to make sense of this ballooning amount of data.
+            From C-level executives down to engineers, the challenge is to base forecasts
+            and make decisions derived from this information. This article shows you how
+            to analyze these big datasets using Apache Hive, a data warehouse built for
+            data-intensive distributed applications.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-hiveanalyze/index.html?ca=drs-]]></link> 
+		<pubDate>23 Jul 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Sqoop: Big data conduit between NoSQL and RDBMS]]></title>
+		
+		<description><![CDATA[Sqoop is an integral part of a Hadoop ecosystem, helping transfer 
+            data between NoSQL data storage and the traditional RDBMS. Numerous technical
+            articles have been published featuring the Sqoop command-line interface (CLI) usage. However, as of
+            Sqoop 1.4.3, there is not much insight publicly available about the
+            usage of the Sqoop Java API. This article covers the usage of the Sqoop CLI,
+            with additional emphasis on the Sqoop Java API, using an example of data from
+            the Bombay Stock Exchange. The article is intended to provide preliminary exposure
+            to technical architects, solution architects, technical managers, consultants,
+            data scientists, technical leads, and developers interested in and working in
+            the big data space.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-sqoop/index.html?ca=drs-]]></link> 
+		<pubDate>23 Jul 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[IBM Security Privileged Identity Manager: Automate ID management]]></title>
+		
+		<description><![CDATA[This quick-read guide explains the basics of how IBM Security Privileged Identity Manager centralizes the management of privileged and shared accounts and helps you track and audit the activities of privileged users so you can provide effective security and authentication governance.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/security/library/se-privileged/index.html?ca=drs-]]></link> 
+		<pubDate>23 Jul 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>security</category>
+		
+			
+			<category>Analytics</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Leverage the benefits of enterprise Hadoop]]></title>
+		
+		<description><![CDATA[MapReduce implementations are the technology of choice for
+            enterprises that want to analyze big data at rest. Businesses have a choice
+            between purely open source MapReduce implementations -- most notably,
+            Apache Hadoop -- and commercial implementations. Here, the authors
+            argue the case that enterprise requirements are better served by Hadoop-based
+            products, such as InfoSphere BigInsights than they are by &quot;vanilla&quot;
+            Hadoop.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-enterprisehadoop/index.html?ca=drs-]]></link> 
+		<pubDate>16 Jul 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Data visualization, Part 1: Visualize browsing metrics with SVG and D3]]></title>
+		
+		<description><![CDATA[In this two-article series, learn how to use Scalable Vector Graphics (SVG) with
+    the open source D3 JavaScript library to create data visualizations. Shapes, colors,
+    and layouts can be of great help in making business sense out of data volumes. An
+    example scenario demonstrates the use of SVG and D3 for creating informative graphics
+    out of browsing metrics for social media.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/opensource/library/os-dataviz1/index.html?ca=drs-]]></link> 
+		<pubDate>15 Jul 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>opensource</category>
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>web</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Data visualization, Part 2: Use D3 component layouts]]></title>
+		
+		<description><![CDATA[In this two-article series, learn how to use Scalable Vector Graphics (SVG) with
+    the open source D3 JavaScript library to create data visualizations. Shapes, colors,
+    and layouts can be of great help in making business sense out of data volumes. This
+    article demonstrates various ways to arrange graphical components to represent your data on a canvas, using both D3&apos;s and your own calculations.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/opensource/library/os-dataviz2/index.html?ca=drs-]]></link> 
+		<pubDate>15 Jul 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>opensource</category>
+		
+			
+			<category>web</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Big data security and auditing with IBM InfoSphere Guardium]]></title>
+		
+		<description><![CDATA[In this article, you will learn how InfoSphere Guardium provides
+            database activity monitoring and auditing capabilities that enable you to seamlessly
+            integrate Hadoop data protection into your existing enterprise data security strategy.
+            You will learn how to configure the system and to use InfoSphere Guardium security
+            policies and reports tailored specifically for Hadoop environments, including IBM InfoSphere BigInsights, Cloudera, Hortonworks Data Platform, and Greenplum Hadoop. You will also learn
+            about a quick start monitoring implementation available only with IBM InfoSphere
+            BigInsights.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1210bigdatasecurity/index.html?ca=drs-]]></link> 
+		<pubDate>11 Jul 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>security</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Big data in the cloud]]></title>
+		
+		<description><![CDATA[Big data is an inherent feature of the cloud and provides
+            unprecedented opportunities to use both traditional, structured database
+            information and business analytics with social networking, sensor network
+            data, and far less structured multimedia. Big data applications require a
+              data-centric compute architecture, and many solutions
+            include cloud-based APIs to interface with advanced columnar searches, machine
+            learning algorithms, and advanced analytics such as computer vision, video
+            analytics, and visualization tools. This article examines the use of the R
+            language and similar tools for big data analysis and methods to scale big data
+            services in the cloud. It provides an in-depth look at digital photo
+            management as a simple big data service that employs key elements of search,
+            analytics, and machine learning applied to unstructured data.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-bigdatacloud/index.html?ca=drs-]]></link> 
+		<pubDate>09 Jul 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>cloud</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Moving ahead with Hadoop YARN]]></title>
+		
+		<description><![CDATA[As big data evolves, so do its processing frameworks. Apache Hadoop was
+            introduced in 2005 with the core MapReduce processing engine to support
+            distributed processing of large-scale data workloads. Seven years later,
+            Hadoop is undergoing an overhaul. The result of this process is a more
+            generally usable Hadoop framework that supports not just MapReduce but other
+            distributed processing models. This article introduces the new Hadoop
+            architecture and identifies what you need to know before you switch.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-hadoopyarn/index.html?ca=drs-]]></link> 
+		<pubDate>02 Jul 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Build a data warehouse with Hive]]></title>
+		
+		<description><![CDATA[The data warehouse has been an ongoing battle among
+            organizations for years. How do you build it? What data can you integrate?
+            Should you use Kimball or Inmon, corporate information factory (CIF), or data
+            marts? The list could go on for days -- decades, even. With big data, the
+            questions become far more complicated, such as is a data warehouse enough? The
+            answer lies in the enterprise. People claim that Hive is the data warehouse of
+            Hadoop. Although true on one level, it&apos;s also something of a false claim.
+            Sometimes, however, you have to use the tools available to you, and for that,
+            Hive can be a data warehouse.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-hivewarehouse/index.html?ca=drs-]]></link> 
+		<pubDate>25 Jun 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[What's the big deal about Big SQL?]]></title>
+		
+		<description><![CDATA[If you specialize in relational database management technology, you&apos;ve
+            probably heard a lot about &quot;big data&quot; and the open source Apache Hadoop
+            project. Perhaps you&apos;ve also heard about IBM&apos;s new Big SQL technology, which
+            enables InfoSphere BigInsights users to query Hadoop data using
+            industry-standard SQL. Curious? This article introduces you to Big SQL,
+            answering many of the common questions that relational DBMS users have about
+            this IBM technology.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-bigsql/index.html?ca=drs-]]></link> 
+		<pubDate>14 Jun 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Get started with BigInsights]]></title>
+		
+		<description><![CDATA[Learn how to manage your big data environment, import data for analysis, analyze data with BigSheets, develop your first big data application, develop Big SQL queries to analyze big data, and create an extractor to derive insights from text documents in this comprehensive set of learning guides.]]></description> 
+		<link><![CDATA[http://www.ibm.com/e-business/linkweb/publications/servlet/pbi.wss?CTY=US&amp;FNC=SRX&amp;PBL=GC19-4104-00]]></link> 
+		<pubDate>14 Jun 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Synchronize data with control signals in the InfoSphere Streams Time
+            Series Toolkit]]></title>
+		
+		<description><![CDATA[InfoSphere Streams is the real-time component of the IBM big data
+            platform. It provides the platform and toolkits for building
+            real-time analytical solutions. The Time Series Toolkit included with 
+            Streams includes operators for preprocessing,
+            analyzing, and modeling time series data in real time. Modeling operators in the toolkit use
+            incoming time series data to build an internal model for forecasting or
+            tracking. In real-world scenarios, the incoming data used for model building
+            might become noisy and should be discarded from
+            the model-building process. Also, once the incoming data is clean, the model
+            might have to be retrained. This article provides a solution for
+            this and describes how to synchronize and calibrate the process of
+            model building and operator functions with the quality of incoming data using
+            the control port feature.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-streamstimeseries/index.html?ca=drs-]]></link> 
+		<pubDate>11 Jun 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Processing large-scale graph data: A guide to current technology]]></title>
+		
+		<description><![CDATA[With emphasis on Apache Giraph and the GraphLab framework, this article
+    introduces and compares open source solutions for processing large volumes of graph
+    data. The growth of graph-structured data in modern applications such as social
+    networks and knowledge bases creates a crucial need for scalable platforms and
+    parallel architectures that can process it in bulk. Despite its prominent role in big
+    data analytics, MapReduce is not the optimal programming model for graph processing.
+    This article explains why and then explores systems in development to tackle the graph-processing challenge.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/opensource/library/os-giraph/index.html?ca=drs-]]></link> 
+		<pubDate>10 Jun 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>opensource</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Integrating PureData System for Analytics with InfoSphere Streams]]></title>
+		
+		<description><![CDATA[This article describes how to perform bulk load from
+            InfoSphere Streams 2.0 to PureData System for Analytics N1001-010 using Netezza
+            technology. The example InfoSphere Streams application demonstrates how Netezza enables a
+            high-throughput connection and allows both systems working together to reach
+            the high throughput that they can offer separately.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-integratepuredatastreams/index.html?ca=drs-]]></link> 
+		<pubDate>04 Jun 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[IBM Accelerator for Machine Data Analytics, Part
+                5: Speeding up analysis of structured data together with unstructured data]]></title>
+		
+		<description><![CDATA[Previously in this series, you created a searchable repository of
+            semi-structured and unstructured data -- namely, Apache web access logs,
+            WebSphere logs, Oracle logs, and email data. 
+In this tutorial, you will enrich the repository with structured data exported from a customer database. 
+Specifically, you will search across structured customer information and semi-structured
+and unstructured logs and emails, and perform analysis using BigSheets to identify which customers who emailed 
+Sample Outdoors Company during the July 14th outage were more loyal than others.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-machinedata5/index.html?ca=drs-]]></link> 
+		<pubDate>28 May 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[developerWorks Labs]]></title>
+		
+		<description><![CDATA[Get ahead of the technology curve with 
+                        the no-charge software previews showcased in developerworks Labs.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/labs/index.html?ca=drs-]]></link> 
+		<pubDate>24 May 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>cloud</category>
+		
+			
+			<category>Mobile</category>
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>rational</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Build a data library with Hive]]></title>
+		
+		<description><![CDATA[Storing massive amounts of data is great until you need to do something with
+	it. No incredible discoveries or futuristic predictions come from unused data, no matter how
+	much of it you store. Big data can be a complicated beast. Writing complex MapReduce
+	programs in the Java programming language takes time, good resources, and know-how that most
+	organizations don&apos;t have available. This is where building a data library using a tool like Hive
+	on top of Hadoop becomes a powerful solution.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-hivelibrary/index.html?ca=drs-]]></link> 
+		<pubDate>21 May 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Analyze text from social media sites with InfoSphere BigInsights]]></title>
+		
+		<description><![CDATA[Learn how you can start creating, testing, deploying, and using custom text extractors to analyze social media data and other forms of text data using technologies available in IBM&apos;s big data platform.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-socialmediabiginsights/index.html?ca=drs-]]></link> 
+		<pubDate>14 May 2013 04:00:00 +0000</pubDate>     
+		
+		<dw:image-url>http://www.ibm.com/developerworks/i/t-j-f-immutable_ebf7fb.jpg</dw:image-url>
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[An introduction to InfoSphere Streams]]></title>
+		
+		<description><![CDATA[Learn about InfoSphere Streams, part of the IBM big data
+            platform. InfoSphere Streams addresses a crucial emerging need for platforms
+            and architectures that can process vast amounts of generated streaming data in
+            real time. Find out what the product is designed to do, when it can be useful,
+            how it works, and how it can complement InfoSphere BigInsights to perform
+            highly complex analytics.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-streamsintro/index.html?ca=drs-]]></link> 
+		<pubDate>07 May 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Integrate PureData System for Analytics and InfoSphere BigInsights for
+            email analysis]]></title>
+		
+		<description><![CDATA[PureData System for Analytics is IBM&apos;s core warehousing platform and part of the PureSystems product family. 
+			This article explains how to integrate it with InfoSphere BigInsights, 
+			IBM&apos;s enterprise-ready Hadoop distribution. We&apos;ll discuss the
+			integration concepts, as well as a primary use cases for this integration, 
+			combining the advanced text analytics capabilities of BigInsights with your warehouse. 
+			We&apos;ll illustrate how to create a small scenario that enriches employee data with information 
+			extracted from email. Then we will demonstrate how to extract this information in 
+			BigInsights and how to upload the extracted results to PureData for Analytics. 
+			We will also show how to access data stored in BigInsights from the warehouse to 
+			facilitate drill-through capabilities.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-puredatabiginsightsanalysis/index.html?ca=drs-]]></link> 
+		<pubDate>30 Apr 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+			
+			<category>cloud</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Developing a big data application for data exploration and
+            discovery]]></title>
+		
+		<description><![CDATA[Exploring big data and traditional enterprise data is a common
+            requirement of many organizations. In this article, we outline an approach and
+            guidelines for indexing big data managed by a Hadoop-based platform for use
+            with a data discovery solution. Specifically, we describe how data stored in
+            IBM&apos;s InfoSphere BigInsights (a Hadoop-based platform) can be pushed to
+            InfoSphere Data Explorer, a sophisticated tool that enables business users to
+            explore and combine data from multiple enterprise and external data sources.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-exploration/index.html?ca=drs-]]></link> 
+		<pubDate>23 Apr 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Accelerating batch processing with IBM DB2 Analytics Accelerator]]></title>
+		
+		<description><![CDATA[This article provides an overview of the benefits that a company can achieve by introducing IBM DB2 Analytics Accelerator in their batch processing systems.
+            The example given is 
+        based on real implementations done at Swiss Re, a major re-insurance company based in Zurich, Switzerland.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-db2analyticsaccel/index.html?ca=drs-]]></link> 
+		<pubDate>16 Apr 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Calling Python code from IBM InfoSphere Streams]]></title>
+		
+		<description><![CDATA[The Python programming language is a popular choice among
+            enterprise developers to quickly put together working solutions. Many
+            companies adopt Python to build IT assets for regular use. IBM InfoSphere
+            Streams is a novel middleware product designed for implementing logic directly
+            in C++ and Java. It is also possible to call Python code within the context of
+            a Streams application. Learn how to call Python code directly from IBM
+            InfoSphere Streams applications.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-pythonstreams/index.html?ca=drs-]]></link> 
+		<pubDate>15 Apr 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[InfoSphere BigInsights]]></title>
+		
+		<description><![CDATA[InfoSphere BigInsights Basic Edition enables new
+                            solutions that cost effectively turn  large, complex volumes
+                            of data into insight by  combining Apache Hadoop, with unique technologies and  capabilities from
+                            across IBM.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/bigdata/biginsights/index.html?ca=drs-]]></link> 
+		<pubDate>01 Apr 2013 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Extend your secure development process to the cloud and big data]]></title>
+		
+		<description><![CDATA[Cloud computing and big data are changing the enterprise. Discover why it&apos;s necessary
+	to assimilate these new technologies into your secure development processes, and learn what
+	a secure development process is, what cloud computing and big data technologies consist of,
+	and what application security risks they present and how to mitigate them.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/cloud/library/cl-extenddevtocloudbigdata/index.html?ca=drs-]]></link> 
+		<pubDate>04 Mar 2013 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>cloud</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Using InfoSphere Streams with Informix]]></title>
+		
+		<description><![CDATA[Learn you how to connect and use Informix as a data source or a data target with InfoSphere Streams. It covers the use of both the Informix-specific protocol 
+    and the more general IBM Common Driver protocol that is used by several IBM database products. After reading this article, a reader will be able to use Informix in a Streams environment.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/bd-streamsinformix/index.html?ca=drs-]]></link> 
+		<pubDate>28 Feb 2013 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[IBM Accelerator for Machine Data Analytics, Part
+                3: Speeding up machine data searching]]></title>
+		
+		<description><![CDATA[Machine logs from diverse sources are generated in an enterprise in
+            voluminous quantities. IBM Accelerator for Machine Data Analytics simplifies the task
+            of implementation required so analysis of semi-structured, unstructured or structured
+            textual data is accelerated.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/tutorials/dm-1301machinedata3/index.html?ca=drs-]]></link> 
+		<pubDate>31 Jan 2013 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[IBM Accelerator for Machine Data Analytics, Part 2: Speeding up analysis of new log types]]></title>
+		
+		<description><![CDATA[Machine logs from diverse sources are generated in an enterprise in
+            voluminous quantities. IBM Accelerator for Machine Data Analytics simplifies the task
+            of implementation required so analysis of semi-structured, unstructured or structured
+            textual data is accelerated.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/tutorials/dm-1301machinedata2/index.html?ca=drs-]]></link> 
+		<pubDate>17 Jan 2013 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Ten considerations for a cloud-based big data solution]]></title>
+		
+		<description><![CDATA[The author highlights 10 factors a company should consider when starting a big
+	data project, even one that is considered a test. A cloud-based solution is emphasized since it solves many
+	complicated technical factors in a beginning big data implementation.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/cloud/library/cl-bigdatacloud/index.html?ca=drs-]]></link> 
+		<pubDate>15 Jan 2013 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>cloud</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[IBM Accelerator for Machine Data Analytics, Part
+                1: Speeding up machine data analysis]]></title>
+		
+		<description><![CDATA[Machine logs from diverse sources are generated in an enterprise in
+            voluminous quantities. IBM Accelerator for Machine Data Analytics simplifies the task
+            of implementation required so analysis of semi-structured, unstructured or structured
+            textual data is accelerated.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1301machinedata1/index.html?ca=drs-]]></link> 
+		<pubDate>03 Jan 2013 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Cognos Business Intelligence 10.2 reporting on InfoSphere
+            BigInsights]]></title>
+		
+		<description><![CDATA[Find guidance on consuming IBM InfoSphere
+            BigInsights data through IBM Cognos Business Intelligence 10.2.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/ba-cognosbi10-infospherebiginsights/index.html?ca=drs-]]></link> 
+		<pubDate>01 Jan 2013 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>Analytics</category>
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Real-time transliteration using InfoSphere Streams custom Java operator and
+            ICU4J]]></title>
+		
+		<description><![CDATA[With the ever growing importance of Internet monitoring and sentiment
+            analysis, there is an immediate need for identifying patterns (performing text analytics)
+            in big data. However, one of the challenges during this exercise is that countries can
+            have multiple languages that creates a challenge for effectively running the text
+            analytics, since rules are not available for all the languages. For example, in India,
+            the official language of each state is different and data is available in both English
+            and local languages. This article describes how to bring about consistency during the
+            transliteration process, and to use IBM InfoSphere Streams to prepare linguistic data
+            and apply text analytics or pattern recognition logic.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1212transliteration/index.html?ca=drs-]]></link> 
+		<pubDate>13 Dec 2012 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Big data business intelligence analytics]]></title>
+		
+		<description><![CDATA[Learn about integrating business intelligence and big data analytics.
+            Explore the similarities, differences, and what choices to consider.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/opensource/library/ba-big-data-bi/index.html?ca=drs-]]></link> 
+		<pubDate>20 Nov 2012 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>Analytics</category>
+		
+			
+			<category>data</category>
+		
+			
+			<category>opensource</category>
+		
+			
+			<category>industries</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Create customer segmentation models in SPSS Statistics from
+            spreadsheets]]></title>
+		
+		<description><![CDATA[Learn how to bring a spreadsheet
+	of raw data into SPSS Statistics and apply two classification algorithms to create
+	customer segmentation models. Then, use options in SPSS Statistics to create persistent
+	files that contain the rules for the models that can be used for both deployment of
+	customer classifications back to spreadsheets and into a big data environment.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/ba-custsegmodelspss/index.html?ca=drs-]]></link> 
+		<pubDate>13 Nov 2012 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>Analytics</category>
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Build social media datamarts using SPSS text mining tools]]></title>
+		
+		<description><![CDATA[The rise of social media has changed the way big brands do business.
+                Customers are online, conversing, asking advice, performing comparisons,
+                and influencing others. These individual-level behaviors embedded in raw
+                social media data represent consumer preference, purchase history,
+                significant life events, mood, personality, and other attributes that can
+                be derived through text mining and stored in a social media datamart.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/ba-social-media-spss-text-mining/index.html?ca=drs-]]></link> 
+		<pubDate>02 Oct 2012 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>Analytics</category>
+		
+			
+			<category>data</category>
+		
+			
+			<category>industries</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Developing, publishing, and deploying your first Big Data application with InfoSphere
+            BigInsights]]></title>
+		
+		<description><![CDATA[Developing your first Big Data application and deploying it across your
+            distributed computing environment doesn&apos;t have to be a daunting task. Learn how you can
+            use Eclipse-based tools for InfoSphere BigInsights to expedite application development,
+            package your application for publication in a web-based catalog, and deploy your
+            application so that business staff and others can easily launch it.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1209bigdatabiginsights/index.html?ca=drs-]]></link> 
+		<pubDate>27 Sep 2012 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Open Source Big Data for the Impatient, Part 1: Hadoop tutorial: Hello World with Java, Pig, Hive, Flume, Fuse, Oozie, and
+            Sqoop with Informix, DB2, and MySQL]]></title>
+		
+		<description><![CDATA[This article is focused on explaining Big Data and then providing simple worked
+            examples in Hadoop, the major open-source player in the Big Data space. You&apos;ll be happy
+            to hear that Hadoop is NOT a replacement for Informix or DB2, but in fact plays nicely with
+            the existing infrastructure.  There are multiple components in the Hadoop
+            family and this article will drill down to specific code samples that show the capabilities.  
+            No Elephants will stampede if you try these examples on your own PC.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1209hadoopbigdata/index.html?ca=drs-]]></link> 
+		<pubDate>27 Sep 2012 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Real-time data representation conversion in a distributed deployment using InfoSphere
+            Streams native functions]]></title>
+		
+		<description><![CDATA[InfoSphere Streams provides the capabilities for handling/reporting data or events
+            as they happen in real time. But sometimes when running a distributed application on
+            multiple platforms where data flows between machines having different processor architectures,
+            the task can be challenging. Due to variations in processor architectures, the data representation
+            may differ, requiring the application developer to convert the representation before applying
+            the required logic. This is true especially if the data is in binary format. By performing
+            data format conversion at real time, soon after data is read from source, more consistent and
+            meaningful results can be obtained.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1209streamsdataconversion/index.html?ca=drs-]]></link> 
+		<pubDate>20 Sep 2012 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Query social media and structured data with InfoSphere BigInsights]]></title>
+		
+		<description><![CDATA[If you&apos;re looking to get off to a quick start with big data projects
+            involving IBM InfoSphere BigInsights, learning the basics of how to query, manipulate,
+            and analyze your data is important. This article takes you through simple query examples
+            that show how you can read, write, filter, and refine social media and structured
+            data. You&apos;ll even see how business analysts can visualize query results using a
+            spreadsheet-style tool.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1207querysocialmedia/index.html?ca=drs-]]></link> 
+		<pubDate>02 Aug 2012 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Big data analytics for video, mobile, and social game monetization]]></title>
+		
+		<description><![CDATA[Apply big data analytics techniques to capture rich and varied behavioral and
+            multi-structured game and player data. Then store this data in noSQL
+            databases and integrate it with relational transactional databases to gain
+            keen competitive advantages through deeper and more actionable
+            insights.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/mobile/library/ba-big-data-gaming/index.html?ca=drs-]]></link> 
+		<pubDate>01 Aug 2012 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>Analytics</category>
+		
+			
+			<category>data</category>
+		
+			
+			<category>Mobile</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Where to start data mining in wholesale distribution]]></title>
+		
+		<description><![CDATA[Large distributors are blazing the way in predictive analytics
+            for distribution, which puts mid-sized distributors in a great position to
+            take advantage of the larger companies&apos; successes and failures. In this
+            article, discover examples of how predictive analytics can be used to improve
+            business operations in several different function departments in a wholesale
+            distributor, and learn about the IBM product set, which works from exploration
+            and first applications to big data as your skills and data grow in the
+            future.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/library/ba-data-mining-wholesale/index.html?ca=drs-]]></link> 
+		<pubDate>10 Jul 2012 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>Analytics</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Using IBM InfoSphere Streams for simulations]]></title>
+		
+		<description><![CDATA[Learn how you can use IBM InfoSphere Streams for
+            simulations. In this article, we will build a traffic simulation for highways according
+            to the Nagel-Schreckenberg model as an example.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1207streamssimulation/index.html?ca=drs-]]></link> 
+		<pubDate>05 Jul 2012 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Analyzing social media and structured data with InfoSphere
+            BigInsights]]></title>
+		
+		<description><![CDATA[If you want to work with &quot;big data&quot; without writing code or scripts, you&apos;ll want to look into BigSheets.  BigSheets is a spreadsheet-style tool for business 
+            analysts provided with IBM&apos;s InfoSphere BigInsights, a platform based on the open source Apache Hadoop project.  This article teaches you the basics of using BigSheets 
+            to analyze social media and structured data collected through sample applications provided with BigInsights.  You&apos;ll learn how to model this data in BigSheets, manipulate 
+            this data using built-in macros and functions, create charts to visualize your work, and export the results of your analysis in one of several popular output formats.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1206socialmedia/index.html?ca=drs-]]></link> 
+		<pubDate>07 Jun 2012 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Starting your education in big data]]></title>
+		
+		<description><![CDATA[Learn about current free, online courses that are available at
+    BigDataUniversity.com.  Follow the suggested path to get started and grow your
+    knowledge on big data, and get ready to implement it to meet your own business needs.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1205bigdatauniversity/index.html?ca=drs-]]></link> 
+		<pubDate>24 May 2012 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Exploring your InfoSphere BigInsights cluster and sample applications]]></title>
+		
+		<description><![CDATA[If you&apos;re looking to get off to a quick start with &quot;big data&quot; projects involving IBM&apos;s 
+                InfoSphere BigInsights, you&apos;ll want to become familiar with its integrated
+                web console.  Through this tool, you can  explore the health of your
+                cluster, navigate your distributed file  system, launch IBM-supplied
+                sample applications, monitor the status  of jobs and workflows, and
+                analyze data using a spreadsheet-style tool. This article takes you on a
+                tour of the web console, highlighting key capabilities that can help you get up to speed quickly.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1204infospherebiginsights/index.html?ca=drs-]]></link> 
+		<pubDate>12 Apr 2012 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Introducing InfoSphere Streams 2.0 features, Part
+                2: Using collections]]></title>
+		
+		<description><![CDATA[With the introduction of IBM InfoSphere(R) Streams 2.0 and the Streams
+            processing language (SPL),
+            developers gained access to two new collection types:  set and map. 
+            This article describes these three collection types and how to exploit them as 
+            part of a native SPL application.  You will also learn how to access
+            collections using a primitive C++ Streams operator.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1204infostreamsfeatures2/index.html?ca=drs-]]></link> 
+		<pubDate>02 Apr 2012 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Introducing InfoSphere Streams 2.0 features, Part
+                1: Application monitoring with metrics]]></title>
+		
+		<description><![CDATA[New to InfoSphere Streams 2.0, the introduction of the metrics component provides
+runtime access to both system and user-defined statistics than can be used to monitor the inner
+workings of your Streams application. This article outlines the new metrics system and describes
+how to access and use both system and user-defined metrics as part of your Streams application.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1203infostreamsfeatures1/index.html?ca=drs-]]></link> 
+		<pubDate>15 Mar 2012 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Boost IBM InfoSphere Streams performance with Linux channel bonding]]></title>
+		
+		<description><![CDATA[Have you ever wondered if Linux channel bonding would allow you to get faster throughput using 
+               IBM InfoSphere Streams?  We have answered that question when running InfoSphere Streams release 
+		2.0.0.2 on Red Hat Enterprise Linux release 5.5. In this article, we describe what channel bonding 
+		is at a high level, how we set up our test environment, and the results we observed.  
+                In our experiments, channel bonding increased bandwidth by as much as 68
+                percent.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1202streamslinuxperf/index.html?ca=drs-]]></link> 
+		<pubDate>16 Feb 2012 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+			
+			<category>linux</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Back up, restore, and roll forward in an InfoSphere Warehouse data
+            partitioning environment]]></title>
+		
+		<description><![CDATA[Knowing how to back up and restore your database is a fundamental skill
+            for every database administrator.  In a partitioned database environment, where your
+            database is split across multiple partitions or nodes, there are special
+            considerations. This article introduces the basics and demonstrates
+            step-by-step the process 
+            of backup, recovery, and rollforward in the IBM InfoSphere Warehouse partitioned environment.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1112backupinfosphere/index.html?ca=drs-]]></link> 
+		<pubDate>08 Dec 2011 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Scheduling in Hadoop]]></title>
+		
+		<description><![CDATA[Get to know Hadoop scheduling, and explore two of the algorithms
+            available today:fair scheduling and capacity scheduling. Also, learn how these
+            algorithms are tuned and in what scenarios they&apos;re relevant.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/opensource/library/os-hadoop-scheduling/index.html?ca=drs-]]></link> 
+		<pubDate>06 Dec 2011 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>linux</category>
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>opensource</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Online roll-out with table partitioning in InfoSphere Warehouse]]></title>
+		
+		<description><![CDATA[Starting with DB2 9.7.1, the table partitioning feature is enhanced with
+            support for online roll-out using detach. With online roll-out, queries
+            continue to access the partitioned table while one or more partitions of the
+            table are being detached using the ALTER TABLE DETACH PARTITION command. This
+            article discusses how online detach improves the availability of the warehouse
+            and describes some best practices to leverage and monitor the new behavior. A
+            stored procedure is provided to help database administrators to script the
+            post-detach processing on the target table, that is, the new table created as
+            a result of the detach operation. The article also demonstrates how the same
+            procedure can be used to simulate synchronous detach behavior in certain
+            application scenarios. We conclude with frequently asked questions related to
+            detach.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1110tablepartinfosphwhs/index.html?ca=drs-]]></link> 
+		<pubDate>27 Oct 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Smarter is: Putting renewable energy on the map]]></title>
+		
+		<description><![CDATA[Vestas Wind Systems of Aarhus, Denmark uses IBM InfoSphere
+            BigInsights to analyze location-specific data, such as wind speed, temperature,
+            humidity, atmospheric pressure, and precipitation, in order to predict wind farm
+            performance. This helps them to install wind turbines at optimal locations, converting
+            energy at a modest price, while leaving a minimal carbon footprint.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/dmmag/DMMag_2011_Issue4/SmarterIs/index.html?ca=drs-]]></link> 
+		<pubDate>21 Oct 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Creating an active-active data warehouse topology using IBM InfoSphere Warehouse]]></title>
+		
+		<description><![CDATA[This article explains how you can create an active-active environment for IBM InfoSphere Warehouse to meet the highest availability requirements using DB2 for Linux, UNIX, and Windows, WebSphere Edge Components, and Q Replication.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/long/dm-1110activeactivedw/index.html?ca=drs-]]></link> 
+		<pubDate>21 Oct 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>websphere</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Integrating SPSS Model Scoring in InfoSphere Streams, Part
+                1: Calling Solution Publisher from an InfoSphere Streams operator]]></title>
+		
+		<description><![CDATA[This tutorial describes how to write and use an InfoSphere Streams
+            operator to execute an IBM SPSS Modeler predictive model in an InfoSphere
+            Streams application using the IBM SPSS Modeler Solution Publisher Runtime
+            Library API.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/tutorials/dm-1109spssscoringinfospherestreams1/index.html?ca=drs-]]></link> 
+		<pubDate>13 Oct 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>Analytics</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Get started with Hadoop-based data analytics on IBM SmartCloud Enterprise]]></title>
+		
+		<description><![CDATA[Cloud computing and big data analytics go together -- cloud provides the benefits of elasticity, on-demand access to resources, and utility-like billing while big data processing/analytics delivers a framework to take advantage of cloud resources. The combination of cloud and Hadoop make it possible to handle large amounts of structured and unstructured data. In this article, the author explains how to get started using Hadoop (in the form of InfoSphere BigInsights Basic) on IBM SmartCloud Enterprise. Learn how to set up a three-node cluster and verify your cluster is working.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/cloud/library/cl-cloudhadoop/index.html?ca=drs-]]></link> 
+		<pubDate>11 Oct 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>cloud</category>
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Using NoSQL and analyzing big data]]></title>
+		
+		<description><![CDATA[The RDBMS model is a rock-solid foundation for storing
+data in traditional client-server architectures, but it doesn&apos;t scale to multiple nodes easily or cheaply. In the era of highly scalable web
+applications like Facebook and Twitter, schemaless datastores -- NoSQL -- provide a
+solution. This knowledge path introduces Java developers to
+NoSQL technology and the role of Apache Hadoop MapReduce in big data analysis.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/training/kp/j-kp-nosql/index.html?ca=drs-]]></link> 
+		<pubDate>07 Oct 2011 04:00:00 +0000</pubDate>     
+		
+		<dw:image-url>http://www.ibm.com/developerworks/i/t-j-f-immutable_ebf7fb.jpg</dw:image-url>
+		
+		
+		
+			
+			<category>java</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Understanding InfoSphere BigInsights]]></title>
+		
+		<description><![CDATA[Perhaps you&apos;ve heard about InfoSphere BigInsights, IBM&apos;s software
+            platform for storing and analyzing “big data,” and you may be wondering what
+            the buzz is all about. This article provides an introduction to BigInsights
+            and explains what the product was designed to do, when it can be useful, and
+            how it can complement other software you may already have.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1110biginsightsintro/index.html?ca=drs-]]></link> 
+		<pubDate>06 Oct 2011 04:00:00 +0000</pubDate>     
+		
+		<dw:image-url>http://www.ibm.com/developerworks/i/t-j-f-immutable_ebf7fb.jpg</dw:image-url>
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Integrating SPSS Model Scoring in InfoSphere Streams, Part
+                2: Using a generic operator]]></title>
+		
+		<description><![CDATA[Part 1 of this series describes how to write and use an InfoSphere Streams 
+            operator to execute an IBM SPSS Modeler predictive model in an InfoSphere Streams application 
+            using the IBM SPSS Modeler Solution Publisher Runtime library API.         
+            Part 2 takes the non-generic operator produced in Part 1 and extends it to be a generic 
+            operator capable of being used with any SPSS Modeler stream  without any custom C++ coding 
+            needed.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/tutorials/dm-1110spssscoringinfospherestreams2/index.html?ca=drs-]]></link> 
+		<pubDate>06 Oct 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Managing the data ingestion process in IBM InfoSphere Identity Insight]]></title>
+		
+		<description><![CDATA[InfoSphere Identity Insight is a real-time, scalable entity relationship
+            and analysis platform.  It uses entity and relationship disambiguation
+            technology together with complex event processing techniques for fighting
+            threat, fraud, and risk.  The process of bringing data into Identity Insight,
+            or data ingestion, acquires a high level of complexity when dealing with
+            multiple data sources, multiple entity types, and hundreds of millions of records. 
+        In this article, learn how to build a comprehensive approach for handling 
+        various aspects of the load process, including priorities, performance, logging, and auditing.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1109datadigestionprocess/index.html?ca=drs-]]></link> 
+		<pubDate>01 Sep 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Configure and monitor InfoSphere Warehouse with Optim Performance Manager
+            Extended Insight]]></title>
+		
+		<description><![CDATA[Optim Performance Manager Extended Edition provides end-to-end database transaction response time 
+    monitoring capability for InfoSphere Warehouse applications with its Extended Insight capability. This 
+    capability gives you insight into the transaction and SQL statement response time metrics of a database 
+    application throughout all layers of the software stack; from the time that the SQL is issued in the application, and through
+    the network and database server. Special support is available for InfoSphere
+    Warehouse SQL Warehousing Tool (SQW) 
+    applications by recognizing transactions and SQL statements from InfoSphere Warehouse Application Server 
+    automatically. This article provides detailed information for installing, configuring, and validating 
+    the Optim Performance Manager Extended Insight feature for InfoSphere Warehouse applications.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1108opmextendedinsight/index.html?ca=drs-]]></link> 
+		<pubDate>25 Aug 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Smarter is: Saving minds, saving lives]]></title>
+		
+		<description><![CDATA[Columbia University Medical Center&apos;s Neuro-ICU uses IBM InfoSphere
+            Streams software to isolate early warning signs of a damaging and often deadly
+            stroke complication.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/dmmag/DMMag_2011_Issue3/SmarterIs/index.html?ca=drs-]]></link> 
+		<pubDate>03 Aug 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Migrating InfoSphere Streams SPADE applications to Streams Processing Language, Part
+                3: Migrate SPADE user-defined function applications]]></title>
+		
+		<description><![CDATA[The most significant new feature of Version 2.0 of the IBM InfoSphere(R)
+            Streams product is the programming language model
+transformation from Streams Processing Application Declarative Engine (SPADE) to Streams 
+Processing Language (SPL).
+Users with SPADE applications from previous versions will need to 
+migrate and port their applications to SPL when upgrading their installations to Version
+2.0. This tutorial is Part 3 of a 5-part 
+series that uses actual SPADE samples to demonstrate a series of step-by-step procedures for migrating and porting different 
+types of SPADE application content. Part 3 demonstrates the migration of SPADE
+user-defined function applications.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/tutorials/dm-1105spadeappstospl3/index.html?ca=drs-]]></link> 
+		<pubDate>18 Jul 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Deriving new business insights with Big Data]]></title>
+		
+		<description><![CDATA[Emerging capabilities to process vast quantities of data are bringing
+            about changes in technology and business landscapes. This article examines the
+            drivers, the new landscape, and the opportunities available to analytics with
+            Apache Hadoop.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/opensource/library/os-bigdata/index.html?ca=drs-]]></link> 
+		<pubDate>28 Jun 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>opensource</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Migrating InfoSphere Streams SPADE applications to Streams Processing Language, Part
+                5: Migrate SPADE user-defined built-in operator (UBOP) applications]]></title>
+		
+		<description><![CDATA[The most significant new feature of Version 2.0 of the IBM InfoSphere(R)
+            Streams product is the programming language model
+transformation from Streams Processing Application Declarative Engine (SPADE) to Streams 
+Processing Language (SPL).
+Users with SPADE applications from previous versions will need to 
+migrate and port their applications to SPL when upgrading their installations to Version
+2.0. This tutorial is Part 5 of a 5-part 
+series that uses actual SPADE samples to demonstrate a series of step-by-step procedures for migrating and porting different 
+types of SPADE application content. Part 5 demonstrates the migration of SPADE
+user-defined built-in operator (UBOP) applications.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/tutorials/dm-1105spadeappstospl5/index.html?ca=drs-]]></link> 
+		<pubDate>16 Jun 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Integrate MATLAB code into InfoSphere Streams]]></title>
+		
+		<description><![CDATA[MATLAB is a scientific computing language and platform whose strong support for matrix manipulation and large collection of
+mathematical modeling libraries make it a popular implementation choice for various analytic assets.  This article describes how MATLAB 
+functions can be integrated into SPL in order to execute MATLAB code within IBM InfoSphere Streams applications. The integration does not 
+require any changes to the MATLAB code. It relies on the MATLAB support for compiling
+MATLAB code into C++ shared libraries, and the SPL support 
+for interfacing with native functions.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1106matlab/index.html?ca=drs-]]></link> 
+		<pubDate>09 Jun 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Migrating InfoSphere Streams SPADE applications to Streams Processing Language, Part
+                4: Migrate SPADE user-defined operator (UDOP) applications]]></title>
+		
+		<description><![CDATA[The most significant new feature of Version 2.0 of the IBM InfoSphere(R)
+            Streams product is the programming language model
+transformation from Streams Processing Application Declarative Engine (SPADE) to Streams
+Processing Language (SPL).
+Users with SPADE applications from previous versions will need to 
+migrate and port their applications to SPL when upgrading their installations to Version
+2.0. This tutorial is Part 4 of a 5-part 
+series that uses actual SPADE samples to demonstrate a series of step-by-step procedures for migrating and porting different 
+types of SPADE application content. Part 4 demonstrates the migration of SPADE
+user-defined operator (UDOP) applications.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/tutorials/dm-1105spadeappstospl4/index.html?ca=drs-]]></link> 
+		<pubDate>09 Jun 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Migrating InfoSphere Streams SPADE applications to Streams Processing Language, Part
+                2: Migrate SPADE mixed-mode applications]]></title>
+		
+		<description><![CDATA[The most significant new feature of Version 2.0 of the IBM InfoSphere(R)
+            Streams product is the programming language model
+transformation from Streams Processing Application Declarative Engine (SPADE) to Streams 
+Processing Language (SPL).
+Users with SPADE applications from previous versions will need to 
+migrate and port their applications to SPL when upgrading their installations to Version
+2.0. This tutorial is Part 2 of a 5-part 
+series that uses actual SPADE samples to demonstrate a series of step-by-step procedures for migrating and porting different 
+types of SPADE application content. Part 2 demonstrates the migration of SPADE
+mixed-mode applications.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/tutorials/dm-1105spadeappstospl2/index.html?ca=drs-]]></link> 
+		<pubDate>26 May 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Migrating InfoSphere Streams SPADE applications to Streams 
+Processing Language, Part
+                1: Migrate basic SPADE applications]]></title>
+		
+		<description><![CDATA[The most significant new feature of Version 2.0 of the IBM InfoSphere(R)
+            Streams product is the programming language model
+transformation from Streams Processing Application Declarative Engine (SPADE) to Streams 
+Processing Language (SPL).
+Users with SPADE applications from previous versions will need to 
+migrate and port their applications to SPL when upgrading their installations to Version
+2.0. This tutorial is Part 1 of a 5-part 
+series that uses actual SPADE samples to demonstrate a series of step-by-step procedures for migrating and porting different 
+types of SPADE application content. Part 1 demonstrates the migration of basic SPADE
+applications.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/tutorials/dm-1105spadeappstospl1/index.html?ca=drs-]]></link> 
+		<pubDate>19 May 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Taming big data]]></title>
+		
+		<description><![CDATA[The realm of huge information flows is governed by new rules.
+            What changes in the multi-petabyte world? And how will big data change what
+            you do?]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/dmmag/DMMag_2011_Issue2/BigData/index.html?ca=drs-]]></link> 
+		<pubDate>02 May 2011 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Analyze and optimize cloud cluster performance]]></title>
+		
+		<description><![CDATA[Hadoop is a popular software framework that enables distributed manipulation of large amounts of data, thus making it a perfect companion to cloud computing. In fact, Hadoop MapReduce, the programming model and software framework used to write applications to rapidly process vast amounts of data in parallel on large clusters of compute nodes, is already in play on cloud systems. This article shows you how to take full advantage of Hadoop by introducing Hadoop configurable parameters and using them to monitor, analyze, and tune the performance of your Hadoop cluster.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/cloud/library/cl-cloudclusterperformance/index.html?ca=drs-]]></link> 
+		<pubDate>07 Mar 2011 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>cloud</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Java development 2.0: Big data analysis with Hadoop MapReduce]]></title>
+		
+		<description><![CDATA[Apache Hadoop is currently the premier tool used for analyzing
+    distributed data, and like most Java 2.0 technologies, it&apos;s built to scale. Get started with Hadoop&apos;s MapReduce programming model and learn how to use it to analyze data for both big and small business information needs.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/java/library/j-javadev2-15/index.html?ca=drs-]]></link> 
+		<pubDate>18 Feb 2011 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>opensource</category>
+		
+			
+			<category>cloud</category>
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>java</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[An introduction to the Hadoop Distributed File System]]></title>
+		
+		<description><![CDATA[The Hadoop Distributed File System (HDFS)--a subproject of the Apache
+            Hadoop project--is a distributed, highly fault-tolerant file system designed
+            to run on low-cost commodity hardware. HDFS provides high-throughput access to
+            application data and is suitable for applications with large data sets. This
+            article explores the primary features of HDFS and provides a high-level view
+            of the HDFS architecture.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/web/library/wa-introhdfs/index.html?ca=drs-]]></link> 
+		<pubDate>01 Feb 2011 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>web</category>
+		
+			
+			<category>opensource</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Solve cloud-related big data problems with MapReduce]]></title>
+		
+		<description><![CDATA[At times, you need to be able to access more physical and virtual
+            resources to achieve complex compute-intensive results, but setting up a grid system within an organization can face resource, logistical, and technical hurdles; even some political ones. Cloud computing comes to the rescue in this case. It also combines perfectly with the MapReduce function for handling lots of big data computations by making it both transparent and irrelevant where two numbers get added together. The author demonstrates why cloud computing and MapReduce are helpful in solving big data problems.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/cloud/library/cl-bigdata/index.html?ca=drs-]]></link> 
+		<pubDate>08 Nov 2010 05:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>cloud</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Business intelligence on the cheap with Apache Hadoop and Dojo,
+                Part 2: Create eye-catching, interactive reports using the Dojo toolkit]]></title>
+		
+		<description><![CDATA[Understanding your business is always important. Your company
+            can be as agile as you want it to be, but if you do not know the right moves to
+            make, you are driving with your eyes closed. Business intelligence solutions
+            can be prohibitively expensive, and they often require you to retrofit your
+            data to work with their systems. Open source technologies make it easier than
+            ever to create your own business intelligence reports. In this article, the
+            second of a two-part series, you will learn how to take business intelligence
+            data created by Apache Hadoop and use it to power eye-catching, interactive
+            reports using the Dojo toolkit.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/web/library/wa-dojohadoop2/index.html?ca=drs-]]></link> 
+		<pubDate>31 Aug 2010 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>web</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Business intelligence on the cheap with Apache Hadoop and Dojo,
+                Part 1: Crunch your existing data using Apache Hadoop]]></title>
+		
+		<description><![CDATA[Understanding your business is always important. Your company
+            can be as agile as you want it to be, but if you do not know the right moves to
+            make, you are driving with your eyes closed. Business intelligence solutions
+            can be prohibitively expensive, and they often require you to retrofit your
+            data to work with their systems. Open source technologies, however, make it
+            easier than ever to create your own business intelligence reports. In this
+            article, the first of a two-part series, learn how to crunch your
+            existing data using Apache Hadoop and turn it into data that can be easily fed
+            to a web-based reporting application.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/web/library/wa-dojohadoop1/index.html?ca=drs-]]></link> 
+		<pubDate>17 Aug 2010 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>web</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Using MapReduce and load balancing on the cloud]]></title>
+		
+		<description><![CDATA[Learn how to implement the Hadoop MapReduce framework in a cloud environment and how to use virtual load balancing to improve the performance of both a single- and multiple-node system.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/cloud/library/cl-mapreduce/index.html?ca=drs-]]></link> 
+		<pubDate>19 Jul 2010 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>cloud</category>
+		
+			
+			<category>opensource</category>
+		
+			
+			<category>java</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Distributed data processing with Hadoop, Part 3: Application development]]></title>
+		
+		<description><![CDATA[With configuration, installation, and the use of Hadoop in single- and
+            multinode architectures under your belt, you can now turn to the task of
+            developing applications within the Hadoop infrastructure. This final article
+            in the series explores the Hadoop APIs and data flow and demonstrates their
+            use with a simple mapper and reducer application.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/linux/library/l-hadoop-3/index.html?ca=drs-]]></link> 
+		<pubDate>14 Jul 2010 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>linux</category>
+		
+			
+			<category>java</category>
+		
+			
+			<category>opensource</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Predictive analytics on SAP with SPSS and InfoSphere Warehouse]]></title>
+		
+		<description><![CDATA[Predictive analytics software helps you to find non-obvious, hidden patterns in large
+            data sets. 
+            Current tools for predictive analytics, such as SPSS (an IBM company) and IBM InfoSphere Warehouse, expect data to be represented in an
+appropriate way before the actual analysis can take place. 
+However, you may have cases where the data you want to analyze is not readily available in
+a format these tools can recognize.
+For example, SAP systems are widely used by many companies across a variety of industries, but 
+data in SAP systems is not directly accessible to these tools. 
+This article shows you how to use IBM InfoSphere Information Server to extract data from SAP systems for analysis
+within InfoSphere Warehouse and SPSS PASW Modeler.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1007predictiveanalyticssapspss/index.html?ca=drs-]]></link> 
+		<pubDate>08 Jul 2010 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Distributed data processing with Hadoop, Part 2: Going further]]></title>
+		
+		<description><![CDATA[The first article in this series showed how to use Hadoop in a
+            single-node cluster. This article continues with a more advanced setup that
+            uses multiple nodes for parallel processing. It demonstrates the various node
+            types required for multinode clusters and explores MapReduce functionality in
+            a parallel environment. This article also digs into the management
+            aspects of Hadoop -- both command line and Web based.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/linux/library/l-hadoop-2/index.html?ca=drs-]]></link> 
+		<pubDate>03 Jun 2010 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>linux</category>
+		
+			
+			<category>opensource</category>
+		
+			
+			<category>java</category>
+		
+			
+			<category>cloud</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Distributed data processing with Hadoop, Part 1: Getting started]]></title>
+		
+		<description><![CDATA[This article -- the first in a series on Hadoop -- explores the Hadoop
+            framework, including its fundamental elements, such as the Hadoop file system
+            (HDFS), and node types that are commonly used. Learn how to install and
+            configure a single-node Hadoop cluster, and delve into the MapReduce
+            application. Finally, discover ways to monitor and manage Hadoop using its
+            core Web interfaces.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/linux/library/l-hadoop-1/index.html?ca=drs-]]></link> 
+		<pubDate>18 May 2010 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>linux</category>
+		
+			
+			<category>cloud</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Smarter is...: Adding structure to an unstructured world]]></title>
+		
+		<description><![CDATA[To turn its huge volume of unstructured data--spanning decades of Web pages, online documents, video, images and other sources--into a usable, accessible resource that could be easily analyzed and queried, the British Library used IBM BigSheets analytics software to extract data from source applications, add tags, and display it in an easily consumed format.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/dmmag/DMMag_2010_Issue2/SmarterIs/index.html?ca=drs-]]></link> 
+		<pubDate>30 Apr 2010 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Using IBM InfoSphere Warehouse Design Studio with pureXML data,
+                Part 2: Create a control flow for multiple ETL jobs involving XML]]></title>
+		
+		<description><![CDATA[Learn how to integrate business-critical XML data into your data
+            warehouse using IBM InfoSphere(TM) Warehouse Design Studio and DB2(R) 9.7
+            pureXML(R). This two-part article series provides step-by-step instructions
+            for using pureXML as both a source and target data source for extract,
+            transform, and load (ETL) operations developed with InfoSphere Warehouse
+            Design Studio. This article describes how to build a single control flow that calls multiple data
+            flows that extract, transform, and load XML data in a specific sequence.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1004warehousepurexml2/index.html?ca=drs-]]></link> 
+		<pubDate>01 Apr 2010 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>xml</category>
+		
+			
+			<category>bigdata</category>
+		
+			
+			<category>data</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Using IBM InfoSphere Warehouse Design Studio with pureXML data,
+                Part 1: Create an ETL data flow to populate a hybrid data warehouse]]></title>
+		
+		<description><![CDATA[Learn how to integrate business-critical XML data into your data
+            warehouse using IBM InfoSphere(TM) Warehouse Design Studio and DB2(R) 9.7
+            pureXML(R). This two-part article series provides step-by-step instructions
+            for using pureXML as both a source and target data source for extract,
+            transform, and load (ETL) operations developed with InfoSphere Warehouse
+            Design Studio. This article explains how to build a single data flow that uses
+            an XML-based source table to populate two target data warehouse tables. One of
+            these tables contains only relational data, while the other contains both
+            relational and XML data.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1003warehousepurexml1/index.html?ca=drs-]]></link> 
+		<pubDate>25 Mar 2010 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>xml</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Use InfoSphere Business Glossary to define a common business language among
+            modeling tools]]></title>
+		
+		<description><![CDATA[Combining common business language taxonomies with modeling tools
+            encourages architects, modelers, and developers to understand and use commonly
+            understood business terms, which eliminates the ambiguity that loosely
+            specified language can introduce. This drives alignment of requirements
+            between IT and business stakeholders. This article describes how to use
+            InfoSphere(TM) Business Glossary, Rational(R) Software Architect, and
+            InfoSphere Data Architect within a specific development flow to introduce
+            agreed-upon terms into the modeling environments, establishing the correct
+            semantics early in the development cycle. This effort decreases the cost of
+            development by reducing the churn of getting IT to understand what the
+            business requirements really mean.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-1003infospheremodelingtools/index.html?ca=drs-]]></link> 
+		<pubDate>18 Mar 2010 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>rational</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Finding the way through the semantic Web with HBase]]></title>
+		
+		<description><![CDATA[The Hadoop Database (HBase) is well suited for creating a semantic Web and for extracting existing 
+	or computed knowledge. Learn how to represent RDF/XML assertions in an HBase database 
+	for scientific articles, and discover how HBase and Bigtable are promoting a new approach 
+	to storing and processing data.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/opensource/library/os-hbase/index.html?ca=drs-]]></link> 
+		<pubDate>15 Sep 2009 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>opensource</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Using virtual cubes in IBM InfoSphere Warehouse 9.7 to combine business
+            scenarios and to improve performance]]></title>
+		
+		<description><![CDATA[Virtual cubes are one of the new Cubing Services features in IBM
+            InfoSphere(TM) Warehouse 9.7. A virtual cube provides a way to merge different
+            cubes together to allow a single query destination that returns merged results
+            from the cubes that compose it. Virtual cubes can be used to drastically
+            improve the response time of the cube server queries by using efficient data
+            partitioning for optimum cache utilization (in some cases, over 100 times
+            better response times). Virtual cubes also offer a solution for combining
+            results by merging different regional cubes into a country cube. They also
+            enable merging sales numbers with currency exchange rates to provide a global
+            view of the business. This article explains how virtual cubes are created, how
+            they work, and how to use them for InfoSphere Warehouse Cubing Services
+            9.7.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-0909infospherevirtualcubes/index.html?ca=drs-]]></link> 
+		<pubDate>10 Sep 2009 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Designing and deploying a security model using IBM InfoSphere Warehouse
+            Cubing Services]]></title>
+		
+		<description><![CDATA[In IBM InfoSphere(TM) Warehouse V9.7, Cubing Services modify the way you
+            secure your cubes and provide a way for you to secure your dimensions. You
+            might need to limit access to your OLAP data at the level of the cube or at
+            the more granular level of the dimension, depending on your security
+            requirements. In this article, you will learn how to define security on cubes
+            and dimensions by creating roles, policies, and authorizations in the Design
+            Studio. This article describes how to export the security model to a file and
+            how to use the Administration Console to import the security model to the
+            InfoSphere Warehouse control database. After importing the security model, you
+            will learn how to instruct the Cube Server to enforce the rules in the
+            security model.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-0909securityinfospherecubing/index.html?ca=drs-]]></link> 
+		<pubDate>03 Sep 2009 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Text Analysis in InfoSphere Warehouse, Part 3: Develop and integrate custom UIMA text analysis engines]]></title>
+		
+		<description><![CDATA[In the first two articles of this series, you learned about IBM InfoSphere Warehouse text analysis capabilities,
+			how to use regular expressions and dictionaries to extract information from text, and how to publish the results with
+			a Cognos report.
+			This article describes how to use the Unstructured Information Management Architecture (UIMA) framework to create a custom
+			text annotator and use it in InfoSphere Warehouse.
+			The ability of InfoSphere Warehouse to use UIMA based annotators in analytic flows is a powerful feature. 
+			You can write
+			custom annotators that can extract almost any information from text.
+			Plus you can use UIMA based annotators that are provided by IBM, other companies, and
+			many universities. 
+			For example, you can find UIMA annotators that tokenize words and extract
+			concepts such as persons or sentiments.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-0908textanalysis3/index.html?ca=drs-]]></link> 
+		<pubDate>27 Aug 2009 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Text analysis in InfoSphere Warehouse, Part 2: Dictionary-based information extraction combined with IBM Cognos
+            reporting]]></title>
+		
+		<description><![CDATA[Unstructured information represents the largest, most current, and
+            fastest growing source of information that is available today. This
+            information exists in many different sources such as call center records,
+            repair reports, product reviews, e-mails, and many others. The text analysis
+            features of IBM InfoSphere(TM) Warehouse can help you uncover the hidden value
+            in this unstructured data. This series of articles covers the general
+            architecture and business opportunities of analyzing unstructured data with
+            the text analysis capabilities of InfoSphere Warehouse. The integration of
+            this capability with IBM Cognos(R) reporting enables people across the company
+            to exploit the text analysis results. The first article of this series gave an
+            overview of the text analysis capabilities in InfoSphere Warehouse and showed
+            how to use regular expressions to extract concepts from free-form text. This
+            second article shows you how to use dictionaries for concept extraction and
+            how you can use taxonomies to structure them. It also explains how you can
+            present the results in an interactive Cognos report.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-0907textanalysis2/index.html?ca=drs-]]></link> 
+		<pubDate>09 Jul 2009 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>Analytics</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Generate Cognos reports using InfoSphere Warehouse Cubes]]></title>
+		
+		<description><![CDATA[Learn how to generate Cognos professional reports using InfoSphere Warehouse data models.  
+Cognos is SOA-based, light-weight, and user-friendly, and no programming skills are required to create reports.  
+This article serves as a start for users who may have used other tools in the past and now want to generate professional 
+Cognos reports using InfoSphere Warehouse cubes.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-0906cognoscubes/index.html?ca=drs-]]></link> 
+		<pubDate>18 Jun 2009 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>Analytics</category>
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Text analysis in InfoSphere Warehouse, Part 1: Architecture overview and example of information extraction with regular expressions]]></title>
+		
+		<description><![CDATA[Unstructured information represents the largest, most current, and fastest
+		growing source of information that is available today. 
+		This information exists in many different sources such as call center records, 
+		repair reports, product reviews, e-mails, and many others.
+		The text analysis features of IBM InfoSphere Warehouse can help you uncover the hidden value
+		in this unstructured data. 
+		This series of articles covers the general architecture and business opportunities of analyzing unstructured data with the text analysis capabilities 
+		of InfoSphere Warehouse. 
+		The integration of this capability with IBM Cognos reporting enables people across the company 
+		to exploit the text analysis results.
+		This first article introduces the basic architecture of the text analysis feature in InfoSphere Warehouse 
+		and includes a technical example showing how to extract concepts from text using regular expressions.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-0906textanalysis/index.html?ca=drs-]]></link> 
+		<pubDate>04 Jun 2009 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+	<item>
+		
+		
+		<title><![CDATA[Install and configure InfoSphere Warehouse on System z]]></title>
+		
+		<description><![CDATA[This article takes you through the installation of InfoSphere Warehouse on a Linux partition on System z.  Learn about pre-installation requirements, then walk through the steps for a successful installation.]]></description> 
+		<link><![CDATA[http://www.ibm.com/developerworks/data/library/techarticle/dm-0905systemzwarehouse/index.html?ca=drs-]]></link> 
+		<pubDate>14 May 2009 04:00:00 +0000</pubDate>     
+		
+		
+		
+			
+			<category>data</category>
+		
+			
+			<category>bigdata</category>
+		
+		
+	</item>
+
+</channel>
+</rss>
+
+
