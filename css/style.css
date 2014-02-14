@@ -116,6 +116,11 @@ font-family: Helvetica, Arial, Tahoma, sans-serif;
 	margin-right: 0;
 }
 
+.nrepos
+{
+	vertical-align: middle;
+}
+
 .btn-custom-jazz
 {
 	background-color: #1cba11;
