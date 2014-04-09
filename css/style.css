@@ -127,6 +127,13 @@ font-family: Helvetica, Arial, Tahoma, sans-serif;
 	
 	border: 0;
 }
+
+.btn-custom-bm
+{
+	background-color: #00aed1;
+
+	border: 0;
+}
 .btn-custom-dw
 {
 	background-color: #eb7508;
