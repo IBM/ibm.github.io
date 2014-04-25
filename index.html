@@ -113,7 +113,9 @@
          {"name": "ld4apps",
           "type":"org"},
     	 {"name": "wsadminlib",
-    	  "type": "user"
+    	  "type": "user"},
+    	 {"name": "apimanagement",
+    	  "type": "org"
     	 }
     ];
     
@@ -272,7 +274,7 @@
 	  	$item.appendTo($sectiontitle);
   		var $twistie = $("<a data-toggle='collapse' data-target='#updated'>").addClass("twistie showdetails");
   		$twistie.appendTo($sectiontitle);
-      
+
 	  	$("<div>").addClass("separator gap").appendTo("#wrapper");
 	  	var $sectiontitle = $("<div>").addClass("section-title").appendTo("#wrapper");
   		var $title = $("<span>").addClass('title').text("repos").appendTo($sectiontitle);
