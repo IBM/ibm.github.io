@@ -78,7 +78,7 @@
     </div>
       <footer>
       	 <div class="container">
-        <p>© IBM 2013</p>
+        <p>© IBM 2013-2014</p>
         </div>
       </footer>
     </div> <!-- /container -->
@@ -234,17 +234,22 @@
       	var org = orgs.name;
         repos = repos || [];
         page = page || 1;
+        reposcmd = orgs.type === "repo" ? "" : "/repos";
 
 	   // These client tokens are for a dummy app, and there is no user specific information that we get, so
 	   // all in all, pretty safe to expose this here.
-       var uri = "https://api.github.com/"+orgs.type+"s/"+org+"/repos?callback=?"
-                + "&per_page=1000"
+
+       // there are three supported request types: org, user and repo. Syntax differs.
+       var uri = "https://api.github.com/"+orgs.type+"s/"+org + reposcmd
+                + "?per_page=1000"
                 + "&client_id=1bafa09b6086eec7afb4"
                 + "&client_secret=7e6422a0a2e24f0d0ecb7521a63990b5758c9cc8";
-
         $.getJSON(uri, function (result) {
-          if (result.data && result.data.length > 0) {
-            repos = repos.concat(result.data);
+           if (!Array.isArray(result)) {
+               result = [].concat(result);
+           }
+          if (result && result.length > 0) {
+            repos = repos.concat(result);
 
             $(function () {
 
