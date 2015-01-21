@@ -44,6 +44,8 @@
     	{"name": "andrewlow/v8z",
     	  "type": "repo"},
     	{"name": "ibm-rtvs",
-    	  "type": "user"}
+    	  "type": "user"},
+    	{"name": "bigfix",
+    	  "type": "org"}
     ];
     
