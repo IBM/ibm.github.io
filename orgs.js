@@ -46,6 +46,8 @@
     	{"name": "ibm-rtvs",
     	  "type": "user"},
     	{"name": "bigfix",
-    	  "type": "org"}
+    	  "type": "org"},
+    	{"name": "fog/fog-softlayer",
+    	  "type": "repo"}
     ];
     
