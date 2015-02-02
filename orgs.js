@@ -37,6 +37,8 @@
     	  "type": "repo"},
         {"name": "beloglazov/hamcrest-querydsl",
     	  "type": "repo"},
+        {"name": "beloglazov/couchdb-scala",
+          "type": "repo"},
     	{"name": "andrewlow/node",
     	  "type": "repo"},
     	{"name": "andrewlow/v8ppc",
