@@ -300,10 +300,9 @@ background:url(../imgs/news.jpg) no-repeat;
 {
 	font-family: Helvetica;
 	letter-spacing: 2px;
-
-	font-size: 19px;
-	background-color: #333;
-	padding: 2px 5px 2px 2px;
+	font-size: 16px;
+	margin-left:20px;
+	line-height:40px;
 	vertical-align: bottom;
 	color:#fff
 }
