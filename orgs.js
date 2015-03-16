@@ -11,10 +11,14 @@
     	 "type": "org"},
     	 {"name": "softlayer",
     	 "type": "org"},
+    	 {"name": "cloudant",
+    	 "type": "org"},
+    	 {"name": "cloudant-labs",
+    	 "type": "org"},
     	 {"name": "node-red",
     	 "type": "org"},
     	 {"name": "ibmjstart",
-    	 "type": "org"},    	 
+    	 "type": "org"},
     	 {"name": "ibm-js",
     	 "type": "org"},
          {"name": "ibm-bioinformatics",
@@ -42,7 +46,7 @@
     	{"name": "andrewlow/node",
     	  "type": "repo"},
     	{"name": "andrewlow/v8ppc",
-    	  "type": "repo"},    	
+    	  "type": "repo"},
     	{"name": "andrewlow/v8z",
     	  "type": "repo"},
     	{"name": "ibm-rtvs",
@@ -52,4 +56,3 @@
     	{"name": "fog/fog-softlayer",
     	  "type": "repo"}
     ];
-    
