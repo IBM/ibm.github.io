@@ -17,6 +17,8 @@
     	 "type": "org"},    	 
     	 {"name": "ibm-js",
     	 "type": "org"},
+    	 {"name": "IBMStreams",
+    	 "type": "org"},
          {"name": "ibm-bioinformatics",
           "type":"user"},
          {"name": "ld4apps",
