@@ -55,6 +55,8 @@
     	  "type": "user"},
     	{"name": "bigfix",
     	  "type": "org"},
+    	{"name": "Open-I-Beam",
+    	  "type": "org"},
     	{"name": "fog/fog-softlayer",
     	  "type": "repo"}
     ];
