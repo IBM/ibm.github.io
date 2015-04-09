@@ -61,4 +61,12 @@
     	  "type": "repo"},
 	{"name": "y-omura/TransProg",
 	  "type": "repo"},
+	{"name": "IBM-Bluemix",
+	"type": "org"},
+	{"name": "watson-developer-cloud",
+	"type": "org"},
+	{"name": "IBM-Watson",
+	"type": "org"},
+	{"name": "ibm-research",
+	"type": "org"},
     ];
