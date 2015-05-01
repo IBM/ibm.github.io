@@ -222,11 +222,7 @@ ga('send', 'pageview');
               repo.pushed_at = new Date(repo.pushed_at);
 
             });
-	// omit forks
-        repos = JQuery.grep(repos, function(n, i) {
-              	return n.fork == false;
-        });
-	// pre sort by how recently the repo was modified
+			  // pre sort by how recently the repo was modified
         repos.sort(function (a, b) {
           if (a.pushed_at < b.pushed_at) return 1;
           if (b.pushed_at < a.pushed_at) return -1;
