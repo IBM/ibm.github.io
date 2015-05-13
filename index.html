@@ -196,6 +196,7 @@ ga('send', 'pageview');
     }
     
     function addRepos(orgs, repos, page) {
+     var forks = [];
      var org = orgs.name;
      repos = repos || [];
      page = page || 1;
@@ -220,9 +221,19 @@ ga('send', 'pageview');
 
             $.each(repos, function (i, repo) {
               repo.pushed_at = new Date(repo.pushed_at);
-
+              if (repo.fork === true) {  // if this is a fork, save the index
+                forks.push(i);
+              }
             });
-			  // pre sort by how recently the repo was modified
+
+            // remove forks from the view
+            $.each(forks, function(i, forkindex) {
+              var indextoremove = forkindex - i; // account for prior splices
+              console.log('removing forked entry: ' + repos[indextoremove].full_name);
+              repos.splice(indextoremove,1);
+            });
+
+		// pre sort by how recently the repo was modified
         repos.sort(function (a, b) {
           if (a.pushed_at < b.pushed_at) return 1;
           if (b.pushed_at < a.pushed_at) return -1;
