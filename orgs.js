@@ -65,4 +65,6 @@
 	   "type": "org"},
 	{"name": "ibm-research",
 	   "type": "org"},
+	{"name": "digexp",
+	   "type": "org"}
     ];
