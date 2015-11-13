@@ -66,5 +66,7 @@
         {"name": "ibm-research",
           "type": "org"},
         {"name": "digexp",
-          "type": "org"}
+          "type": "org"},
+        {"name": "andybalaam/git-history-data",
+          "type": "repo"}
     ];
