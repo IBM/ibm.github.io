@@ -66,5 +66,7 @@
         {"name": "ibm-research",
           "type": "org"},
         {"name": "digexp",
+          "type": "org"},
+        {"name": "IBM-DBWKL",
           "type": "org"}
     ];
