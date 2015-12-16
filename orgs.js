@@ -67,7 +67,6 @@
           "type": "org"},
         {"name": "digexp",
           "type": "org"},
-        {"name": "cargo",
-           "type": "repo",
-           "link": "https://github.com/nadgowdas/cargo"}
+        {"name": "nadgowdas/cargo",
+           "type": "repo"}
     ];
