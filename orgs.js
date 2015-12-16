@@ -65,8 +65,8 @@
           "type": "org"},
         {"name": "ibm-research",
           "type": "org"},
-        {"name": "digexp",
-          "type": "org"},
         {"name": "nadgowdas/cargo",
-           "type": "repo"}
+           "type": "repo"},
+        {"name": "digexp",
+          "type": "org"}
     ];
