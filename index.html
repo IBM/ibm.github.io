@@ -1,104 +1,119 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <!-- saved from url=(0043)http://getbootstrap.com/examples/jumbotron/ -->
-<html lang="en"><head>
-<script src="//cdn.optimizely.com/js/1141215513.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
+<html lang="en">
+<head>
+    <script src="//cdn.optimizely.com/js/1141215513.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
 
-<title>IBM @ Github</title>
+    <title>IBM @ Github</title>
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 
-<link href="http://getbootstrap.com/examples/jumbotron/jumbotron.css" rel="stylesheet">
-<link href="./css/style.css" rel="stylesheet">
-<script>
+    <link href="http://getbootstrap.com/examples/jumbotron/jumbotron.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
 
 ga('create', 'UA-41146412-2', 'ibm.github.io');
 ga('send', 'pageview');
 
-</script>
-<link rel="icon" href="http://ibm.github.io/favicon.ico" type="image/vnd.microsoft.icon" />
+
+
+
+    </script>
+    <link rel="icon" href="http://ibm.github.io/favicon.ico" type="image/vnd.microsoft.icon"/>
 </head>
 <body style="">
 
-  <div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="http://www.ibm.com"><img src="images/ibmneg_white_42x20.png" alt="IBM"></a>
-      <!--a class="navbar-brand" style="float: right" href="http://www.ibm.com/developerworks"><img src="images/dWmark.png" alt="DW"></a-->
-      <a id="dw-nav" class="navbar-brand" style="float: right" href="http://www.ibm.com/developerworks" title="developerWorks"><span class="dw-logo-IBM">IBM</span>&nbsp;<span class="dw-logo-d">d</span><span class="dw-logo-W">W</span></a>
-      <div class="navbar-header">
-      </div>
-    </div>
-  </div>
+        <a class="navbar-brand" href="http://www.ibm.com"><img src="images/ibmneg_white_42x20.png" alt="IBM"></a>
+        <!--a class="navbar-brand" style="float: right" href="http://www.ibm.com/developerworks"><img src="images/dWmark.png" alt="DW"></a-->
+        <a id="dw-nav" class="navbar-brand" style="float: right" href="http://www.ibm.com/developerworks"
+           title="developerWorks"><span class="dw-logo-IBM">IBM</span>&nbsp;<span class="dw-logo-d">d</span><span
+                class="dw-logo-W">W</span></a>
 
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
-    <div class="container">
-      <div style="text-align: center;"><h1>IBM Open Source at GitHub</h1> </div>
-      <div style="text-align: center;">
-        <a href="http://hub.jazz.net/" data-analytics-category="Leadspace buttons" data-analytics-action="JazzHub">
-          <p class="btn btn-primary btn-lg btn-custom-jazz" style="font-family:'Helvetica Neue'; margin: 15px">Enhance your GitHub experience with
-            <br><span style="color: #fff;font-family: 'Lubalin'">Bluemix DevOps Services »</span>
-          </p></a>
-          <a href="https://www.bluemix.net/" data-analytics-category="Leadspace buttons" data-analytics-action="BlueMix">
-            <p class="btn btn-primary btn-lg btn-custom-bm" style="font-family:'Helvetica Neue'; margin: 15px">Deploy your application to
-              <br><span style="color: #fff;font-family: 'Lubalin'">Bluemix cloud platform »</span>
-            </p></a>
-            <a href="http://developer.ibm.com/open" data-analytics-category="Leadspace buttons" data-analytics-action="developerWorks Open">
-              <p class="btn btn-primary btn-lg btn-custom-dw" style="font-family	:'Helvetica Neue'; margin: 15px;">Engage with IBM Open Source 
-                <br><span style="color: #fff;font-family: 'Lubalin'">developerWorks Open »</span>
-              </p></a>
-            </div>
-          </div>
+        <div class="navbar-header">
         </div>
+    </div>
+</div>
 
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-             <div id="wrapper">
-              <label for="search" class="col-lg-4 control-label search" style=""><span style="float:left; padding-top:6px; padding-left: 19px;font-weight: 700">SEARCH</span> <input type="search" id="search" class="search-query span3 filter input-medium" placeholder="Our Repos..."></label>
-              
-              <div id="repos" class="columns collapse-group">
-               
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-      </div>
-    </div>
-  </div>
-  <footer>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
     <div class="container">
-      <p>© IBM 2013-2014</p>
+        <div style="text-align: center;"><h1>IBM Open Source at GitHub</h1></div>
+        <div style="text-align: center;">
+            <a href="http://hub.jazz.net/" data-analytics-category="Leadspace buttons" data-analytics-action="JazzHub">
+                <p class="btn btn-primary btn-lg btn-custom-jazz" style="font-family:'Helvetica Neue'; margin: 15px">
+                    Enhance your GitHub experience with
+                    <br><span style="color: #fff;font-family: 'Lubalin'">Bluemix DevOps Services »</span>
+                </p></a>
+            <a href="https://www.bluemix.net/" data-analytics-category="Leadspace buttons"
+               data-analytics-action="BlueMix">
+                <p class="btn btn-primary btn-lg btn-custom-bm" style="font-family:'Helvetica Neue'; margin: 15px">
+                    Deploy your application to
+                    <br><span style="color: #fff;font-family: 'Lubalin'">Bluemix cloud platform »</span>
+                </p></a>
+            <a href="http://developer.ibm.com/open" data-analytics-category="Leadspace buttons"
+               data-analytics-action="developerWorks Open">
+                <p class="btn btn-primary btn-lg btn-custom-dw" style="font-family  :'Helvetica Neue'; margin: 15px;">
+                    Engage with IBM Open Source
+                    <br><span style="color: #fff;font-family: 'Lubalin'">developerWorks Open »</span>
+                </p></a>
+        </div>
     </div>
-  </footer>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <div id="wrapper">
+                <label for="search" class="col-lg-4 control-label search" style=""><span
+                        style="float:left; padding-top:6px; padding-left: 19px;font-weight: 700">SEARCH</span> <input
+                        type="search" id="search" class="search-query span3 filter input-medium"
+                        placeholder="Our Repos..."></label>
+
+                <div id="repos" class="columns collapse-group">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>
+</div>
+</div>
+<footer>
+    <div class="container">
+        <p>© IBM 2013-2014</p>
+    </div>
+</footer>
 </div> <!-- /container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./js/jquery.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/strftime.js"></script>
-    <script type="text/javascript" src="orgs.js"></script>
-    <script type="text/javascript">
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/strftime.js"></script>
+<script type="text/javascript" src="orgs.js"></script>
+<script type="text/javascript">
     
     var updated = [];
     var allrepos = [];
 
     
     (function ($, undefined) {
-    	
+      
       var repoUrls = {
       };
 
@@ -113,10 +128,10 @@ ga('send', 'pageview');
       
       function addUpdated()
       {
-      	$("#updated").empty();
-      	for (r=0; r < Math.min(4, updated.length); r++)
-      	{
-      		repo = updated[r];
+        $("#updated").empty();
+        for (r=0; r < Math.min(4, updated.length); r++)
+        {
+          repo = updated[r];
           desc = repoDescription(repo);
           var $uitem = $("<div>").addClass("updated-card col-sm-5 col-md-4 col-lg-3");
           var $item = $("<div>").addClass("card pin " + (repo.language || '').toLowerCase() + " "+repo.name.toLowerCase());
@@ -136,11 +151,11 @@ ga('send', 'pageview');
       
       function addAllRepos()
       {
-      	$("#allrepos").empty();
-      	
-      	for (r=0; r < allrepos.length; r++)
-      	{
-      		repo = allrepos[r];
+        $("#allrepos").empty();
+        
+        for (r=0; r < allrepos.length; r++)
+        {
+          repo = allrepos[r];
           desc = repoDescription(repo);
           var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 " + (repo.language || '').toLowerCase() + " "+repo.name.toLowerCase());
           var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
@@ -161,7 +176,7 @@ ga('send', 'pageview');
 
       function pushRepo(repos, org) 
       {
-      	var left = repos; var right = allrepos;
+        var left = repos; var right = allrepos;
         var result  = [],
         il      = 0,
         ir      = 0;
@@ -202,8 +217,8 @@ ga('send', 'pageview');
      page = page || 1;
      reposcmd = orgs.type === "repo" ? "" : "/repos";
 
-	   // These client tokens are for a dummy app, and there is no user specific information that we get, so
-	   // all in all, pretty safe to expose this here.
+     // These client tokens are for a dummy app, and there is no user specific information that we get, so
+     // all in all, pretty safe to expose this here.
 
        // there are three supported request types: org, user and repo. Syntax differs.
        var uri = "https://api.github.com/"+orgs.type+"s/"+org + reposcmd
@@ -233,7 +248,7 @@ ga('send', 'pageview');
               repos.splice(indextoremove,1);
             });
 
-		// pre sort by how recently the repo was modified
+    // pre sort by how recently the repo was modified
         repos.sort(function (a, b) {
           if (a.pushed_at < b.pushed_at) return 1;
           if (b.pushed_at < a.pushed_at) return -1;
@@ -298,12 +313,12 @@ ga('send', 'pageview');
     n = $rows.length;
     for (r in $rows)
     {
-    	row = $rows[r];
-    	style = row.style;
-    	if (style && style.cssText && style.cssText.match("none"))
-    	{
-    		n--;
-    	}
+      row = $rows[r];
+      style = row.style;
+      if (style && style.cssText && style.cssText.match("none"))
+      {
+        n--;
+      }
 
     }
     
@@ -316,12 +331,12 @@ ga('send', 'pageview');
     m = 4;
     for (r in $rows)
     {
-    	row = $rows[r];
-    	style = row.style;
-    	if (style && style.cssText && style.cssText.match("none"))
-    	{
-    		m--;
-    	}
+      row = $rows[r];
+      style = row.style;
+      if (style && style.cssText && style.cssText.match("none"))
+      {
+        m--;
+      }
 
     }
     
@@ -389,7 +404,11 @@ ga('send', 'pageview');
     });
 
 });
+
+
+
 </script>
 
 
-</body></html>
+</body>
+</html>
