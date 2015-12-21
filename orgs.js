@@ -68,5 +68,7 @@
         {"name": "nadgowdas/cargo",
            "type": "repo"},
         {"name": "digexp",
+          "type": "org"},
+        {"name": "IBM-DBWKL",
           "type": "org"}
     ];
