@@ -68,5 +68,8 @@
         {"name": "nadgowdas/cargo",
            "type": "repo"},
         {"name": "digexp",
-          "type": "org"}
+          "type": "org"},
+         {"name": "OpenWhisk",
+          "type": "org",
+         "link": "https://github.com/openwhisk"}
     ];
