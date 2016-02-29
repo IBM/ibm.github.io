@@ -70,5 +70,7 @@
         {"name": "nadgowdas/cargo",
            "type": "repo"},
         {"name": "digexp",
-          "type": "org"}
+          "type": "org"},
+        {"name": "andybalaam/git-history-data",
+          "type": "repo"}
     ];
