@@ -72,5 +72,11 @@
         {"name": "digexp",
           "type": "org"},
         {"name": "andybalaam/git-history-data",
-          "type": "repo"}
+          "type": "repo"},
+        {"name": "ibm-cds-labs",
+          "type": "org"},
+        {"name": "OpenWhisk",
+          "type": "org"},
+        {"name": "IBM-DBWKL",
+          "type": "org"}
     ];
