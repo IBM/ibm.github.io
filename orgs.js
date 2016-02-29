@@ -1,5 +1,7 @@
 
     var orgs = [
+        {"name": "bradleyjeck/epanetReader",
+         "type": "repo"},
         {"name": "wasdev",
           "type": "org",
           "link": "http://wasdev.github.io/"},
