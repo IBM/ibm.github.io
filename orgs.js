@@ -69,4 +69,6 @@
 	   "type": "org"},
 	{"name": "ibm-research",
 	   "type": "org"},
+	{"name": "strongloop",
+	   "type": "org"}
     ];
