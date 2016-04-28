@@ -41,8 +41,30 @@ src: url('/fonts/Lubalin/LubalinGraphStd-Medium.otf') format('opentype');
 
 .jumbotron h1
 {
+	text-align: center;
 	font-size: 3em;
 	font-weight: 400;
+}
+
+.jumbotron .leadspace-buttons {
+	text-align: center;
+}
+
+.jumbotron .leadspace-buttons a p {
+	font-family:'Helvetica Neue';
+	margin: 15px;
+}
+
+.jumbotron .leadspace-buttons a p b {
+	color: #fff;
+	font-family: 'Lubalin';
+	display: block;
+	font-weight: normal;
+	padding-top: .25em;
+}
+
+.jumbotron .leadspace-buttons a p b::after {
+	content: ' »';
 }
 
 body
