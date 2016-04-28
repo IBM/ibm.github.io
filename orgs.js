@@ -112,7 +112,7 @@
         {"name": "djwillia/solo5",
         "type": "repo"},
         {"name": "quarks-edge",
-         "type": "orgs"},
+         "type": "org"},
         {"name": "jamiejennings/rosie-pattern-language",
          "type": "repo"},
         {"name": "openblockchain",
