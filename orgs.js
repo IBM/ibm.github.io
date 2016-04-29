@@ -132,5 +132,7 @@
         {"name": "ibm-security-innovation",
         "type": "org"},
         {"name": "strongloop",
+        "type": "org"},
+	{"name": "cicsdev",
         "type": "org"}
     ];
