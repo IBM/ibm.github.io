@@ -281,17 +281,17 @@ background:url(../imgs/news.jpg) no-repeat;
 
 #wrapper .java
 {
-	//border-top: 4px solid #510FAD;
+	/* border-top: 4px solid #510FAD; */
 }
 
 #wrapper .ruby
 {
-	//border-top: 4px solid #33CCCC;
+	/* border-top: 4px solid #33CCCC; */
 }
 
 #wrapper .javascript
 {
-	//border-top: 4px solid #FFBE40;
+	/* border-top: 4px solid #FFBE40; */
 }
 
 .section-title
@@ -300,6 +300,16 @@ background:url(../imgs/news.jpg) no-repeat;
 	text-transform: uppercase;
 	position: relative;
 	margin: 3px;
+}
+
+label.search span
+{
+	text-transform: uppercase;
+	float: left;
+	padding-top: 6px;
+	padding-left: 19px;
+	font-weight: 700;
+	padding-right: .25em;
 }
 
 .section-title .title
