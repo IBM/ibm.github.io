@@ -205,6 +205,10 @@ ga('send', 'pageview');
 	   // all in all, pretty safe to expose this here.
 
        // there are three supported request types: org, user and repo. Syntax differs.
+       if((orgs.type !== 'org') && (orgs.type !== 'user') && (orgs.type !== 'repo')) {
+       	  console.log('** Unknown type “'+orgs.type+'” for org “'+org+'” — check “orgs.js” for typo.'); 
+       	  return;
+       }
        var uri = "https://api.github.com/"+orgs.type+"s/"+org + reposcmd
        + "?per_page=1000"
        + "&client_id=1bafa09b6086eec7afb4"
