@@ -93,7 +93,9 @@ ga('send', 'pageview');
     
     var updated = [];
     var allrepos = [];
-
+    
+    // go to http://thissite.example.com/#DEBUG to set DEBUG=true
+    var DEBUG = (window.location.hash === '#DEBUG');
     
     (function ($, undefined) {
     	
@@ -231,7 +233,7 @@ ga('send', 'pageview');
             // remove forks from the view
             $.each(forks, function(i, forkindex) {
               var indextoremove = forkindex - i; // account for prior splices
-              console.log('removing forked entry: ' + repos[indextoremove].full_name);
+              if(DEBUG) console.log('removing forked entry: ' + repos[indextoremove].full_name);
               repos.splice(indextoremove,1);
             });
 
