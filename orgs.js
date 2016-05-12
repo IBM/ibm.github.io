@@ -390,5 +390,7 @@
         {"name": "strongloop/loopback-example-connector",
           "type": "repo"},
         {"name": "strongloop/loopback-example-storage",
-          "type": "repo"}
+          "type": "repo"},
+        {"name": "personality-insights",
+          "type": "org"},
     ];
