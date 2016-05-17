@@ -345,6 +345,10 @@
           "type": "repo"},
         {"name": "strongloop/loopback-example-connector",
           "type": "repo"},
+        {"name": "strongloop/strong-db-watcher",
+          "type": "repo"},
+        {"name": "strongloop/ephemeral-npm",   
+          "type": "repo"},        
         {"name": "strongloop/loopback-example-storage",
           "type": "repo"}
     ];
