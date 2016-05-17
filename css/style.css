@@ -144,9 +144,15 @@ font-family: Helvetica, Arial, Tahoma, sans-serif;
 	margin-right: 0;
 }
 
-.nrepos
+.nrepos, .loading
 {
 	vertical-align: middle;
+}
+
+.loading {
+	float:  right;
+	padding-right:  1em;
+	font-size:  small;
 }
 
 .btn-custom-jazz
