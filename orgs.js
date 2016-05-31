@@ -133,6 +133,8 @@
         "type": "org"},
         {"name": "cicsdev",
         "type": "org"},
+        {"name": "zvmexporter",
+        "type": "org"},
         {"name": "strongloop/node-foreman",
          "type": "repo"},
         {"name": "strongloop/strongloop",
@@ -390,5 +392,7 @@
         {"name": "strongloop/loopback-example-connector",
           "type": "repo"},
         {"name": "strongloop/loopback-example-storage",
+          "type": "repo"},
+        {"name": "zvmexporter/zvm_exporter",
           "type": "repo"}
     ];
