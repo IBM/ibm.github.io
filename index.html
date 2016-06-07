@@ -76,7 +76,7 @@ ga('send', 'pageview');
   </div>
   <footer>
     <div class="container">
-      <p>© IBM 2013-2016</p>
+      <p>© IBM 2013-<span id="copyright-last-year">2016</span></p>
     </div>
   </footer>
 </div> <!-- /container -->
@@ -391,7 +391,8 @@ ga('send', 'pageview');
       ga('send', data);
       
     });
-
+	// Fix copyright to be the current year.
+	$('#copyright-last-year').text(new Date().getFullYear());
 });
 </script>
 
