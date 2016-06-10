@@ -41,8 +41,30 @@ src: url('/fonts/Lubalin/LubalinGraphStd-Medium.otf') format('opentype');
 
 .jumbotron h1
 {
+	text-align: center;
 	font-size: 3em;
 	font-weight: 400;
+}
+
+.jumbotron .leadspace-buttons {
+	text-align: center;
+}
+
+.jumbotron .leadspace-buttons a p {
+	font-family:'Helvetica Neue';
+	margin: 15px;
+}
+
+.jumbotron .leadspace-buttons a p b {
+	color: #fff;
+	font-family: 'Lubalin';
+	display: block;
+	font-weight: normal;
+	padding-top: .25em;
+}
+
+.jumbotron .leadspace-buttons a p b::after {
+	content: ' »';
 }
 
 body
@@ -56,6 +78,12 @@ body
 	padding-top: 28px;
 	padding-bottom: 28px;
 	}
+}
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .navbar
@@ -275,17 +303,17 @@ background:url(../imgs/news.jpg) no-repeat;
 
 #wrapper .java
 {
-	//border-top: 4px solid #510FAD;
+	/* border-top: 4px solid #510FAD; */
 }
 
 #wrapper .ruby
 {
-	//border-top: 4px solid #33CCCC;
+	/* border-top: 4px solid #33CCCC; */
 }
 
 #wrapper .javascript
 {
-	//border-top: 4px solid #FFBE40;
+	/* border-top: 4px solid #FFBE40; */
 }
 
 .section-title
@@ -294,6 +322,16 @@ background:url(../imgs/news.jpg) no-repeat;
 	text-transform: uppercase;
 	position: relative;
 	margin: 3px;
+}
+
+label.search span
+{
+	text-transform: uppercase;
+	float: left;
+	padding-top: 6px;
+	padding-left: 19px;
+	font-weight: 700;
+	padding-right: .25em;
 }
 
 .section-title .title

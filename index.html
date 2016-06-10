@@ -13,7 +13,6 @@
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 
-<link href="http://getbootstrap.com/examples/jumbotron/jumbotron.css" rel="stylesheet">
 <link href="./css/style.css" rel="stylesheet">
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -42,29 +41,28 @@ ga('send', 'pageview');
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
     <div class="container">
-      <div style="text-align: center;"><h1>IBM Open Source at GitHub</h1> </div>
-      <div style="text-align: center;">
+      <h1>IBM Open Source at GitHub</h1>
+      <div class="leadspace-buttons">
         <a href="http://hub.jazz.net/" data-analytics-category="Leadspace buttons" data-analytics-action="JazzHub">
-          <p class="btn btn-primary btn-lg btn-custom-jazz" style="font-family:'Helvetica Neue'; margin: 15px">Enhance your GitHub experience with
-            <br><span style="color: #fff;font-family: 'Lubalin'">Bluemix DevOps Services »</span>
-          </p></a>
-          <a href="https://www.bluemix.net/" data-analytics-category="Leadspace buttons" data-analytics-action="BlueMix">
-            <p class="btn btn-primary btn-lg btn-custom-bm" style="font-family:'Helvetica Neue'; margin: 15px">Deploy your application to
-              <br><span style="color: #fff;font-family: 'Lubalin'">Bluemix cloud platform »</span>
-            </p></a>
-            <a href="http://developer.ibm.com/open" data-analytics-category="Leadspace buttons" data-analytics-action="developerWorks Open">
-              <p class="btn btn-primary btn-lg btn-custom-dw" style="font-family	:'Helvetica Neue'; margin: 15px;">Engage with IBM Open Source 
-                <br><span style="color: #fff;font-family: 'Lubalin'">developerWorks Open »</span>
-              </p></a>
-            </div>
-          </div>
+          <p class="btn btn-primary btn-lg btn-custom-jazz">Enhance your GitHub experience with <b>Bluemix DevOps Services</b>
+          </p>
+         </a>
+	     <a href="https://www.bluemix.net/" data-analytics-category="Leadspace buttons" data-analytics-action="BlueMix">
+	            <p class="btn btn-primary btn-lg btn-custom-bm">Deploy your application to <b>Bluemix cloud platform</b></p>
+	     </a>
+         <a href="http://developer.ibm.com/open" data-analytics-category="Leadspace buttons" data-analytics-action="developerWorks Open">
+              <p class="btn btn-primary btn-lg btn-custom-dw">Engage with IBM Open Source <b>developerWorks Open</b>
+              </p>
+         </a>
         </div>
+      </div>
+    </div>
 
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
              <div id="wrapper">
-              <label for="search" class="col-lg-4 control-label search" style=""><span style="float:left; padding-top:6px; padding-left: 19px;font-weight: 700">SEARCH</span> <input type="search" id="search" class="search-query span3 filter input-medium" placeholder="Our Repos..."></label>
+              <label for="search" class="col-lg-4 control-label search" style=""><span>Search</span> <input type="search" id="search" class="search-query span3 filter input-medium" placeholder="Our Repos..."></label>
               
               <div id="repos" class="columns collapse-group">
                
@@ -78,7 +76,7 @@ ga('send', 'pageview');
   </div>
   <footer>
     <div class="container">
-      <p>© IBM 2013-2014</p>
+      <p>© IBM 2013-<span id="copyright-last-year">2016</span></p>
     </div>
   </footer>
 </div> <!-- /container -->
@@ -95,7 +93,9 @@ ga('send', 'pageview');
     
     var updated = [];
     var allrepos = [];
-
+    
+    // go to http://thissite.example.com/#DEBUG to set DEBUG=true
+    var DEBUG = (window.location.hash === '#DEBUG');
     
     (function ($, undefined) {
     	
@@ -206,6 +206,10 @@ ga('send', 'pageview');
 	   // all in all, pretty safe to expose this here.
 
        // there are three supported request types: org, user and repo. Syntax differs.
+       if((orgs.type !== 'org') && (orgs.type !== 'user') && (orgs.type !== 'repo')) {
+       	  console.log('** Unknown type “'+orgs.type+'” for org “'+org+'” — check “orgs.js” for typo.'); 
+       	  return;
+       }
        var uri = "https://api.github.com/"+orgs.type+"s/"+org + reposcmd
        + "?per_page=1000"
        + "&client_id=1bafa09b6086eec7afb4"
@@ -229,7 +233,7 @@ ga('send', 'pageview');
             // remove forks from the view
             $.each(forks, function(i, forkindex) {
               var indextoremove = forkindex - i; // account for prior splices
-              console.log('removing forked entry: ' + repos[indextoremove].full_name);
+              if(DEBUG) console.log('removing forked entry: ' + repos[indextoremove].full_name);
               repos.splice(indextoremove,1);
             });
 
@@ -387,7 +391,8 @@ ga('send', 'pageview');
       ga('send', data);
       
     });
-
+	// Fix copyright to be the current year.
+	$('#copyright-last-year').text(new Date().getFullYear());
 });
 </script>
 

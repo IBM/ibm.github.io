@@ -112,7 +112,7 @@
         {"name": "djwillia/solo5",
         "type": "repo"},
         {"name": "quarks-edge",
-         "type": "orgs"},
+         "type": "org"},
         {"name": "jamiejennings/rosie-pattern-language",
          "type": "repo"},
         {"name": "openblockchain",
@@ -131,6 +131,10 @@
          "type": "org"},
         {"name": "ibm-security-innovation",
         "type": "org"},
+        {"name": "cicsdev",
+        "type": "org"},
         {"name": "strongloop",
-        "type": "org"}
+         "type": "org"},
+        {"name": "personality-insights",
+          "type": "org"},
     ];
