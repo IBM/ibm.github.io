@@ -1,5 +1,7 @@
 
     var orgs = [
+        {"name": "electron.atom.io",
+         "type": "repo"},
         {"name": "bradleyjeck/epanetReader",
          "type": "repo"},
         {"name": "wasdev",
