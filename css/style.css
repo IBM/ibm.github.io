@@ -60,6 +60,19 @@ src: url('/fonts/Lubalin/LubalinGraphStd-Medium.otf') format('opentype');
 		white-space: normal;
 		width: initial;
 	}
+
+	#wrapper .card{
+		width:95%;
+	}
+
+	#wrapper .updated-card{
+		width: 95%;
+	}
+
+	#search{
+		float: initial;
+		width:100%;
+	}
 }
 
 .jumbotron .leadspace-buttons a p b {
@@ -256,7 +269,7 @@ background:url(../imgs/news.jpg) no-repeat;
 {
 	/*background: #fff url(../images/updated.png) no-repeat 102% 0px;*/
 	background-color: #fff;
-	height: 150px;
+	height: 160px;
 	display: inline-block;
 	margin: 5px 2px 5px 5px;
 	padding: 0px 2px 0px 0px;
@@ -282,7 +295,7 @@ background:url(../imgs/news.jpg) no-repeat;
 		margin: 5px;
 
 		/*border-top: 4px solid #ccc;*/
-		height: 150px;
+		height: 160px;
 		text-overflow: ellipsis;
 		overflow: hidden;
 }
