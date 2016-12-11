@@ -55,6 +55,26 @@ src: url('/fonts/Lubalin/LubalinGraphStd-Medium.otf') format('opentype');
 	margin: 15px;
 }
 
+@media only screen and (max-width:440px){
+	.jumbotron .leadspace-buttons p {
+		white-space: normal;
+		width: initial;
+	}
+
+	#wrapper .card{
+		width:95%;
+	}
+
+	#wrapper .updated-card{
+		width: 95%;
+	}
+
+	#search{
+		float: initial;
+		width:100%;
+	}
+}
+
 .jumbotron .leadspace-buttons a p b {
 	color: #fff;
 	font-family: 'Lubalin';
@@ -71,6 +91,7 @@ body
 {
 	padding-bottom: 0;
 	background-color: #f0f0f0;
+	overflow-x: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -89,7 +110,7 @@ body {
 .navbar
 {
 	height: 40px;
-	
+
 	background: rgb(60,60,60);
 background: -moz-linear-gradient(top, rgba(60,60,60,1) 0%, rgba(19,19,19,1) 100%);
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(60,60,60,1)), color-stop(100%,rgba(19,19,19,1)));
@@ -152,7 +173,7 @@ font-family: Helvetica, Arial, Tahoma, sans-serif;
 .btn-custom-jazz
 {
 	background-color: #1cba11;
-	
+
 	border: 0;
 }
 
@@ -182,8 +203,8 @@ font-family: Helvetica, Arial, Tahoma, sans-serif;
         font-color: #fff;
         color: #fff;
         font-color: #fff;
-        
-} 
+
+}
 
 div.newsImage
 {
@@ -208,12 +229,12 @@ background:url(../imgs/news.jpg) no-repeat;
   filter:alpha(opacity=70);
   /* CSS3 standard */
   opacity:0.7;
-}  
+}
 
 .news a:visited
 {
         color: #FF9933;
-}        
+}
 
 .news a
 {
@@ -243,13 +264,13 @@ background:url(../imgs/news.jpg) no-repeat;
 {
 	font-weight: normal;
 	color: #3399FF;
-}  
+}
 
 #wrapper .updated-card
 {
 	/*background: #fff url(../images/updated.png) no-repeat 102% 0px;*/
 	background-color: #fff;
-	height: 150px;
+	height: 160px;
 	display: inline-block;
 	margin: 5px 2px 5px 5px;
 	padding: 0px 2px 0px 0px;
@@ -273,9 +294,9 @@ background:url(../imgs/news.jpg) no-repeat;
 #wrapper .card
 {
 		margin: 5px;
-		
+
 		/*border-top: 4px solid #ccc;*/
-		height: 150px;
+		height: 160px;
 		text-overflow: ellipsis;
 		overflow: hidden;
 }
@@ -358,7 +379,7 @@ label.search span
 #repos h4
 {
 	font-size: 16px;
-	
+
 	color: #1b1f30;
 	margin-top: 0;
 	padding: 3px;
@@ -373,7 +394,7 @@ label.search span
 .jumbotron h1
 {
 	font-family: Lubalin;
-	
+
 }
 
 .jumbotron p
@@ -414,7 +435,7 @@ label.search span
 	{
 		width: 24%
 	}
-	
+
 	#updated .col-lg-3
 	{
 		width: 24.25%;
@@ -473,7 +494,7 @@ label.search span
 {
 	padding-left: 10px;
 	color: #aaa;
-	
+
 }
 
 .org a:hover
@@ -507,7 +528,7 @@ margin-right: -2px;
 	color: #fff;
 }
 
-.dw-logo-W 
+.dw-logo-W
 {
 	color: #F19027;
 }
@@ -525,7 +546,7 @@ margin-right: -2px;
 	padding-bottom: 5px;
 	background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
 	opacity: 1;
-	
+
 	-webkit-transition: all .2s ease;
 	-moz-transition: all .2s ease;
 	-o-transition: all .2s ease;
