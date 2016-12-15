@@ -137,4 +137,6 @@
          "type": "org"},
         {"name": "personality-insights",
           "type": "org"},
+        {"name": "ComputationalGenomics",
+          "type": "org"},
     ];
