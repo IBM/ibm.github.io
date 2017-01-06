@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <!-- saved from url=(0043)http://getbootstrap.com/examples/jumbotron/ -->
 <html lang="en"><head>
 <script src="//cdn.optimizely.com/js/1141215513.js"></script>
@@ -14,16 +14,6 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 
 <link href="./css/style.css" rel="stylesheet">
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
-
-ga('create', 'UA-41146412-2', 'ibm.github.io');
-ga('send', 'pageview');
-
-</script>
 <link rel="icon" href="http://ibm.github.io/favicon.ico" type="image/vnd.microsoft.icon" />
 </head>
 <body style="">
@@ -63,9 +53,9 @@ ga('send', 'pageview');
             <div class="col-sm-12 col-md-12 col-lg-12">
              <div id="wrapper">
               <label for="search" class="col-lg-4 control-label search" style=""><span>Search</span> <input type="search" id="search" class="search-query span3 filter input-medium" placeholder="Our Repos..."></label>
-              
+
               <div id="repos" class="columns collapse-group">
-               
+
               </div>
             </div>
           </div>
@@ -90,27 +80,27 @@ ga('send', 'pageview');
     <script type="text/javascript" src="js/strftime.js"></script>
     <script type="text/javascript" src="orgs.js"></script>
     <script type="text/javascript">
-    
+
     var updated = [];
     var allrepos = [];
-    
+
     // go to http://thissite.example.com/#DEBUG to set DEBUG=true
     var DEBUG = (window.location.hash === '#DEBUG');
-    
+
     (function ($, undefined) {
-    	
+
       var repoUrls = {
       };
 
       function repoUrl(repo) {
         return repoUrls[repo.name] || repo.html_url;
-      }   
-      
+      }
+
       function repoDescription(repo) {
         desc = repo.description;
         return desc;
       }
-      
+
       function addUpdated()
       {
       	$("#updated").empty();
@@ -127,17 +117,17 @@ ga('send', 'pageview');
           $item.appendTo($uitem);
           $uitem.appendTo("#updated");
         }
-        
+
         var d = $("#updated").collapse({
          toggle: true
        });
 
       }
-      
+
       function addAllRepos()
       {
       	$("#allrepos").empty();
-      	
+
       	for (r=0; r < allrepos.length; r++)
       	{
       		repo = allrepos[r];
@@ -150,22 +140,22 @@ ga('send', 'pageview');
           htag = "#allrepos";
           $item.appendTo(htag);
         }
-        
+
         $(".nrepos").text("("+allrepos.length+")");
-        
+
         var d = $("#allrepos").collapse({
          toggle: true
        });
-        
+
       }
 
-      function pushRepo(repos, org) 
+      function pushRepo(repos, org)
       {
       	var left = repos; var right = allrepos;
         var result  = [],
         il      = 0,
         ir      = 0;
-        
+
         while (il < left.length && ir < right.length){
          if (left[il].name.toLowerCase() < right[ir].name.toLowerCase()){
            result.push(left[il++]);
@@ -173,17 +163,17 @@ ga('send', 'pageview');
            result.push(right[ir++]);
          }
        }
-       
+
        allrepos = result.concat(left.slice(il)).concat(right.slice(ir));
-     }      
-     
+     }
+
      function mergeUpdated(repos)
      {
        var left = repos; var right = updated;
        var result  = [],
        il      = 0,
        ir      = 0;
-       
+
        while (il < left.length && ir < right.length){
         if (left[il].pushed_at > right[ir].pushed_at){
           result.push(left[il++]);
@@ -191,10 +181,10 @@ ga('send', 'pageview');
           result.push(right[ir++]);
         }
       }
-      
+
       updated = result.concat(left.slice(il)).concat(right.slice(ir));
     }
-    
+
     function addRepos(orgs, repos, page) {
      var forks = [];
      var org = orgs.name;
@@ -207,12 +197,12 @@ ga('send', 'pageview');
 
        // there are three supported request types: org, user and repo. Syntax differs.
        if((orgs.type !== 'org') && (orgs.type !== 'user') && (orgs.type !== 'repo')) {
-       	  console.log('** Unknown type “'+orgs.type+'” for org “'+org+'” — check “orgs.js” for typo.'); 
+       	  console.log('** Unknown type “'+orgs.type+'” for org “'+org+'” — check “orgs.js” for typo.');
        	  return;
        }
        var uri = "https://api.github.com/"+orgs.type+"s/"+org + reposcmd
        + "?per_page=1000"
-       + "&client_id=1bafa09b6086eec7afb4"
+       + "&client_id=a000b54dee10f80eaff0"
        + "&client_secret=7e6422a0a2e24f0d0ecb7521a63990b5758c9cc8";
        $.getJSON(uri, function (result) {
          if (!Array.isArray(result)) {
@@ -260,7 +250,7 @@ ga('send', 'pageview');
         }
       });
      }
-     
+
      $("<div>").addClass("separator").appendTo("#wrapper");
      var $sectiontitle = $("<div>").addClass("section-title").appendTo("#wrapper");
      var $title = $("<span>").addClass('title').text("recent").appendTo($sectiontitle);
@@ -282,14 +272,14 @@ ga('send', 'pageview');
      {
       addRepos(orgs[r]);
     }
-    
-    
+
+
     $("<div>").addClass("separator").appendTo("#wrapper");
-    
+
 
 
   })(jQuery);
-  
+
   $('#search').keyup(function() {
     var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
     $rows = $(".card")
@@ -297,7 +287,7 @@ ga('send', 'pageview');
       var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
       return !~text.indexOf(val);
     }).hide();
-    
+
     // update repo count here
     n = $rows.length;
     for (r in $rows)
@@ -310,13 +300,13 @@ ga('send', 'pageview');
     	}
 
     }
-    
+
     $rows = $(".updated-card");
     $rows.show().filter(function() {
       var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
       return !~text.indexOf(val);
     }).hide();
-    
+
     m = 4;
     for (r in $rows)
     {
@@ -328,14 +318,14 @@ ga('send', 'pageview');
     	}
 
     }
-    
+
     $(".nrepos").text("("+(n - m)+")");
-    
+
 
     // ---------------------------------
     // Google Analytics Event Tracking
-    // 
-    // 
+    //
+    //
     // usage: add the following attributes to links you want to track:
     //   data-analytics-category=""    REQUIRED  String   Typically the object that was interacted with (e.g. button)
     //   data-analytics-action=""      REQUIRED  String   The type of interaction (e.g. click)
@@ -344,41 +334,41 @@ ga('send', 'pageview');
     //
     // Those are the suggested usages, but you can use the attributes how you want
     // see https://developers.google.com/analytics/devguides/collection/analyticsjs/events for more details
-    // 
+    //
     // EXAMPLE:
     // <a href="http://ibm.com" data-analytics-category="Leadspace button" data-analytics-action="To ibm.com">Off you go!</a>
     // ---------------------------------
-    
+
     $('body').on('click', 'a[data-analytics-category][data-analytics-action]', function(e){
 
       // No analytics? Bail.
       if ( ! window.ga )
         return;
-      
+
       // for links to external sources, we need a tiny delay to have a little extra time to send to Google's servers before unload
       // 200ms is about right for enough time
       if (this.hostname && this.hostname !== location.hostname) {
         // Stop the link action
         e.preventDefault();
-        
+
         // setTimeout callback is called in the window scope, so cache the url from the link now
         var url = this.href;
-        
+
         // in 200ms, off you go
         setTimeout(function(){
-          document.location = url;        
+          document.location = url;
         },200);
       }
-      
+
       var $el = $(this),
-          data = {'hitType': 'event'}; // make a new data object 
-          
+          data = {'hitType': 'event'}; // make a new data object
+
       // category (required string)
       data['eventCategory'] =  $el.attr('data-analytics-category');
-      
+
       // action (required string)
       data['eventAction'] = $el.attr('data-analytics-action');
-      
+
       // label (optional string)
       if ( $el.attr('data-analytics-label') )
         data['eventLabel'] = $el.attr('data-analytics-label');
@@ -389,7 +379,7 @@ ga('send', 'pageview');
 
       // send the data
       ga('send', data);
-      
+
     });
 	// Fix copyright to be the current year.
 	$('#copyright-last-year').text(new Date().getFullYear());
