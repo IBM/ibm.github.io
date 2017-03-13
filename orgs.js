@@ -1,5 +1,7 @@
 
     var orgs = [
+        {"name": "csync/TogetherStream",
+         "type": "repo"},
         {"name": "bradleyjeck/epanetReader",
          "type": "repo"},
         {"name": "wasdev",
