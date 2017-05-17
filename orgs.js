@@ -137,4 +137,6 @@
          "type": "org"},
         {"name": "personality-insights",
           "type": "org"},
+        {"name": "zosconnect",
+          "type": "org"},
     ];
