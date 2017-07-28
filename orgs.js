@@ -142,5 +142,5 @@
         {"name": "zosconnect",
           "type": "org"},
         {"name": "IBM-ATAT",
-          "type": "org"},
+          "type": "org"}
     ];
