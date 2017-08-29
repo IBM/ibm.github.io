@@ -142,5 +142,7 @@
         {"name": "zosconnect",
           "type": "org"},
         {"name": "IBM-ATAT",
+          "type": "org"},
+        {"name": "IBMResilient",
           "type": "org"}
     ];
