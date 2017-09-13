@@ -53,6 +53,8 @@
           "type": "repo"},
         {"name": "andrewlow/v8ppc",
           "type": "repo"},
+        {"name": "timlynar/Containerized-Forecasting-Workflow",
+          "type": "repo"},
         {"name": "andrewlow/v8z",
           "type": "repo"},
         {"name": "ibm-rtvs",
