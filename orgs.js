@@ -29,8 +29,6 @@
           "type": "org"},
         {"name": "IBMStreams",
           "type": "org"},
-        {"name": "IBM-containerized-forecasting-workflow",
-          "type": "org"},
         {"name": "ibm-bioinformatics",
           "type":"user"},
         {"name": "ld4apps",
