@@ -144,5 +144,7 @@
         {"name": "IBM-ATAT",
           "type": "org"},
         {"name": "IBMResilient",
+          "type": "org"},
+        {"name": "ComputationalGenomics",
           "type": "org"}
     ];
