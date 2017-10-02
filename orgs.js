@@ -38,8 +38,6 @@
         {"name": "Watson-Explorer",
           "type": "org"},
 	{"name": "timlynar/Containerized-Forecasting-Workflow",
-	  "type": "org"},
-	{"name": "timlynar/Containerized-Forecasting-Workflow",
           "type": "repo"},
         {"name": "ot4i/event-filter-pattern",
           "type": "repo"},
