@@ -37,6 +37,8 @@
           "type": "org"},
         {"name": "Watson-Explorer",
           "type": "org"},
+	{"name": "timlynar/Containerized-Forecasting-Workflow",
+          "type": "repo"},
         {"name": "ot4i/event-filter-pattern",
           "type": "repo"},
         {"name": "ot4i/mqtt-client-connector",
