@@ -158,10 +158,11 @@ font-family: Helvetica, Arial, Tahoma, sans-serif;
 
 .search
 {
-	float:right;
+	float:none;
 	font-family: 'Helvetica';
 	padding-right: 0;
-	margin-right: 0;
+	margin: auto;
+	display: table;
 }
 
 .nrepos
@@ -352,6 +353,13 @@ label.search span
 	padding-left: 19px;
 	font-weight: 700;
 	padding-right: .25em;
+}
+@media screen and (max-width:768px){
+	label.search span{
+		float: none;
+		margin: auto;
+		display: table;
+	}
 }
 
 .section-title .title
