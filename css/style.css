@@ -305,7 +305,8 @@ background:url(../imgs/news.jpg) no-repeat;
 	float: right;
 	padding: 5px;
 	width: 280px;
-	border: 1px solid #e8e8e8;
+	border: 1px solid #b9b9b9;
+    	border-radius: 5px;
 }
 
 .section
