@@ -146,5 +146,7 @@
         {"name": "IBMResilient",
           "type": "org"},
         {"name": "ComputationalGenomics",
-          "type": "org"}
+          "type": "org"},
+        {"name": "IBM/zos-node-accessor",
+          "type": "repo"}
     ];
