@@ -146,5 +146,7 @@
         {"name": "IBMResilient",
           "type": "org"},
         {"name": "ComputationalGenomics",
+          "type": "org"},
+        {"name": "IzODA",
           "type": "org"}
     ];
