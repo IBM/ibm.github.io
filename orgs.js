@@ -1,7 +1,5 @@
 
     var orgs = [
-        {"name": "ibm-watson-iot",
-         "type": "repo"},
         {"name": "csync/TogetherStream",
          "type": "repo"},
         {"name": "bradleyjeck/epanetReader",
@@ -148,5 +146,7 @@
         {"name": "IBMResilient",
           "type": "org"},
         {"name": "ComputationalGenomics",
-          "type": "org"}
+          "type": "org"},
+        {"name": "ibm-watson-iot",
+         "type": "org"}
     ];
