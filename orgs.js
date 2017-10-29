@@ -146,5 +146,7 @@
         {"name": "IBMResilient",
           "type": "org"},
         {"name": "ComputationalGenomics",
-          "type": "org"}
+          "type": "org"},
+        {"name": "ibm-watson-iot",
+         "type": "org"}
     ];
