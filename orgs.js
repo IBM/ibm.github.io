@@ -299,5 +299,9 @@ var orgs = [
   {
       "name": "IzODA",
       "type": "org"
+  },
+  {
+      "name": "ComputationalGenomics",
+      "type": "org"
   }
 ];
