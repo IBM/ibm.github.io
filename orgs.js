@@ -295,5 +295,9 @@ var orgs = [
   {
       "name": "ibm-watson-iot",
       "type": "org"
+  },
+  {
+      "name": "IzODA",
+      "type": "org"
   }
 ];
