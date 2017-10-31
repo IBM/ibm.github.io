@@ -158,10 +158,11 @@ font-family: Helvetica, Arial, Tahoma, sans-serif;
 
 .search
 {
-	float:right;
+	float:none;
 	font-family: 'Helvetica';
-	padding-right: 0;
-	margin-right: 0;
+	padding: 2px;
+	margin: auto;
+	display: table;
 }
 
 .nrepos
@@ -305,7 +306,8 @@ background:url(../imgs/news.jpg) no-repeat;
 	float: right;
 	padding: 5px;
 	width: 280px;
-	border: 1px solid #e8e8e8;
+	border: 1px solid #b9b9b9;
+    	border-radius: 5px;
 }
 
 .section
@@ -349,9 +351,21 @@ label.search span
 	text-transform: uppercase;
 	float: left;
 	padding-top: 6px;
-	padding-left: 19px;
+	padding-left: 1px;
 	font-weight: 700;
 	padding-right: .25em;
+}
+@media screen and (max-width:768px){
+	
+	label.search span {
+		float: none;
+		margin: auto;
+		display: table;
+	}
+	
+	label.search { 
+		width: 100%; 
+	}
 }
 
 .section-title .title
