@@ -7,6 +7,6 @@
     "jshint": "^2.9.5"
   },
   "scripts": {
-    "test": "./node_modules/jshint/bin/jshint orgs.js"
+    "test": "jshint orgs.js"
   }
 }
