@@ -121,14 +121,21 @@ ga('send', 'pageview');
       	$("#updated").empty();
       	for (r=0; r < Math.min(4, updated.length); r++)
       	{
-      		repo = updated[r];
+          repo = updated[r];
           desc = repoDescription(repo);
+            
+        
           var $uitem = $("<div>").addClass("updated-card col-sm-5 col-md-4 col-lg-3");
           var $item = $("<div>").addClass("card pin " + (repo.language || '').toLowerCase() + " "+repo.name.toLowerCase());
           var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
           $link.append($("<h4>").text(repo.name));
           $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
-          $item.append($("<p>").text(desc));
+          if(repo.description) {
+              $item.append($("<p>").text(desc));
+          }
+          else {           
+              $item.append($("<p>").text('No description given.'));
+          }  
           $item.appendTo($uitem);
           $uitem.appendTo("#updated");
         }
@@ -145,13 +152,19 @@ ga('send', 'pageview');
       	
       	for (r=0; r < allrepos.length; r++)
       	{
-      		repo = allrepos[r];
+          repo = allrepos[r];
           desc = repoDescription(repo);
+            
           var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 " + (repo.language || '').toLowerCase() + " "+repo.name.toLowerCase());
           var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
           $link.append($("<h4>").html(repo.name + "<div class='org'><a href='"+repo.owner.html_url+"'>("+repo.owner.login+")"));
           $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
-          $item.append($("<p>").text(desc));
+          if(repo.description) {
+              $item.append($("<p>").text(desc));           
+          }
+          else {
+              $item.append($("<p>").text('No description given.'));
+          }       
           htag = "#allrepos";
           $item.appendTo(htag);
         }
