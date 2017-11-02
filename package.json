@@ -1,0 +1,12 @@
+{
+  "name": "ibm.github.io",
+  "description": "ibm.github.io",
+  "author": "IBM",
+  "version": "0.0.1",
+  "devDependencies": {
+    "jshint": "^2.9.5"
+  },
+  "scripts": {
+    "test": "jshint orgs.js"
+  }
+}
