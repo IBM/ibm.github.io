@@ -293,7 +293,7 @@ ga('send', 'pageview');
       	$progress.text(formatPercent(fract));
       	
       	if(progress >= orgs.length) {
-      		$progress.fadeOut();
+      		$progress.delay(1000).fadeOut();
       	}
       }
      
