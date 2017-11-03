@@ -150,8 +150,16 @@ body { /* Double? */
 	display: table;
 }
 
-.nrepos {
+.nrepos  {
 	vertical-align: middle;
+    padding: 5px;
+}
+
+.loading {
+    float:  right;
+    padding-right:  1em;
+    font-size:  small;
+    vertical-align: middle;
 }
 
 .btn-custom-jazz {

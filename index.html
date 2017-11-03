@@ -1,20 +1,23 @@
 <!DOCTYPE html> 
 <!-- saved from url=(0043)http://getbootstrap.com/examples/jumbotron/ -->
-<html lang="en"><head>
-<link href="https://www.ibm.com/favicon.ico" rel="icon"/>
-<script src="//cdn.optimizely.com/js/1141215513.js"></script>
+<html lang="en">
+
+<head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
 
+<link href="https://www.ibm.com/favicon.ico" rel="icon"/>
+<link rel="icon" href="http://ibm.github.io/favicon.ico" type="image/vnd.microsoft.icon" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/style.css" rel="stylesheet">
 
 <title>IBM @ Github</title>
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-
-<link href="./css/style.css" rel="stylesheet">
+<script src="//cdn.optimizely.com/js/1141215513.js"></script>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -23,11 +26,11 @@
 
 ga('create', 'UA-41146412-2', 'ibm.github.io');
 ga('send', 'pageview');
-
 </script>
-<link rel="icon" href="http://ibm.github.io/favicon.ico" type="image/vnd.microsoft.icon" />
+    
+
 </head>
-<body style="">
+<body>
 
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
@@ -49,24 +52,24 @@ ga('send', 'pageview');
           </p>
          </a>
 	     <a href="https://www.bluemix.net/" data-analytics-category="Leadspace buttons" data-analytics-action="BlueMix">
-	            <p class="btn btn-primary btn-lg btn-custom-bm">Deploy your application to <b>Bluemix cloud platform</b></p>
+	       <p class="btn btn-primary btn-lg btn-custom-bm">Deploy your application to <b>Bluemix cloud platform</b>
+           </p>
 	     </a>
          <a href="http://developer.ibm.com/open" data-analytics-category="Leadspace buttons" data-analytics-action="developerWorks Open">
-              <p class="btn btn-primary btn-lg btn-custom-dw">Engage with IBM Open Source <b>developerWorks Open</b>
-              </p>
+           <p class="btn btn-primary btn-lg btn-custom-dw">Engage with IBM Open Source <b>developerWorks Open</b>
+           </p>
          </a>
         </div>
       </div>
     </div>
-
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
              <div id="wrapper">
-              <label for="search" class="col-lg-4 control-label search" style=""><span>Search</span> <input type="search" id="search" class="search-query span3 filter input-medium" placeholder="Our Repos..."></label>
-              
+              <label for="search" class="col-lg-4 control-label search"><span>Search</span> 
+                  <input type="search" id="search" class="search-query span3 filter input-medium" placeholder="Our Repos...">
+              </label>
               <div id="repos" class="columns collapse-group">
-               
               </div>
             </div>
           </div>
@@ -97,6 +100,7 @@ ga('send', 'pageview');
     
     // go to http://thissite.example.com/#DEBUG to set DEBUG=true
     var DEBUG = (window.location.hash === '#DEBUG');
+    var progress = 0;
     
     (function ($, undefined) {
     	
@@ -117,14 +121,18 @@ ga('send', 'pageview');
       	$("#updated").empty();
       	for (r=0; r < Math.min(4, updated.length); r++)
       	{
-      		repo = updated[r];
+          repo = updated[r];
           desc = repoDescription(repo);
+            
+        
           var $uitem = $("<div>").addClass("updated-card col-sm-5 col-md-4 col-lg-3");
           var $item = $("<div>").addClass("card pin " + (repo.language || '').toLowerCase() + " "+repo.name.toLowerCase());
           var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
           $link.append($("<h4>").text(repo.name));
           $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
-          $item.append($("<p>").text(desc));
+          if(repo.description) {
+              $item.append($("<p>").text(desc));
+          }
           $item.appendTo($uitem);
           $uitem.appendTo("#updated");
         }
@@ -141,13 +149,16 @@ ga('send', 'pageview');
       	
       	for (r=0; r < allrepos.length; r++)
       	{
-      		repo = allrepos[r];
+          repo = allrepos[r];
           desc = repoDescription(repo);
+            
           var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 " + (repo.language || '').toLowerCase() + " "+repo.name.toLowerCase());
           var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
           $link.append($("<h4>").html(repo.name + "<div class='org'><a href='"+repo.owner.html_url+"'>("+repo.owner.login+")"));
           $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
-          $item.append($("<p>").text(desc));
+          if(repo.description) {
+              $item.append($("<p>").text(desc));           
+          }     
           htag = "#allrepos";
           $item.appendTo(htag);
         }
@@ -259,8 +270,39 @@ ga('send', 'pageview');
 
       });
         }
+      }).always(function() {
+        updateProgress();
       });
      }
+        
+      var formatPercent = function simplePercent(x) {
+        return (x*100).toFixed(0);
+      }
+      var formatInt = function simpleNum(x) {
+      	return x.toLocaleString();
+      }
+      if(window.hasOwnProperty('Intl')) {
+      	var pctFormat = new Intl.NumberFormat([], {style: 'percent'});
+      	var decFormat = new Intl.NumberFormat([], {style: 'decimal', maximumFractionDigits:0 });
+ 
+      	formatPercent = function intlPercent(x) {
+      		return pctFormat.format(x);
+      	};
+ 
+      	formatInt = function intlNum(x) {
+      		return decFormat.format(x);
+      	};
+      }
+      
+      function updateProgress() {
+      	progress++;
+      	var fract = ((progress/orgs.length));
+      	$progress.text(formatPercent(fract));
+      	
+      	if(progress >= orgs.length) {
+      		$progress.delay(1000).fadeOut();
+      	}
+      }
      
      $("<div>").addClass("separator").appendTo("#wrapper");
      var $sectiontitle = $("<div>").addClass("section-title").appendTo("#wrapper");
@@ -274,6 +316,7 @@ ga('send', 'pageview');
      var $sectiontitle = $("<div>").addClass("section-title").appendTo("#wrapper");
      var $title = $("<span>").addClass('title').text("repos").appendTo($sectiontitle);
      var $repos = $("<span>").addClass('nrepos').text("(0)").appendTo($title);
+     var $progress = $("<span>").addClass('loading').text("0 %").appendTo($title);
      var $item = $("<div id='allrepos'>").addClass("columns section collapse");
      $item.appendTo($sectiontitle);
      var $twistie = $("<a data-toggle='collapse' data-target='#allrepos'>").addClass("twistie showdetails");
