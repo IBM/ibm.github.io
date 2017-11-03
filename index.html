@@ -133,9 +133,6 @@ ga('send', 'pageview');
           if(repo.description) {
               $item.append($("<p>").text(desc));
           }
-          else {           
-              $item.append($("<p>").text('No description given.'));
-          }  
           $item.appendTo($uitem);
           $uitem.appendTo("#updated");
         }
@@ -161,10 +158,7 @@ ga('send', 'pageview');
           $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
           if(repo.description) {
               $item.append($("<p>").text(desc));           
-          }
-          else {
-              $item.append($("<p>").text('No description given.'));
-          }       
+          }     
           htag = "#allrepos";
           $item.appendTo(htag);
         }
