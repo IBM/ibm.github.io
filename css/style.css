@@ -27,6 +27,32 @@
 	src: url('/fonts/helvneue/HelveticaNeueLTStd-Md.otf') format('opentype');
 }
 
+.show_less {
+    float: left; 
+    width: 25%; 
+    text-align: center;
+}
+
+.show_less a {
+    margin-left: auto !important;
+}
+
+.show_more {
+    float: right; 
+    width: 25%; 
+    text-align: center;
+}
+
+.show_more a {
+    margin-left: auto !important;
+}
+
+@media screen and (max-width:768px) {
+    .show_less, .show_more {
+        margin-top: 5% !important;
+    }
+}
+
 .jumbotron {
 	background: #1b1f30 url(../images/pattern.png) repeat 0 0;
 	color: #fff;

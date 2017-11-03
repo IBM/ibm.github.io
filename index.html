@@ -27,7 +27,32 @@
 ga('create', 'UA-41146412-2', 'ibm.github.io');
 ga('send', 'pageview');
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(function() {
 
+    $('#showallrepos a').click(function(e){
+        var url=$(this).attr('href');
+
+        window.location.href=url;// ## change url with hash
+        location.reload();       // ## reload page
+
+        e.preventDefault();      // ## prevent default click action 
+    })
+
+})     
+</script>
+  <script>  
+$(function() {
+
+    $('#showsomerepos a').click(function(e){
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+        location.reload();
+        e.preventDefault();
+    })
+
+})     
+</script>
     
 
 </head>
@@ -72,6 +97,14 @@ ga('send', 'pageview');
               </label>
               <div id="repos" class="columns collapse-group">
               </div>
+                <div id="showsomerepos" class="section-title show_less">
+                    <a class="title" href="">Show less</a>
+                </div>
+                <div id="showallrepos" class="section-title show_more">
+                    <a class="title" href="#showall">Show more</a>
+                </div>
+                 <div class="separator gap"></div>
+              </div> 
             </div>
           </div>
         </div>
@@ -136,25 +169,38 @@ ga('send', 'pageview');
       function addAllRepos()
       {
       	$("#allrepos").empty();
-      	
-      	for (r=0; r < allrepos.length; r++)
-      	{
-          repo = allrepos[r];
-          var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 " + (repo.language || '').toLowerCase() + " "+repo.name.toLowerCase());
-          var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
-          $link.append($("<h4>").html(repo.name + "<div class='org'><a href='"+repo.owner.html_url+"'>("+repo.owner.login+")"));
-          $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));  
-          $item.append($("<p>").text(repo.description != null) ? repo.description : "");  
-          htag = "#allrepos";
-          $item.appendTo(htag);
+        var counter = 0;
+      	  if (window.location.hash === '#showall') {
+            for (r = 0; r < allrepos.length; r++)
+            {
+                repo = allrepos[r];
+                var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 item " + (repo.language || '').toLowerCase() + " "+repo.name.toLowerCase());
+                var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
+                $link.append($("<h4>").html(repo.name + "<div class='org'><a href='"+repo.owner.html_url+"'>("+repo.owner.login+")"));
+                $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));  
+                $item.append($("<p>").text(repo.description != null) ? repo.description : "");  
+                htag = "#allrepos";
+                $item.appendTo(htag);
+                counter++;
+            }
+            $(".nrepos").text("("+ counter +") Click 'Show less' to show only 20 repos");
+          }
+          else {
+            for (r = 0; r < Math.min(20, allrepos.length); r++)
+            {
+                repo = allrepos[r];
+                var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 item " + (repo.language || '').toLowerCase() + " "+repo.name.toLowerCase());
+                var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
+                $link.append($("<h4>").html(repo.name + "<div class='org'><a href='"+repo.owner.html_url+"'>("+repo.owner.login+")"));
+                $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));  
+                $item.append($("<p>").text(repo.description != null) ? repo.description : "");  
+                htag = "#allrepos";
+                $item.appendTo(htag);
+                counter++;
+            }
+            $(".nrepos").text("("+ counter +") Click 'Show more' to see other ("+(allrepos.length - counter)+") repos");
         }
-        
-        $(".nrepos").text("("+allrepos.length+")");
-        
-        var d = $("#allrepos").collapse({
-         toggle: true
-       });
-        
+        $("#allrepos").collapse({toggle: true})
       }
 
       function pushRepo(repos, org) 
@@ -200,14 +246,14 @@ ga('send', 'pageview');
      page = page || 1;
      reposcmd = orgs.type === "repo" ? "" : "/repos";
 
-	   // These client tokens are for a dummy app, and there is no user specific information that we get, so
-	   // all in all, pretty safe to expose this here.
-
-       // there are three supported request types: org, user and repo. Syntax differs.
+       // There are three supported request types: org, user and repo. Syntax differs.    
        if((orgs.type !== 'org') && (orgs.type !== 'user') && (orgs.type !== 'repo')) {
        	  console.log('** Unknown type “'+orgs.type+'” for org “'+org+'” — check “orgs.js” for typo.'); 
        	  return;
        }
+        
+       // These client tokens are for a dummy app, and there is no user specific 
+	   // information that we get, so all in all, pretty safe to expose this here.
        var uri = "https://api.github.com/"+orgs.type+"s/"+org + reposcmd
        + "?per_page=1000"
        + "&client_id=1bafa09b6086eec7afb4"
@@ -249,9 +295,13 @@ ga('send', 'pageview');
           if (b.name.toLowerCase() > a.name.toLowerCase()) {return -1};
           return 0;
         });
+              
         pushRepo(repos, org);
-
+        
+        // add 4 recently updated repos sorted by latest updates
         addUpdated();
+              
+        // add all other repos
         addAllRepos();
 
       });
