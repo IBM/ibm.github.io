@@ -27,6 +27,7 @@
 ga('create', 'UA-41146412-2', 'ibm.github.io');
 ga('send', 'pageview');
 </script>
+
     
 
 </head>
@@ -80,7 +81,7 @@ ga('send', 'pageview');
   </div>
   <footer>
     <div class="container">
-      <p>© IBM 2013-<span id="copyright-last-year">2016</span></p>
+      <p>&copy; Copyright IBM 2013-<span id="copyright-last-year"><script>document.write(new Date().getFullYear())</script></span></p>
     </div>
   </footer>
 </div> <!-- /container -->
@@ -110,25 +111,18 @@ ga('send', 'pageview');
       function repoUrl(repo) {
         return repoUrls[repo.name] || repo.html_url;
       }   
-      
-      function repoDescription(repo) {
-        desc = repo.description;
-        return desc;
-      }
-      
       function addUpdated()
       {
       	$("#updated").empty();
       	for (r=0; r < Math.min(4, updated.length); r++)
       	{
           repo = updated[r];
-          desc = repoDescription(repo);
           var $uitem = $("<div>").addClass("updated-card col-sm-5 col-md-4 col-lg-3");
           var $item = $("<div>").addClass("card pin " + (repo.language || '').toLowerCase() + " "+repo.name.toLowerCase());
           var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
           $link.append($("<h4>").text(repo.name));
           $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
-          $item.append($("<p>").text(desc != null) ? desc : "");  
+          $item.append($("<p>").text(repo.description != null) ? repo.description : "");  
           $item.appendTo($uitem);
           $uitem.appendTo("#updated");
         }
@@ -146,12 +140,11 @@ ga('send', 'pageview');
       	for (r=0; r < allrepos.length; r++)
       	{
           repo = allrepos[r];
-          desc = repoDescription(repo);
           var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 " + (repo.language || '').toLowerCase() + " "+repo.name.toLowerCase());
           var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
           $link.append($("<h4>").html(repo.name + "<div class='org'><a href='"+repo.owner.html_url+"'>("+repo.owner.login+")"));
           $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));  
-          $item.append($("<p>").text(desc != null) ? desc : "");  
+          $item.append($("<p>").text(repo.description != null) ? repo.description : "");  
           htag = "#allrepos";
           $item.appendTo(htag);
         }
@@ -269,11 +262,13 @@ ga('send', 'pageview');
      }
         
       var formatPercent = function simplePercent(x) {
-        return (x*100).toFixed(0);
+        return (x * 100).toFixed(0);
       }
+      
       var formatInt = function simpleNum(x) {
       	return x.toLocaleString();
       }
+      
       if(window.hasOwnProperty('Intl')) {
       	var pctFormat = new Intl.NumberFormat([], {style: 'percent'});
       	var decFormat = new Intl.NumberFormat([], {style: 'decimal', maximumFractionDigits:0 });
@@ -289,8 +284,14 @@ ga('send', 'pageview');
       
       function updateProgress() {
       	progress++;
-      	var fract = ((progress/orgs.length));
-      	$progress.text(formatPercent(fract));
+      	
+        if (orgs.empty()) {
+            $progress.fadeOut();
+        }  
+        
+        var fract = progress / orgs.length;
+      	
+        $progress.text(formatPercent(fract));
       	
       	if(progress >= orgs.length) {
       		$progress.delay(1000).fadeOut();
@@ -315,13 +316,11 @@ ga('send', 'pageview');
      var $twistie = $("<a data-toggle='collapse' data-target='#allrepos'>").addClass("twistie showdetails");
      $twistie.appendTo($sectiontitle);
 
-     for (var r in orgs)
-     {
-      addRepos(orgs[r]);
-    }
+     for (var r in orgs) {
+         addRepos(orgs[r]);
+     }
     
-    
-    $("<div>").addClass("separator").appendTo("#wrapper");
+     $("<div>").addClass("separator").appendTo("#wrapper");
     
 
 
@@ -389,12 +388,13 @@ ga('send', 'pageview');
     $('body').on('click', 'a[data-analytics-category][data-analytics-action]', function(e){
 
       // No analytics? Bail.
-      if ( ! window.ga )
+      if (!window.ga)
         return;
       
       // for links to external sources, we need a tiny delay to have a little extra time to send to Google's servers before unload
       // 200ms is about right for enough time
       if (this.hostname && this.hostname !== location.hostname) {
+        
         // Stop the link action
         e.preventDefault();
         
@@ -407,8 +407,8 @@ ga('send', 'pageview');
         },200);
       }
       
-      var $el = $(this),
-          data = {'hitType': 'event'}; // make a new data object 
+      // make a new data object 
+      var $el = $(this), data = {'hitType': 'event'}; 
           
       // category (required string)
       data['eventCategory'] =  $el.attr('data-analytics-category');
@@ -417,21 +417,22 @@ ga('send', 'pageview');
       data['eventAction'] = $el.attr('data-analytics-action');
       
       // label (optional string)
-      if ( $el.attr('data-analytics-label') )
-        data['eventLabel'] = $el.attr('data-analytics-label');
-
+      if ($el.attr('data-analytics-label')) {
+          data['eventLabel'] = $el.attr('data-analytics-label');
+      }
+        
       // value (optional int)
-      if ( $el.attr('data-analytics-value') )
-        data['eventValue'] = parseInt( $el.attr('data-analytics-value') );
+      if ($el.attr('data-analytics-value')) {
+          data['eventValue'] = parseInt($el.attr('data-analytics-value'));
+      }
 
       // send the data
       ga('send', data);
       
     });
-	// Fix copyright to be the current year.
-	$('#copyright-last-year').text(new Date().getFullYear());
 });
 </script>
 
 
-</body></html>
+</body>
+</html>
