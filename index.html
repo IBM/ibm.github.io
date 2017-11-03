@@ -192,7 +192,7 @@
                         $item.appendTo(htag);
                         counter++;
                     }
-                    $(".nrepos").text("(" + counter + ") Click 'Show less' to show only 20 repos");
+                    $(".nrepos").text(": " + counter + " shown. Click 'Show less' to show only 20 repos");
                 } else {
                     for (r = 0; r < Math.min(20, allrepos.length); r++) {
                         repo = allrepos[r];
@@ -205,7 +205,7 @@
                         $item.appendTo(htag);
                         counter++;
                     }
-                    $(".nrepos").text("(" + counter + ") Click 'Show more' to see other (" + (allrepos.length - counter) + ") repos");
+                    $(".nrepos").text(": " + counter + " shown. Click 'Show more' to see other " + (allrepos.length - counter) + " repos");
                 }
                 $("#allrepos").collapse({
                     toggle: true
