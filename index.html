@@ -105,7 +105,7 @@
                 <div id="wrapper">
                     <div class="navigation">
                         <div id="showsomerepos" class="section-title show_less">
-                            <a class="title" href="">Show less</a>
+                            <a class="title" href="">Show fewer</a>
                         </div>
                         <label for="search" class="col-lg-4 control-label search"><span>Search</span> 
                             <input type="search" id="search" class="search-query span3 filter input-medium" placeholder="Our Repos...">
@@ -192,7 +192,7 @@
                         $item.appendTo(htag);
                         counter++;
                     }
-                    $(".nrepos").text(": " + counter + " shown. Click 'Show less' to show only 20 repos");
+                    $(".nrepos").text(": " + counter + " shown. Click 'Show fewer' to show only 20 repos");
                 } else {
                     for (r = 0; r < Math.min(20, allrepos.length); r++) {
                         repo = allrepos[r];
