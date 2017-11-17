@@ -45,7 +45,7 @@
                 window.location.href = url; // ## change url with hash
                 location.reload(); // ## reload page
 
-                e.preventDefault(); // ## prevent default click action 
+                e.preventDefault(); // ## prevent default click action
             })
 
         })
@@ -82,18 +82,18 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
-            <h1>IBM Open Source at GitHub</h1>
+            <h1>IBM open source at GitHub</h1>
             <div class="leadspace-buttons">
                 <a href="https://console.bluemix.net/devops/getting-started" data-analytics-category="Leadspace buttons" data-analytics-action="JazzHub">
-                    <p class="btn btn-primary btn-lg btn-custom-jazz">Enhance your GitHub experience with <b>Bluemix DevOps Services</b>
+                    <p class="btn btn-primary btn-lg btn-custom-jazz">Enhance your GitHub experience with <b>IBM Cloud DevOps</b>
                     </p>
                 </a>
                 <a href="https://www.bluemix.net/" data-analytics-category="Leadspace buttons" data-analytics-action="BlueMix">
-                    <p class="btn btn-primary btn-lg btn-custom-bm">Deploy your application to <b>Bluemix cloud platform</b>
+                    <p class="btn btn-primary btn-lg btn-custom-bm">Deploy your application to <b>IBM Cloud</b>
                     </p>
                 </a>
-                <a href="http://developer.ibm.com/open" data-analytics-category="Leadspace buttons" data-analytics-action="developerWorks Open">
-                    <p class="btn btn-primary btn-lg btn-custom-dw">Engage with IBM Open Source <b>developerWorks Open</b>
+                <a href="http://developer.ibm.com/code/open" data-analytics-category="Leadspace buttons" data-analytics-action="developerWorks Open">
+                    <p class="btn btn-primary btn-lg btn-custom-dw">Engage with IBM Open Source <b>IBM Code</b>
                     </p>
                 </a>
             </div>
@@ -107,7 +107,7 @@
                         <div id="showsomerepos" class="section-title show_less">
                             <a class="title" href="">Show fewer</a>
                         </div>
-                        <label for="search" class="col-lg-4 control-label search"><span>Search</span> 
+                        <label for="search" class="col-lg-4 control-label search"><span>Search</span>
                             <input type="search" id="search" class="search-query span3 filter input-medium" placeholder="Our Repos...">
                         </label>
                         <div id="showallrepos" class="section-title show_more">
@@ -255,13 +255,13 @@
                 page = page || 1;
                 reposcmd = orgs.type === "repo" ? "" : "/repos";
 
-                // There are three supported request types: org, user and repo. Syntax differs.    
+                // There are three supported request types: org, user and repo. Syntax differs.
                 if ((orgs.type !== 'org') && (orgs.type !== 'user') && (orgs.type !== 'repo')) {
                     console.log('** Unknown type “' + orgs.type + '” for org “' + org + '” — check “orgs.js” for typo.');
                     return;
                 }
 
-                // These client tokens are for a dummy app, and there is no user specific 
+                // These client tokens are for a dummy app, and there is no user specific
                 // information that we get, so all in all, pretty safe to expose this here.
                 var uri = "https://api.github.com/" + orgs.type + "s/" + org + reposcmd +
                     "?per_page=1000" +
@@ -430,8 +430,8 @@
 
             // ---------------------------------
             // Google Analytics Event Tracking
-            // 
-            // 
+            //
+            //
             // usage: add the following attributes to links you want to track:
             //   data-analytics-category=""    REQUIRED  String   Typically the object that was interacted with (e.g. button)
             //   data-analytics-action=""      REQUIRED  String   The type of interaction (e.g. click)
@@ -440,7 +440,7 @@
             //
             // Those are the suggested usages, but you can use the attributes how you want
             // see https://developers.google.com/analytics/devguides/collection/analyticsjs/events for more details
-            // 
+            //
             // EXAMPLE:
             // <a href="http://ibm.com" data-analytics-category="Leadspace button" data-analytics-action="To ibm.com">Off you go!</a>
             // ---------------------------------
@@ -467,7 +467,7 @@
                     }, 200);
                 }
 
-                // make a new data object 
+                // make a new data object
                 var $el = $(this),
                     data = {
                         'hitType': 'event'
