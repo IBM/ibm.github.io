@@ -307,5 +307,10 @@ var orgs = [
   {
       "name": "ibm-research-tokyo/dybm",
       "type": "repo"
+  },
+  {
+      "name": "QISKit",
+      "type": "org",
+      "link": "https://www.qiskit.org/"
   }
 ];
