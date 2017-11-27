@@ -281,7 +281,7 @@ var orgs = [
       "type": "org"
   },
   {
-      "name": "IBM-ATAT",
+      "name": "IBM-DSE",
       "type": "org"
   },
   {
