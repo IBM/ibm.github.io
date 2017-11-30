@@ -89,15 +89,15 @@ var orgs = [
       "type": "repo"
   },
   {
-      "name": "andrewlow/node",
+      "name": "ibmruntimes/node",
       "type": "repo"
   },
   {
-      "name": "andrewlow/v8ppc",
+      "name": "ibmruntimes/v8ppc",
       "type": "repo"
   },
   {
-      "name": "andrewlow/v8z",
+      "name": "ibmruntimes/v8z",
       "type": "repo"
   },
   {
@@ -161,7 +161,7 @@ var orgs = [
       "type": "org"
   },
   {
-      "name": "apache/incubator-systemml",
+      "name": "apache/systemml",
       "type": "repo"
   },
   {
