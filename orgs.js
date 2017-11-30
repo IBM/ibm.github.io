@@ -312,5 +312,10 @@ var orgs = [
       "name": "QISKit",
       "type": "org",
       "link": "https://www.qiskit.org/"
+  },
+  {
+      "name": "SparkTC",
+      "type": "org",
+      "link": "http://spark.tc/"
   }
 ];
