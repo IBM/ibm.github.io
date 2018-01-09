@@ -58,27 +58,13 @@ body {
 
 @media screen and (max-width:767px) {
     .show_less {
-        order: 3;
-        float: none;
         margin-top: 5% !important;
-        border-left: 3px solid #f0f0f0;
-        width: 25% !important;
+        width: 100% !important;
     }
     .show_more {
-        order: 2;
+        width: 100% !important;
         margin-right: 1em;
-        float: none;
-        border-right: 3px solid #f0f0f0;
         margin-top: 5% !important;
-    }
-    .search {
-        order: 1;
-    }
-}
-
-@media screen and (max-width:1024px) {
-    .filter {
-        width: 21em !important;
     }
 }
 
@@ -118,7 +104,6 @@ body {
     }
 
     #search {
-        float: initial;
         width: 100%;
     }
 }
@@ -322,12 +307,12 @@ div.news {
 }
 
 .filter {
-    float: none;
     padding: 10px;
     width: 30em;
     border: 2px solid #333;
     color: #FFF;
     background-color: transparent;
+    max-width: 100%;
 }
 
 .section {
@@ -367,31 +352,6 @@ label.search span {
     /* padding-right: 1px; */
     font-weight: 700;
     padding-right: .5em;
-}
-
-@media screen and (max-width:1199px) {
-
-    label.search span {
-        padding-right: 15px;
-    }
-}
-
-@media screen and (max-width:768px) {
-
-    label.search span {
-        float: none;
-        margin: auto;
-        display: table;
-        padding-top: 0px;
-    }
-    label.search {}
-}
-
-@media screen and (max-width:440px) {
-
-    label.search span {
-        padding-top: 0px;
-    }
 }
 
 .section-title .title {
