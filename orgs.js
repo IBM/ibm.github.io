@@ -317,5 +317,10 @@ var orgs = [
       "name": "SparkTC",
       "type": "org",
       "link": "http://spark.tc/"
+  },
+  {
+      "name": "OpenLiberty",
+      "type": "org",
+      "link": "https://openliberty.io/"
   }
 ];
