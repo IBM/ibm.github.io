@@ -325,6 +325,6 @@ var orgs = [
   },
   {
       "name": "ibm-s390-tools",
-      "type": "org",
+      "type": "org"
   }
 ];
