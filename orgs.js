@@ -301,10 +301,6 @@ var orgs = [
       "type": "org"
   },
   {
-      "name": "ComputationalGenomics",
-      "type": "org"
-  },
-  {
       "name": "ibm-research-tokyo/dybm",
       "type": "repo"
   },
