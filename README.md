@@ -1,6 +1,6 @@
 # Portal for IBM @ GitHub
 
-This repository is rendered online at [http://ibm.github.io](http://ibm.github.io), it contains a listing of repostiories that are open source and maintained by IBM teams.
+This repository is rendered online at [http://ibm.github.io](http://ibm.github.io), it contains a listing of repositories that are open source and maintained by IBM teams.
 
 ### Adding a new repo to the listing
 
