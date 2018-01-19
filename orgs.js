@@ -121,7 +121,7 @@ var orgs = [
       "type": "repo"
   },
   {
-      "name": "IBM-Bluemix",
+      "name": "IBM-Cloud",
       "type": "org"
   },
   {
