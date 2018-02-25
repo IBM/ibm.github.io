@@ -177,12 +177,15 @@
                     repo = updated[r];
                     var $uitem = $("<div>").addClass("updated-card col-sm-5 col-md-4 col-lg-3");
                     var $item = $("<div>").addClass("card pin " + (repo.language || '').toLowerCase() + " " + repo.name.toLowerCase());
-                    var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
+                    var $scrollbarOuter = $("<div>").addClass("scrollbar-outer").appendTo($item)
+                    var $scrollbarInner = $("<div>").addClass("scrollbar-inner").appendTo($scrollbarOuter)
+                    var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($scrollbarInner);
                     $link.append($("<h4>").text(repo.name));
                     $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
-                    $item.append($("<p>").text(repo.description != null) ? repo.description : "");
+                    $scrollbarInner.append($("<p>").text(repo.description != null) ? repo.description : "");
                     $item.appendTo($uitem);
                     $uitem.appendTo("#updated");
+                    $scrollbarInner.css("padding-right",($scrollbarInner[0].offsetWidth - $scrollbarInner[0].clientWidth));
                 }
 
                 var d = $("#updated").collapse({
@@ -198,12 +201,16 @@
                     for (r = 0; r < allrepos.length; r++) {
                         repo = allrepos[r];
                         var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 item " + (repo.language || '').toLowerCase() + " " + repo.name.toLowerCase());
-                        var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
+                        var $scrollbarOuter = $("<div>").addClass("scrollbar-outer").appendTo($item)
+                        var $scrollbarInner = $("<div>").addClass("scrollbar-inner").appendTo($scrollbarOuter)
+                        var scrollbarOuter = document.createElement('div');
+                        var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($scrollbarInner);
                         $link.append($("<h4>").html(repo.name + "<div class='org'><a href='" + repo.owner.html_url + "'>(" + repo.owner.login + ")"));
                         $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
-                        $item.append($("<p>").text(repo.description != null) ? repo.description : "");
+                        $scrollbarInner.append($("<p>").text(repo.description != null) ? repo.description : "");
                         htag = "#allrepos";
                         $item.appendTo(htag);
+                        $scrollbarInner.css("padding-right",($scrollbarInner[0].offsetWidth - $scrollbarInner[0].clientWidth));
                         counter++;
                     }
                     $(".nrepos").text(": " + counter + " shown. Click 'Show fewer' to show only 20 repos");
@@ -211,12 +218,16 @@
                     for (r = 0; r < Math.min(20, allrepos.length); r++) {
                         repo = allrepos[r];
                         var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 item " + (repo.language || '').toLowerCase() + " " + repo.name.toLowerCase());
-                        var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
+                        var $scrollbarOuter = $("<div>").addClass("scrollbar-outer").appendTo($item)
+                        var $scrollbarInner = $("<div>").addClass("scrollbar-inner").appendTo($scrollbarOuter)
+                        var scrollbarOuter = document.createElement('div');
+                        var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($scrollbarInner);
                         $link.append($("<h4>").html(repo.name + "<div class='org'><a href='" + repo.owner.html_url + "'>(" + repo.owner.login + ")"));
                         $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
-                        $item.append($("<p>").text(repo.description != null) ? repo.description : "");
+                        $scrollbarInner.append($("<p>").text(repo.description != null) ? repo.description : "");
                         htag = "#allrepos";
                         $item.appendTo(htag);
+                        $scrollbarInner.css("padding-right",($scrollbarInner[0].offsetWidth - $scrollbarInner[0].clientWidth));
                         counter++;
                     }
                     $(".nrepos").text(": " + counter + " shown. Click 'Show more' to see other " + (allrepos.length - counter) + " repos");
