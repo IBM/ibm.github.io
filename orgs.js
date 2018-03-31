@@ -310,9 +310,9 @@ var orgs = [
       "link": "https://www.qiskit.org/"
   },
   {
-      "name": "SparkTC",
+      "name": "CODAIT",
       "type": "org",
-      "link": "http://spark.tc/"
+      "link": "http://codait.org/"
   },
   {
       "name": "OpenLiberty",
