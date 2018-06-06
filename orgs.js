@@ -326,5 +326,9 @@ var orgs = [
   {
       "name": "ibm-security-mss",
       "type": "org"
+  },
+  {
+      "name": "IBM/API4JSON",
+      "type": "repo"
   }
 ];
