@@ -330,5 +330,9 @@ var orgs = [
   {
       "name": "IBM/API4JSON",
       "type": "repo"
+  },
+  {
+      "name": "ruscur/snowpatch",
+      "type": "repo"
   }
 ];
