@@ -335,7 +335,7 @@ var orgs = [
       "name": "ruscur/snowpatch",
       "type": "repo"
   },
-  {   "name": "IBM-ATAT",
+  {   "name": "IBM",
       "type": "org"
   }
 ];
