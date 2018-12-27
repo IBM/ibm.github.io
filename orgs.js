@@ -335,6 +335,10 @@ var orgs = [
       "name": "ruscur/snowpatch",
       "type": "repo"
   },
+  {
+      "name": "ibm-messaging",
+      "type": "org"
+  },
   {   "name": "IBM",
       "type": "org"
   }
