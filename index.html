@@ -3,7 +3,6 @@
 <html lang="en">
 
 <head>
-
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +10,17 @@
     <meta name="author" content="">
 
     <link href="https://www.ibm.com/favicon.ico" rel="icon" />
-    <link rel="icon" href="http://ibm.github.io/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="icon" href="https://www.ibm.com/favicon.ico" type="image/vnd.microsoft.icon" />
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://1.www.s81c.com/common/v18/css/www.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 
     <title>IBM @ Github</title>
 
-    <script src="//cdn.optimizely.com/js/1141215513.js"></script>
+    <script src="https://cdn.optimizely.com/js/1141215513.js"></script>
     <script>
-      (function(i, s, o, g, r, a, m) {
+        (function(i, s, o, g, r, a, m) {
           i['GoogleAnalyticsObject'] = r;
           i[r] = i[r] || function() {
               (i[r].q = i[r].q || []).push(arguments)
@@ -29,24 +30,24 @@
           a.async = 1;
           a.src = g;
           m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      })(window, document, 'script', 'https://google-analytics.com/analytics.js', 'ga');
 
       ga('create', 'UA-41146412-2', 'ibm.github.io');
       ga('send', 'pageview');
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-      $(function() {
+        $(function() {
         $('#showallrepos a').click(function(e) {
           var url = $(this).attr('href');
-          window.location.href = url; // ## change url with hash
-          location.reload(); // ## reload page
-          e.preventDefault(); // ## prevent default click action
+          window.location.href = url;   // ## change url with hash
+          location.reload();            // ## reload page
+          e.preventDefault();           // ## prevent default click action
         })
       })
     </script>
     <script>
-      $(function() {
+        $(function() {
         $('#showsomerepos a').click(function(e) {
           history.pushState("", document.title, window.location.pathname + window.location.search);
           location.reload();
@@ -56,61 +57,39 @@
     </script>
 
     <script src="https://1.www.s81c.com/common/stats/ida_stats.js"></script>
-    <link href="https://1.www.s81c.com/common/v18/css/www.css" rel="stylesheet">
     <script src="https://1.www.s81c.com/common/v18/js/www.js"></script>
-
 </head>
 
 <body>
-
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="http://www.ibm.com"><img src="images/ibmneg_white_42x20.png" alt="IBM"></a>
-            <!--a class="navbar-brand" style="float: right" href="http://www.ibm.com/developerworks"><img src="images/dWmark.png" alt="DW"></a-->
-            <a id="dw-nav" class="navbar-brand" style="float: right" href="http://www.ibm.com/developerworks" title="developerWorks"><span class="dw-logo-IBM">IBM</span>&nbsp;<span class="dw-logo-d">d</span><span class="dw-logo-W">W</span></a>
+            <a class="navbar-brand" href="https://www.ibm.com"><img src="images/ibmneg_white_42x20.png" alt="IBM"></a>
+            <a id="dw-nav" class="navbar-brand" style="float: right" href="https://developer.ibm.com/" title="developerWorks"><span
+                    class="dw-logo-IBM">IBM</span>&nbsp;<span class="dw-logo-d">d</span><span class="dw-logo-W">W</span></a>
             <div class="navbar-header">
             </div>
         </div>
     </div>
     <!-- main banner-->
     <div id="ibm-leadspace-head" class="ibm-alternate ibm-padding-top-2 ibm-padding-bottom-1" style="background: url(images/open-bg.jpg) center / cover no-repeat;">
-      <div id="ibm-leadspace-body" class="ibm-padding-top-3 ibm-padding-bottom-1">
-        <div class="ibm-columns ibm-alternate-background">
-          <div class="ibm-col-6-5 ibm-col-medium-1-1">
-            <h1 class="ibm-h1 ibm-medium ibm-padding-bottom-3">IBM open source at GitHub</h1>
-            <!--<h4 class="ibm-h4 ibm-padding-bottom-2">Drive performance and deliver results to transform your enterprise</h4>-->
-            <p class="ibm-button-link ibm-btn-row">
-              <a href="https://developer.ibm.com/code/open" class="ibm-btn-pri ibm-btn-white" data-analytics-category="Leadspace buttons" data-analytics-action="IBM Code Open">Explore IBM open source at IBM Code</a>
-              <a href="https://www.bluemix.net/" class="ibm-btn-sec ibm-btn-white" data-analytics-category="Leadspace buttons" data-analytics-action="BlueMix">Deploy your application to IBM Cloud</a>
-              <a href="https://console.bluemix.net/devops/getting-started" class="ibm-btn-sec ibm-btn-white" data-analytics-category="Leadspace buttons" data-analytics-action="JazzHub">Enhance your GitHub experience with IBM Cloud DevOps</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /main banner -->
-
-    <!-- Main jumbotron for a primary marketing message or call to action
-    <div class="jumbotron">
-        <div class="container">
-            <h1>IBM open source at GitHub</h1>
-            <div class="leadspace-buttons">
-                <a href="https://console.bluemix.net/devops/getting-started" data-analytics-category="Leadspace buttons" data-analytics-action="JazzHub">
-                    <p class="btn btn-primary btn-lg btn-custom-jazz">Enhance your GitHub experience with <b>IBM Cloud DevOps</b>
+        <div id="ibm-leadspace-body" class="ibm-padding-top-3 ibm-padding-bottom-1">
+            <div class="ibm-columns ibm-alternate-background">
+                <div class="ibm-col-6-5 ibm-col-medium-1-1">
+                    <h1 class="ibm-h1 ibm-medium ibm-padding-bottom-3">IBM open source at GitHub</h1>
+                    <p class="ibm-button-link ibm-btn-row">
+                        <a href="https://developer.ibm.com/code/open" class="ibm-btn-pri ibm-btn-white"
+                            data-analytics-category="Leadspace buttons" data-analytics-action="IBM Code Open">Explore
+                            IBM open source at IBM Code</a>
+                        <a href="https://www.bluemix.net/" class="ibm-btn-sec ibm-btn-white" data-analytics-category="Leadspace buttons"
+                            data-analytics-action="BlueMix">Deploy your application to IBM Cloud</a>
+                        <a href="https://console.bluemix.net/devops/getting-started" class="ibm-btn-sec ibm-btn-white"
+                            data-analytics-category="Leadspace buttons" data-analytics-action="JazzHub">Enhance your
+                            GitHub experience with IBM Cloud DevOps</a>
                     </p>
-                </a>
-                <a href="https://www.bluemix.net/" data-analytics-category="Leadspace buttons" data-analytics-action="BlueMix">
-                    <p class="btn btn-primary btn-lg btn-custom-bm">Deploy your application to <b>IBM Cloud</b>
-                    </p>
-                </a>
-                <a href="http://developer.ibm.com/code/open" data-analytics-category="Leadspace buttons" data-analytics-action="IBM Code Open">
-                    <p class="btn btn-primary btn-lg btn-custom-dw">Engage with IBM Open Source <b>IBM Code</b>
-                    </p>
-                </a>
+                </div>
             </div>
         </div>
-    </div>-->
-
+    </div>
     <div class="ibm-columns ibm-padding-top-3">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
@@ -134,36 +113,33 @@
         </div>
     </div>
     <hr>
-    </div>
-    </div>
-    </div>
-
-
     <footer>
         <div class="container">
-            <p>&copy; Copyright IBM 2013-<span id="copyright-last-year"><script>document.write(new Date().getFullYear())</script></span></p>
+            <p>&copy; Copyright IBM 2013-<span id="copyright-last-year">
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>
+                </span>
+            </p>
         </div>
     </footer>
-    </div>
     <!-- /container -->
-
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/strftime.js"></script>
+    <script type="text/javascript" src="./js/strftime.js"></script>
     <script type="text/javascript" src="orgs.js"></script>
     <script type="text/javascript">
         var updated = [];
-        var allrepos = [];
+        var allrepos = []; 
 
         // go to http://thissite.example.com/#DEBUG to set DEBUG=true
         var DEBUG = (window.location.hash === '#DEBUG');
         var progress = 0;
 
-        (function($, undefined) {
+        (function ($, undefined) {
 
             var repoUrls = {};
 
@@ -176,7 +152,8 @@
                 for (r = 0; r < Math.min(4, updated.length); r++) {
                     repo = updated[r];
                     var $uitem = $("<div>").addClass("updated-card col-sm-5 col-md-4 col-lg-3");
-                    var $item = $("<div>").addClass("card pin " + (repo.language || '').toLowerCase() + " " + repo.name.toLowerCase());
+                    var $item = $("<div>").addClass("card pin " + (repo.language || '').toLowerCase() + " " + repo.name
+                        .toLowerCase());
                     var $scrollbarOuter = $("<div>").addClass("scrollbar-outer").appendTo($item)
                     var $scrollbarInner = $("<div>").addClass("scrollbar-inner").appendTo($scrollbarOuter)
                     var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($scrollbarInner);
@@ -185,13 +162,12 @@
                     $scrollbarInner.append($("<p>").text(repo.description != null) ? repo.description : "");
                     $item.appendTo($uitem);
                     $uitem.appendTo("#updated");
-                    $scrollbarInner.css("padding-right",($scrollbarInner[0].offsetWidth - $scrollbarInner[0].clientWidth));
+                    $scrollbarInner.css("padding-right", ($scrollbarInner[0].offsetWidth - $scrollbarInner[0].clientWidth));
                 }
 
                 var d = $("#updated").collapse({
                     toggle: true
                 });
-
             }
 
             function addAllRepos() {
@@ -200,38 +176,44 @@
                 if (window.location.hash === '#showall') {
                     for (r = 0; r < allrepos.length; r++) {
                         repo = allrepos[r];
-                        var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 item " + (repo.language || '').toLowerCase() + " " + repo.name.toLowerCase());
+                        var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 item " + (repo.language ||
+                            '').toLowerCase() + " " + repo.name.toLowerCase());
                         var $scrollbarOuter = $("<div>").addClass("scrollbar-outer").appendTo($item)
                         var $scrollbarInner = $("<div>").addClass("scrollbar-inner").appendTo($scrollbarOuter)
                         var scrollbarOuter = document.createElement('div');
                         var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($scrollbarInner);
-                        $link.append($("<h4>").html(repo.name + "<div class='org'><a href='" + repo.owner.html_url + "'>(" + repo.owner.login + ")"));
+                        $link.append($("<h4>").html(repo.name + "<div class='org'><a href='" + repo.owner.html_url +
+                            "'>(" + repo.owner.login + ")"));
                         $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
                         $scrollbarInner.append($("<p>").text(repo.description != null) ? repo.description : "");
                         htag = "#allrepos";
                         $item.appendTo(htag);
-                        $scrollbarInner.css("padding-right",($scrollbarInner[0].offsetWidth - $scrollbarInner[0].clientWidth));
+                        $scrollbarInner.css("padding-right", ($scrollbarInner[0].offsetWidth - $scrollbarInner[0].clientWidth));
                         counter++;
                     }
                     $(".nrepos").text(": " + counter + " shown. Click 'Show fewer' to show only 20 repos");
                 } else {
                     for (r = 0; r < Math.min(20, allrepos.length); r++) {
                         repo = allrepos[r];
-                        var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 item " + (repo.language || '').toLowerCase() + " " + repo.name.toLowerCase());
+                        var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 item " + (repo.language ||
+                            '').toLowerCase() + " " + repo.name.toLowerCase());
                         var $scrollbarOuter = $("<div>").addClass("scrollbar-outer").appendTo($item)
                         var $scrollbarInner = $("<div>").addClass("scrollbar-inner").appendTo($scrollbarOuter)
                         var scrollbarOuter = document.createElement('div');
                         var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($scrollbarInner);
-                        $link.append($("<h4>").html(repo.name + "<div class='org'><a href='" + repo.owner.html_url + "'>(" + repo.owner.login + ")"));
+                        $link.append($("<h4>").html(repo.name + "<div class='org'><a href='" + repo.owner.html_url +
+                            "'>(" + repo.owner.login + ")"));
                         $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
                         $scrollbarInner.append($("<p>").text(repo.description != null) ? repo.description : "");
                         htag = "#allrepos";
                         $item.appendTo(htag);
-                        $scrollbarInner.css("padding-right",($scrollbarInner[0].offsetWidth - $scrollbarInner[0].clientWidth));
+                        $scrollbarInner.css("padding-right", ($scrollbarInner[0].offsetWidth - $scrollbarInner[0].clientWidth));
                         counter++;
                     }
-                    $(".nrepos").text(": " + counter + " shown. Click 'Show more' to see other " + (allrepos.length - counter) + " repos");
+                    $(".nrepos").text(": " + counter + " shown. Click 'Show more' to see other " + (allrepos.length -
+                        counter) + " repos");
                 }
+
                 $("#allrepos").collapse({
                     toggle: true
                 })
@@ -251,7 +233,6 @@
                         result.push(right[ir++]);
                     }
                 }
-
                 allrepos = result.concat(left.slice(il)).concat(right.slice(ir));
             }
 
@@ -269,7 +250,6 @@
                         result.push(right[ir++]);
                     }
                 }
-
                 updated = result.concat(left.slice(il)).concat(right.slice(ir));
             }
 
@@ -282,7 +262,8 @@
 
                 // There are three supported request types: org, user and repo. Syntax differs.
                 if ((orgs.type !== 'org') && (orgs.type !== 'user') && (orgs.type !== 'repo')) {
-                    console.log('** Unknown type “' + orgs.type + '” for org “' + org + '” — check “orgs.js” for typo.');
+                    console.log('** Unknown type “' + orgs.type + '” for org “' + org +
+                        '” — check “orgs.js” for typo.');
                     return;
                 }
 
@@ -292,16 +273,15 @@
                     "?per_page=1000" +
                     "&client_id=1bafa09b6086eec7afb4" +
                     "&client_secret=7e6422a0a2e24f0d0ecb7521a63990b5758c9cc8";
-                $.getJSON(uri, function(result) {
+                $.getJSON(uri, function (result) {
                     if (!Array.isArray(result)) {
                         result = [].concat(result);
                     }
                     if (result && result.length > 0) {
                         repos = repos.concat(result);
 
-                        $(function() {
-
-                            $.each(repos, function(i, repo) {
+                        $(function () {
+                            $.each(repos, function (i, repo) {
                                 repo.pushed_at = new Date(repo.pushed_at);
                                 if (repo.fork === true) { // if this is a fork, save the index
                                     forks.push(i);
@@ -309,22 +289,25 @@
                             });
 
                             // remove forks from the view
-                            $.each(forks, function(i, forkindex) {
+                            $.each(forks, function (i, forkindex) {
                                 var indextoremove = forkindex - i; // account for prior splices
-                                if (DEBUG) console.log('removing forked entry: ' + repos[indextoremove].full_name);
+                                if (DEBUG) console.log('removing forked entry: ' + repos[
+                                    indextoremove].full_name);
                                 repos.splice(indextoremove, 1);
                             });
 
                             // pre sort by how recently the repo was modified
-                            repos.sort(function(a, b) {
-                                if (a.pushed_at < b.pushed_at) return 1;
-                                if (b.pushed_at < a.pushed_at) return -1;
+                            repos.sort(function (a, b) {
+                                if (a.pushed_at < b.pushed_at)
+                                    return 1;
+                                if (b.pushed_at < a.pushed_at)
+                                    return -1;
                                 return 0;
                             });
 
                             mergeUpdated(repos);
 
-                            repos.sort(function(a, b) {
+                            repos.sort(function (a, b) {
                                 if (a.name.toLowerCase() > b.name.toLowerCase()) {
                                     return 1;
                                 }
@@ -344,7 +327,7 @@
 
                         });
                     }
-                }).always(function() {
+                }).always(function () {
                     updateProgress();
                 });
             }
@@ -415,10 +398,10 @@
 
         })(jQuery);
 
-        $('#search').keyup(function() {
+        $('#search').keyup(function () {
             var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
             $rows = $(".card")
-            $rows.show().filter(function() {
+            $rows.show().filter(function () {
                 var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
                 return !~text.indexOf(val);
             }).hide();
@@ -431,11 +414,10 @@
                 if (style && style.cssText && style.cssText.match("none")) {
                     n--;
                 }
-
             }
 
             $rows = $(".updated-card");
-            $rows.show().filter(function() {
+            $rows.show().filter(function () {
                 var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
                 return !~text.indexOf(val);
             }).hide();
@@ -447,7 +429,6 @@
                 if (style && style.cssText && style.cssText.match("none")) {
                     m--;
                 }
-
             }
 
             $(".nrepos").text("(" + (n - m) + ")");
@@ -470,7 +451,7 @@
             // <a href="http://ibm.com" data-analytics-category="Leadspace button" data-analytics-action="To ibm.com">Off you go!</a>
             // ---------------------------------
 
-            $('body').on('click', 'a[data-analytics-category][data-analytics-action]', function(e) {
+            $('body').on('click', 'a[data-analytics-category][data-analytics-action]', function (e) {
 
                 // No analytics? Bail.
                 if (!window.ga)
@@ -487,7 +468,7 @@
                     var url = this.href;
 
                     // in 200ms, off you go
-                    setTimeout(function() {
+                    setTimeout(function () {
                         document.location = url;
                     }, 200);
                 }
@@ -519,10 +500,7 @@
 
             });
         });
-
     </script>
-
-
 </body>
 
 </html>
