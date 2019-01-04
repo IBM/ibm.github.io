@@ -9,12 +9,10 @@ body {
     src: url('/fonts/Lubalin/LubalinGraphStd-Book.otf') format('opentype');
 }
 
-
 @font-face {
     font-family: 'Lubalin-Md';
     src: url('/fonts/Lubalin/LubalinGraphStd-Medium.otf') format('opentype');
 }
-
 
 @font-face {
     font-family: 'Helvetica-Neue-Hv';
