@@ -265,114 +265,111 @@ var progress = 0;
 
     $("<div>").addClass("separator").appendTo("#wrapper");
 
+    /*
+     * Search for $repo.name & render result
+     */
+    $('#search').keyup(function () {
+        var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+        $rows = $(".card")
+        $rows.show().filter(function () {
+            var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+            return !~text.indexOf(val);
+        }).hide();
 
+        /*
+         * Update repo count based on the search
+         */
+        n = $rows.length;
+        for (r in $rows) {
+            row = $rows[r];
+            style = row.style;
+            if (style && style.cssText && style.cssText.match("none")) {
+                n--;
+            }
+        }
+
+        $rows = $(".updated-card");
+        $rows.show().filter(function () {
+            var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+            return !~text.indexOf(val);
+        }).hide();
+
+        m = 4;
+        for (r in $rows) {
+            row = $rows[r];
+            style = row.style;
+            if (style && style.cssText && style.cssText.match("none")) {
+                m--;
+            }
+        }
+
+        $(".nrepos").text("(" + (n - m) + ")");
+    });
+
+    // ---------------------------------
+    // Google Analytics Event Tracking
+    //
+    //
+    // usage: add the following attributes to links you want to track:
+    //   data-analytics-category=""    REQUIRED  String   Typically the object that was interacted with (e.g. button)
+    //   data-analytics-action=""      REQUIRED  String   The type of interaction (e.g. click)
+    //   data-analytics-label=""       OPTIONAL  String   Useful for categorizing events (e.g. nav buttons)
+    //   data-analytics-value=""       OPTIONAL  Integer  Values must be non-negative. Useful to pass counts (e.g. 4 times)
+    //
+    // Those are the suggested usages, but you can use the attributes how you want
+    // see https://developers.google.com/analytics/devguides/collection/analyticsjs/events for more details
+    //
+    // EXAMPLE:
+    // <a href="http://ibm.com" data-analytics-category="Leadspace button" data-analytics-action="To ibm.com">Off you go!</a>
+    // ---------------------------------
+
+    $('body').on('click', 'a[data-analytics-category][data-analytics-action]', function (e) {
+
+        // No analytics? Bail.
+        if (!window.ga)
+            return;
+
+        // for links to external sources, we need a tiny delay to have a little extra time to send to Google's servers before unload
+        // 200ms is about right for enough time
+        if (this.hostname && this.hostname !== location.hostname) {
+
+            // Stop the link action
+            e.preventDefault();
+
+            // setTimeout callback is called in the window scope, so cache the url from the link now
+            var url = this.href;
+
+            // in 200ms, off you go
+            setTimeout(function () {
+                document.location = url;
+            }, 200);
+        }
+
+        // make a new data object
+        var $el = $(this),
+            data = {
+                'hitType': 'event'
+            };
+
+        // category (required string)
+        data['eventCategory'] = $el.attr('data-analytics-category');
+
+        // action (required string)
+        data['eventAction'] = $el.attr('data-analytics-action');
+
+        // label (optional string)
+        if ($el.attr('data-analytics-label')) {
+            data['eventLabel'] = $el.attr('data-analytics-label');
+        }
+
+        // value (optional int)
+        if ($el.attr('data-analytics-value')) {
+            data['eventValue'] = parseInt($el.attr('data-analytics-value'));
+        }
+
+        // send the data
+        ga('send', data);
+
+    });
 
 })(jQuery);
-
-/*
- * Search for $repo.name & render result
- */
-$('#search').keyup(function () {
-    var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
-    $rows = $(".card")
-    $rows.show().filter(function () {
-        var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
-        return !~text.indexOf(val);
-    }).hide();
-
-    /*
-     * Update repo count based on the search
-     */
-    n = $rows.length;
-    for (r in $rows) {
-        row = $rows[r];
-        style = row.style;
-        if (style && style.cssText && style.cssText.match("none")) {
-            n--;
-        }
-    }
-
-    $rows = $(".updated-card");
-    $rows.show().filter(function () {
-        var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
-        return !~text.indexOf(val);
-    }).hide();
-
-    m = 4;
-    for (r in $rows) {
-        row = $rows[r];
-        style = row.style;
-        if (style && style.cssText && style.cssText.match("none")) {
-            m--;
-        }
-    }
-
-    $(".nrepos").text("(" + (n - m) + ")");
-});
-
-//     // ---------------------------------
-//     // Google Analytics Event Tracking
-//     //
-//     //
-//     // usage: add the following attributes to links you want to track:
-//     //   data-analytics-category=""    REQUIRED  String   Typically the object that was interacted with (e.g. button)
-//     //   data-analytics-action=""      REQUIRED  String   The type of interaction (e.g. click)
-//     //   data-analytics-label=""       OPTIONAL  String   Useful for categorizing events (e.g. nav buttons)
-//     //   data-analytics-value=""       OPTIONAL  Integer  Values must be non-negative. Useful to pass counts (e.g. 4 times)
-//     //
-//     // Those are the suggested usages, but you can use the attributes how you want
-//     // see https://developers.google.com/analytics/devguides/collection/analyticsjs/events for more details
-//     //
-//     // EXAMPLE:
-//     // <a href="http://ibm.com" data-analytics-category="Leadspace button" data-analytics-action="To ibm.com">Off you go!</a>
-//     // ---------------------------------
-
-//     $('body').on('click', 'a[data-analytics-category][data-analytics-action]', function (e) {
-
-//         // No analytics? Bail.
-//         if (!window.ga)
-//             return;
-
-//         // for links to external sources, we need a tiny delay to have a little extra time to send to Google's servers before unload
-//         // 200ms is about right for enough time
-//         if (this.hostname && this.hostname !== location.hostname) {
-
-//             // Stop the link action
-//             e.preventDefault();
-
-//             // setTimeout callback is called in the window scope, so cache the url from the link now
-//             var url = this.href;
-
-//             // in 200ms, off you go
-//             setTimeout(function () {
-//                 document.location = url;
-//             }, 200);
-//         }
-
-//         // make a new data object
-//         var $el = $(this),
-//             data = {
-//                 'hitType': 'event'
-//             };
-
-//         // category (required string)
-//         data['eventCategory'] = $el.attr('data-analytics-category');
-
-//         // action (required string)
-//         data['eventAction'] = $el.attr('data-analytics-action');
-
-//         // label (optional string)
-//         if ($el.attr('data-analytics-label')) {
-//             data['eventLabel'] = $el.attr('data-analytics-label');
-//         }
-
-//         // value (optional int)
-//         if ($el.attr('data-analytics-value')) {
-//             data['eventValue'] = parseInt($el.attr('data-analytics-value'));
-//         }
-
-//         // send the data
-//         ga('send', data);
-
-//     });
-// });
