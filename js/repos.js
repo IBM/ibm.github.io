@@ -26,16 +26,12 @@ var progress = 0;
     function RenderRepo($index) {
         repo = allrepos[$index];
         var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 item " + (repo.language || '').toLowerCase() + " " + repo.name.toLowerCase());
-        var $scrollbarOuter = $("<div>").addClass("scrollbar-outer").appendTo($item);
-        var $scrollbarInner = $("<div>").addClass("scrollbar-inner").appendTo($scrollbarOuter);
-        var scrollbarOuter = document.createElement('div');
-        var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($scrollbarInner);
+        var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
         $link.append($("<h4>").html(repo.name + "<div class='org'><a href='" + repo.owner.html_url + "'>(" + repo.owner.login + ")"));
-        $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
-        $scrollbarInner.append($("<p>").text(repo.description != null) ? repo.description : "");
+        $link.append($("<p>").text((repo.language != null) ? repo.language : ""));
+        $item.append($("<small>").text((repo.description != null) ? repo.description : ""));
         htag = "#allrepos";
         $item.appendTo(htag);
-        $scrollbarInner.css("padding-right", ($scrollbarInner[0].offsetWidth - $scrollbarInner[0].clientWidth));
         return;
     }
 
@@ -43,15 +39,13 @@ var progress = 0;
         repo = updated[$index];
         var $uitem = $("<div>").addClass("updated-card col-sm-5 col-md-4 col-lg-3");
         var $item = $("<div>").addClass("card pin " + (repo.language || '').toLowerCase() + " " + repo.name.toLowerCase());
-        var $scrollbarOuter = $("<div>").addClass("scrollbar-outer").appendTo($item);
-        var $scrollbarInner = $("<div>").addClass("scrollbar-inner").appendTo($scrollbarOuter);
-        var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($scrollbarInner);
+        var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
         $link.append($("<h4>").text(repo.name));
-        $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
-        $scrollbarInner.append($("<p>").text(repo.description != null) ? repo.description : "");
+        $link.append($("<p>").text((repo.language != null) ? repo.language : ""));
+        $item.append($("<small>").text((repo.description != null) ? repo.description : ""));
+        $("<small>").attr("style", "font-size: 10px;");
         $item.appendTo($uitem);
         $uitem.appendTo("#updated");
-        $scrollbarInner.css("padding-right", ($scrollbarInner[0].offsetWidth - $scrollbarInner[0].clientWidth));
     }
 
     function addUpdated() {
