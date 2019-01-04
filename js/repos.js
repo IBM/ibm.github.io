@@ -1,6 +1,18 @@
+/*
+ * Add hash to the URL and reload after
+ */
+$(function () {
+    $('#showallrepos a').click(function (e) {
+        var url = $(this).attr('href');
+        window.location.href = url;
+        location.reload();
+        e.preventDefault();
+    })
+})
+
 var updated = [];
 var allrepos = [];
-var DEBUG = (window.location.hash === '#DEBUG');
+var DEBUG = (window.location.hash === '#DEBUG'); // Not used currently
 var progress = 0;
 
 (function ($, undefined) {
@@ -11,24 +23,42 @@ var progress = 0;
         return repoUrls[repo.name] || repo.html_url;
     }
 
+    function RenderRepo($index) {
+        repo = allrepos[$index];
+        var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 item " + (repo.language || '').toLowerCase() + " " + repo.name.toLowerCase());
+        var $scrollbarOuter = $("<div>").addClass("scrollbar-outer").appendTo($item);
+        var $scrollbarInner = $("<div>").addClass("scrollbar-inner").appendTo($scrollbarOuter);
+        var scrollbarOuter = document.createElement('div');
+        var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($scrollbarInner);
+        $link.append($("<h4>").html(repo.name + "<div class='org'><a href='" + repo.owner.html_url + "'>(" + repo.owner.login + ")"));
+        $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
+        $scrollbarInner.append($("<p>").text(repo.description != null) ? repo.description : "");
+        htag = "#allrepos";
+        $item.appendTo(htag);
+        $scrollbarInner.css("padding-right", ($scrollbarInner[0].offsetWidth - $scrollbarInner[0].clientWidth));
+        return;
+    }
+
+    function RenderUpdatedRepo($index) {
+        repo = updated[$index];
+        var $uitem = $("<div>").addClass("updated-card col-sm-5 col-md-4 col-lg-3");
+        var $item = $("<div>").addClass("card pin " + (repo.language || '').toLowerCase() + " " + repo.name.toLowerCase());
+        var $scrollbarOuter = $("<div>").addClass("scrollbar-outer").appendTo($item);
+        var $scrollbarInner = $("<div>").addClass("scrollbar-inner").appendTo($scrollbarOuter);
+        var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($scrollbarInner);
+        $link.append($("<h4>").text(repo.name));
+        $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
+        $scrollbarInner.append($("<p>").text(repo.description != null) ? repo.description : "");
+        $item.appendTo($uitem);
+        $uitem.appendTo("#updated");
+        $scrollbarInner.css("padding-right", ($scrollbarInner[0].offsetWidth - $scrollbarInner[0].clientWidth));
+    }
+
     function addUpdated() {
         $("#updated").empty();
-        for (r = 0; r < Math.min(4, updated.length); r++) {
-            repo = updated[r];
-            
-            var $uitem = $("<div>").addClass("updated-card col-sm-5 col-md-4 col-lg-3");
-            var $item = $("<div>").addClass("card pin " + (repo.language || '').toLowerCase() + " " + repo.name
-                .toLowerCase());
-            var $scrollbarOuter = $("<div>").addClass("scrollbar-outer").appendTo($item)
-            var $scrollbarInner = $("<div>").addClass("scrollbar-inner").appendTo($scrollbarOuter)
-            var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($scrollbarInner);
-            
-            $link.append($("<h4>").text(repo.name));
-            $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
-            $scrollbarInner.append($("<p>").text(repo.description != null) ? repo.description : "");
-            $item.appendTo($uitem);
-            $uitem.appendTo("#updated");
-            $scrollbarInner.css("padding-right", ($scrollbarInner[0].offsetWidth - $scrollbarInner[0].clientWidth));
+        var updatedRepos = 0;
+        for (let r = 0, updatedRepos = Math.min(4, updated.length); r < updatedRepos; r++) {
+            RenderUpdatedRepo(r);
         }
         var d = $("#updated").collapse({
             toggle: true
@@ -41,39 +71,13 @@ var progress = 0;
         var maxRepos = 0;
         if (window.location.hash === '#showall') {
             for (let r = 0, maxRepos = allrepos.length; r < maxRepos; r++) {
-                repo = allrepos[r];
-                var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 item " + (repo.language ||
-                    '').toLowerCase() + " " + repo.name.toLowerCase());
-                var $scrollbarOuter = $("<div>").addClass("scrollbar-outer").appendTo($item)
-                var $scrollbarInner = $("<div>").addClass("scrollbar-inner").appendTo($scrollbarOuter)
-                var scrollbarOuter = document.createElement('div');
-                var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($scrollbarInner);
-                $link.append($("<h4>").html(repo.name + "<div class='org'><a href='" + repo.owner.html_url +
-                    "'>(" + repo.owner.login + ")"));
-                $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
-                $scrollbarInner.append($("<p>").text(repo.description != null) ? repo.description : "");
-                htag = "#allrepos";
-                $item.appendTo(htag);
-                $scrollbarInner.css("padding-right", ($scrollbarInner[0].offsetWidth - $scrollbarInner[0].clientWidth));
+                RenderRepo(r);
                 counter++;
             }
             $(".nrepos").text(": " + counter + " shown. Click 'Show fewer' to show only 20 repos");
         } else {
             for (let r = 0, maxRepos = Math.min(20, allrepos.length); r < maxRepos; r++) {
-                repo = allrepos[r];
-                var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 item " + (repo.language ||
-                    '').toLowerCase() + " " + repo.name.toLowerCase());
-                var $scrollbarOuter = $("<div>").addClass("scrollbar-outer").appendTo($item)
-                var $scrollbarInner = $("<div>").addClass("scrollbar-inner").appendTo($scrollbarOuter)
-                var scrollbarOuter = document.createElement('div');
-                var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($scrollbarInner);
-                $link.append($("<h4>").html(repo.name + "<div class='org'><a href='" + repo.owner.html_url +
-                    "'>(" + repo.owner.login + ")"));
-                $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
-                $scrollbarInner.append($("<p>").text(repo.description != null) ? repo.description : "");
-                htag = "#allrepos";
-                $item.appendTo(htag);
-                $scrollbarInner.css("padding-right", ($scrollbarInner[0].offsetWidth - $scrollbarInner[0].clientWidth));
+                RenderRepo(r);
                 counter++;
             }
             $(".nrepos").text(": " + counter + " shown. Click 'Show more' to see other " + (allrepos.length -
@@ -148,14 +152,16 @@ var progress = 0;
                 $(function () {
                     $.each(repos, function (i, repo) {
                         repo.pushed_at = new Date(repo.pushed_at);
-                        if (repo.fork === true) { // if this is a fork, save the index
+                        // if this is a fork, save the index
+                        if (repo.fork === true) {
                             forks.push(i);
                         }
                     });
 
                     // remove forks from the view
                     $.each(forks, function (i, forkindex) {
-                        var indextoremove = forkindex - i; // account for prior splices
+                        // account for prior splices
+                        var indextoremove = forkindex - i;
                         if (DEBUG) console.log('removing forked entry: ' + repos[
                             indextoremove].full_name);
                         repos.splice(indextoremove, 1);
@@ -263,6 +269,9 @@ var progress = 0;
 
 })(jQuery);
 
+/*
+ * Search for $repo.name & render result
+ */
 $('#search').keyup(function () {
     var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
     $rows = $(".card")
@@ -271,7 +280,9 @@ $('#search').keyup(function () {
         return !~text.indexOf(val);
     }).hide();
 
-    // update repo count here
+    /*
+     * Update repo count based on the search
+     */
     n = $rows.length;
     for (r in $rows) {
         row = $rows[r];
@@ -297,71 +308,71 @@ $('#search').keyup(function () {
     }
 
     $(".nrepos").text("(" + (n - m) + ")");
-
-
-    // ---------------------------------
-    // Google Analytics Event Tracking
-    //
-    //
-    // usage: add the following attributes to links you want to track:
-    //   data-analytics-category=""    REQUIRED  String   Typically the object that was interacted with (e.g. button)
-    //   data-analytics-action=""      REQUIRED  String   The type of interaction (e.g. click)
-    //   data-analytics-label=""       OPTIONAL  String   Useful for categorizing events (e.g. nav buttons)
-    //   data-analytics-value=""       OPTIONAL  Integer  Values must be non-negative. Useful to pass counts (e.g. 4 times)
-    //
-    // Those are the suggested usages, but you can use the attributes how you want
-    // see https://developers.google.com/analytics/devguides/collection/analyticsjs/events for more details
-    //
-    // EXAMPLE:
-    // <a href="http://ibm.com" data-analytics-category="Leadspace button" data-analytics-action="To ibm.com">Off you go!</a>
-    // ---------------------------------
-
-    $('body').on('click', 'a[data-analytics-category][data-analytics-action]', function (e) {
-
-        // No analytics? Bail.
-        if (!window.ga)
-            return;
-
-        // for links to external sources, we need a tiny delay to have a little extra time to send to Google's servers before unload
-        // 200ms is about right for enough time
-        if (this.hostname && this.hostname !== location.hostname) {
-
-            // Stop the link action
-            e.preventDefault();
-
-            // setTimeout callback is called in the window scope, so cache the url from the link now
-            var url = this.href;
-
-            // in 200ms, off you go
-            setTimeout(function () {
-                document.location = url;
-            }, 200);
-        }
-
-        // make a new data object
-        var $el = $(this),
-            data = {
-                'hitType': 'event'
-            };
-
-        // category (required string)
-        data['eventCategory'] = $el.attr('data-analytics-category');
-
-        // action (required string)
-        data['eventAction'] = $el.attr('data-analytics-action');
-
-        // label (optional string)
-        if ($el.attr('data-analytics-label')) {
-            data['eventLabel'] = $el.attr('data-analytics-label');
-        }
-
-        // value (optional int)
-        if ($el.attr('data-analytics-value')) {
-            data['eventValue'] = parseInt($el.attr('data-analytics-value'));
-        }
-
-        // send the data
-        ga('send', data);
-
-    });
 });
+
+//     // ---------------------------------
+//     // Google Analytics Event Tracking
+//     //
+//     //
+//     // usage: add the following attributes to links you want to track:
+//     //   data-analytics-category=""    REQUIRED  String   Typically the object that was interacted with (e.g. button)
+//     //   data-analytics-action=""      REQUIRED  String   The type of interaction (e.g. click)
+//     //   data-analytics-label=""       OPTIONAL  String   Useful for categorizing events (e.g. nav buttons)
+//     //   data-analytics-value=""       OPTIONAL  Integer  Values must be non-negative. Useful to pass counts (e.g. 4 times)
+//     //
+//     // Those are the suggested usages, but you can use the attributes how you want
+//     // see https://developers.google.com/analytics/devguides/collection/analyticsjs/events for more details
+//     //
+//     // EXAMPLE:
+//     // <a href="http://ibm.com" data-analytics-category="Leadspace button" data-analytics-action="To ibm.com">Off you go!</a>
+//     // ---------------------------------
+
+//     $('body').on('click', 'a[data-analytics-category][data-analytics-action]', function (e) {
+
+//         // No analytics? Bail.
+//         if (!window.ga)
+//             return;
+
+//         // for links to external sources, we need a tiny delay to have a little extra time to send to Google's servers before unload
+//         // 200ms is about right for enough time
+//         if (this.hostname && this.hostname !== location.hostname) {
+
+//             // Stop the link action
+//             e.preventDefault();
+
+//             // setTimeout callback is called in the window scope, so cache the url from the link now
+//             var url = this.href;
+
+//             // in 200ms, off you go
+//             setTimeout(function () {
+//                 document.location = url;
+//             }, 200);
+//         }
+
+//         // make a new data object
+//         var $el = $(this),
+//             data = {
+//                 'hitType': 'event'
+//             };
+
+//         // category (required string)
+//         data['eventCategory'] = $el.attr('data-analytics-category');
+
+//         // action (required string)
+//         data['eventAction'] = $el.attr('data-analytics-action');
+
+//         // label (optional string)
+//         if ($el.attr('data-analytics-label')) {
+//             data['eventLabel'] = $el.attr('data-analytics-label');
+//         }
+
+//         // value (optional int)
+//         if ($el.attr('data-analytics-value')) {
+//             data['eventValue'] = parseInt($el.attr('data-analytics-value'));
+//         }
+
+//         // send the data
+//         ga('send', data);
+
+//     });
+// });

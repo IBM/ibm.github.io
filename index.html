@@ -36,26 +36,6 @@
       ga('send', 'pageview');
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-        $(function() {
-        $('#showallrepos a').click(function(e) {
-          var url = $(this).attr('href');
-          window.location.href = url;   // ## change url with hash
-          location.reload();            // ## reload page
-          e.preventDefault();           // ## prevent default click action
-        })
-      })
-    </script>
-    <script>
-        $(function() {
-        $('#showsomerepos a').click(function(e) {
-          history.pushState("", document.title, window.location.pathname + window.location.search);
-          location.reload();
-          e.preventDefault();
-        })
-      })
-    </script>
-
     <script src="https://1.www.s81c.com/common/stats/ida_stats.js"></script>
     <script src="https://1.www.s81c.com/common/v18/js/www.js"></script>
 </head>
