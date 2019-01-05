@@ -297,7 +297,7 @@ div.news {
     overflow-y: auto;
 }
 
-::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 5px;
   }
   
