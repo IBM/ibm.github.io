@@ -29,10 +29,10 @@ In order to have your repository show up at [http://ibm.github.io](http://ibm.gi
 From within the top level folder of the cloned repository run:
 
 ```
-$ python -m SimpleHTTPServer 8000
+$ python -m http.server {port}
 ```
 
-Then open the following URL in a browser:
+For example: `python -m http.server 8000` -> Open the following URL in a browser:
 
 ```
 http://localhost:8000/

@@ -1,18 +1,6 @@
-/*
- * Add hash to the URL and reload after
- */
-$(function () {
-    $('#showallrepos a').click(function (e) {
-        var url = $(this).attr('href');
-        window.location.href = url;
-        location.reload();
-        e.preventDefault();
-    })
-})
-
 var updated = [];
 var allrepos = [];
-var DEBUG = (window.location.hash === '#DEBUG'); // Not used currently
+var DEBUG = (window.location.hash === '#DEBUG');
 var progress = 0;
 
 (function ($, undefined) {
@@ -25,38 +13,36 @@ var progress = 0;
 
     function RenderRepo($index) {
         repo = allrepos[$index];
-        var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 item " + (repo.language || '').toLowerCase() + " " + repo.name.toLowerCase());
+        var $item = $("<div>").addClass("card pin col-sm-6 col-lg-3");
         var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
         $link.append($("<h4>").html(repo.name + "<div class='org'><a href='" + repo.owner.html_url + "'>(" + repo.owner.login + ")"));
         $link.append($("<p>").text((repo.language != null) ? repo.language : ""));
         $item.append($("<small>").text((repo.description != null) ? repo.description : ""));
-        htag = "#allrepos";
-        $item.appendTo(htag);
+        $item.appendTo("#allrepos");
         return;
     }
 
     function RenderUpdatedRepo($index) {
         repo = updated[$index];
-        var $uitem = $("<div>").addClass("updated-card col-sm-5 col-md-4 col-lg-3");
-        var $item = $("<div>").addClass("card pin " + (repo.language || '').toLowerCase() + " " + repo.name.toLowerCase());
+        var $item = $("<div>").addClass("card pin col-sm-6 col-lg-3");
         var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
-        $link.append($("<h4>").text(repo.name));
+        $link.append($("<h4>").html(repo.name + "<div class='org'><a href='" + repo.owner.html_url + "'>(" + repo.owner.login + ")"));
         $link.append($("<p>").text((repo.language != null) ? repo.language : ""));
         $item.append($("<small>").text((repo.description != null) ? repo.description : ""));
-        $("<small>").attr("style", "font-size: 10px;");
-        $item.appendTo($uitem);
-        $uitem.appendTo("#updated");
+        $item.appendTo("#updated");
+        return;
     }
 
     function addUpdated() {
         $("#updated").empty();
         var updatedRepos = 0;
-        for (let r = 0, updatedRepos = Math.min(4, updated.length); r < updatedRepos; r++) {
+        var counter = 0;
+        for (let r = 0, updatedRepos = Math.min(20, updated.length); r < updatedRepos; r++) {
             RenderUpdatedRepo(r);
+            counter++;
         }
-        var d = $("#updated").collapse({
-            toggle: true
-        });
+        var $header = $(".ibm_repo_header").text("Recently updated (" + counter + " of total " + updated.length + ") repos shown").addClass("text-center");
+        $header.append($("<span>").html("<a class='btn btn-primary' href='#showall' onclick='location.reload()'>Show all</a>"));
     }
 
     function addAllRepos() {
@@ -66,20 +52,10 @@ var progress = 0;
         if (window.location.hash === '#showall') {
             for (let r = 0, maxRepos = allrepos.length; r < maxRepos; r++) {
                 RenderRepo(r);
-                counter++;
             }
-            $(".nrepos").text(": " + counter + " shown. Click 'Show fewer' to show only 20 repos");
-        } else {
-            for (let r = 0, maxRepos = Math.min(20, allrepos.length); r < maxRepos; r++) {
-                RenderRepo(r);
-                counter++;
-            }
-            $(".nrepos").text(": " + counter + " shown. Click 'Show more' to see other " + (allrepos.length -
-                counter) + " repos");
+            var $header = $(".ibm_repo_header").text("All " + updated.length + " repos shown").addClass("text-center");
+            $header.append($("<span>").html("<a class='btn btn-primary' href='./'>See recently updated repos</a>"));
         }
-        $("#allrepos").collapse({
-            toggle: true
-        })
     }
 
     function pushRepo(repos, org) {
@@ -130,8 +106,6 @@ var progress = 0;
             return;
         }
 
-        // These client tokens are for a dummy app, and there is no user specific
-        // information that we get, so all in all, pretty safe to expose this here.
         var uri = "https://api.github.com/" + orgs.type + "s/" + org + reposcmd +
             "?per_page=1000" +
             "&client_id=1bafa09b6086eec7afb4" +
@@ -146,22 +120,18 @@ var progress = 0;
                 $(function () {
                     $.each(repos, function (i, repo) {
                         repo.pushed_at = new Date(repo.pushed_at);
-                        // if this is a fork, save the index
                         if (repo.fork === true) {
                             forks.push(i);
                         }
                     });
 
-                    // remove forks from the view
                     $.each(forks, function (i, forkindex) {
-                        // account for prior splices
                         var indextoremove = forkindex - i;
                         if (DEBUG) console.log('removing forked entry: ' + repos[
                             indextoremove].full_name);
                         repos.splice(indextoremove, 1);
                     });
 
-                    // pre sort by how recently the repo was modified
                     repos.sort(function (a, b) {
                         if (a.pushed_at < b.pushed_at)
                             return 1;
@@ -169,7 +139,6 @@ var progress = 0;
                             return -1;
                         return 0;
                     });
-
                     mergeUpdated(repos);
 
                     repos.sort(function (a, b) {
@@ -181,83 +150,28 @@ var progress = 0;
                         };
                         return 0;
                     });
-
                     pushRepo(repos, org);
 
-                    // add 4 recently updated repos sorted by latest updates
-                    addUpdated();
-
-                    // add all other repos
-                    addAllRepos();
-
+                    if (window.location.hash === '#showall') {
+                        addAllRepos()
+                    } else {
+                        addUpdated();
+                    }
                 });
             }
-        }).always(function () {
-            updateProgress();
         });
     }
 
-    var formatPercent = function simplePercent(x) {
-        return (x * 100).toFixed(0);
+    if (window.location.hash === '#showall') {
+        $("<div>").appendTo("#wrapper").append($("<div id='allrepos'>"));
+    } else {
+        $("<div>").appendTo("#wrapper").append($("<div id='updated'>"));
     }
 
-    var formatInt = function simpleNum(x) {
-        return x.toLocaleString();
-    }
-
-    if (window.hasOwnProperty('Intl')) {
-        var pctFormat = new Intl.NumberFormat([], {
-            style: 'percent'
-        });
-        var decFormat = new Intl.NumberFormat([], {
-            style: 'decimal',
-            maximumFractionDigits: 0
-        });
-
-        formatPercent = function intlPercent(x) {
-            return pctFormat.format(x);
-        };
-
-        formatInt = function intlNum(x) {
-            return decFormat.format(x);
-        };
-    }
-
-    function updateProgress() {
-        progress++;
-
-        var fract = progress / orgs.length;
-
-        $progress.text(formatPercent(fract));
-
-        if (progress >= orgs.length) {
-            $progress.delay(1000).fadeOut();
-        }
-    }
-
-    $("<div>").addClass("separator").appendTo("#wrapper");
-    var $sectiontitle = $("<div>").addClass("section-title").appendTo("#wrapper");
-    var $title = $("<span>").addClass('title').text("recent").appendTo($sectiontitle);
-    var $item = $("<div id='updated'>").addClass("columns section collapse");
-    $item.appendTo($sectiontitle);
-    var $twistie = $("<a data-toggle='collapse' data-target='#updated'>").addClass("twistie showdetails");
-    $twistie.appendTo($sectiontitle);
-
-    $("<div>").addClass("separator gap").appendTo("#wrapper");
-    var $sectiontitle = $("<div>").addClass("section-title").appendTo("#wrapper");
-    var $title = $("<span>").addClass('title').text("repos").appendTo($sectiontitle);
-    var $repos = $("<span>").addClass('nrepos').text("(0)").appendTo($title);
-    var $progress = $("<span>").addClass('loading').text("0 %").appendTo($title);
-    var $item = $("<div id='allrepos'>").addClass("columns section collapse");
-    $item.appendTo($sectiontitle);
-    var $twistie = $("<a data-toggle='collapse' data-target='#allrepos'>").addClass("twistie showdetails");
-    $twistie.appendTo($sectiontitle);
 
     for (var r in orgs) {
         addRepos(orgs[r]);
     }
-
-    $("<div>").addClass("separator").appendTo("#wrapper");
 
     /*
      * Search for $repo.name & render result
@@ -269,101 +183,36 @@ var progress = 0;
             var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
             return !~text.indexOf(val);
         }).hide();
-
-        /*
-         * Update repo count based on the search
-         */
-        n = $rows.length;
-        for (r in $rows) {
-            row = $rows[r];
-            style = row.style;
-            if (style && style.cssText && style.cssText.match("none")) {
-                n--;
-            }
-        }
-
-        $rows = $(".updated-card");
-        $rows.show().filter(function () {
-            var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
-            return !~text.indexOf(val);
-        }).hide();
-
-        m = 4;
-        for (r in $rows) {
-            row = $rows[r];
-            style = row.style;
-            if (style && style.cssText && style.cssText.match("none")) {
-                m--;
-            }
-        }
-
-        $(".nrepos").text("(" + (n - m) + ")");
     });
 
-    // ---------------------------------
-    // Google Analytics Event Tracking
-    //
-    //
-    // usage: add the following attributes to links you want to track:
-    //   data-analytics-category=""    REQUIRED  String   Typically the object that was interacted with (e.g. button)
-    //   data-analytics-action=""      REQUIRED  String   The type of interaction (e.g. click)
-    //   data-analytics-label=""       OPTIONAL  String   Useful for categorizing events (e.g. nav buttons)
-    //   data-analytics-value=""       OPTIONAL  Integer  Values must be non-negative. Useful to pass counts (e.g. 4 times)
-    //
-    // Those are the suggested usages, but you can use the attributes how you want
-    // see https://developers.google.com/analytics/devguides/collection/analyticsjs/events for more details
-    //
-    // EXAMPLE:
-    // <a href="http://ibm.com" data-analytics-category="Leadspace button" data-analytics-action="To ibm.com">Off you go!</a>
-    // ---------------------------------
-
     $('body').on('click', 'a[data-analytics-category][data-analytics-action]', function (e) {
-
-        // No analytics? Bail.
         if (!window.ga)
             return;
 
-        // for links to external sources, we need a tiny delay to have a little extra time to send to Google's servers before unload
-        // 200ms is about right for enough time
         if (this.hostname && this.hostname !== location.hostname) {
-
-            // Stop the link action
             e.preventDefault();
-
-            // setTimeout callback is called in the window scope, so cache the url from the link now
             var url = this.href;
-
-            // in 200ms, off you go
             setTimeout(function () {
                 document.location = url;
             }, 200);
         }
 
-        // make a new data object
         var $el = $(this),
             data = {
                 'hitType': 'event'
             };
 
-        // category (required string)
         data['eventCategory'] = $el.attr('data-analytics-category');
-
-        // action (required string)
         data['eventAction'] = $el.attr('data-analytics-action');
 
-        // label (optional string)
         if ($el.attr('data-analytics-label')) {
             data['eventLabel'] = $el.attr('data-analytics-label');
         }
 
-        // value (optional int)
         if ($el.attr('data-analytics-value')) {
             data['eventValue'] = parseInt($el.attr('data-analytics-value'));
         }
-
-        // send the data
         ga('send', data);
-
     });
 
 })(jQuery);

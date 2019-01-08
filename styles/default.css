@@ -1,0 +1,210 @@
+/*
+ * Style additionally needed besides bootstrap
+ */
+
+html,
+body {
+    background: #ececec;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.gap_footer {
+    height: 60px;
+}
+
+.ibm_repo_header {
+    background-color: #333;
+    color: #FFF;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.footer {
+    margin-top: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    line-height: 60px;
+}
+
+.footer a {
+    color: rgb(163, 163, 163);
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: unset;
+}
+
+.footer p {
+    color: #FFF;
+    font-size: 1rem;
+    line-height: unset;
+}
+
+.separator {
+    clear: both;
+}
+
+/*
+ * List of repos
+ */
+
+#wrapper {
+    margin: 0 auto;
+}
+
+#wrapper .updated-card {
+    background-color: #fff;
+    height: 160px;
+    display: inline-block;
+}
+
+#wrapper .updated-card .card {
+    background: transparent;
+    z-index: 1;
+    margin: 0px;
+    width: 100%
+}
+
+#wrapper .updated-card .pin {
+    border: none;
+}
+
+#wrapper .card {
+    height: 160px;
+    overflow-x: hidden;
+    border-radius: 0;
+}
+
+#repos {
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    -webkit-column-fill: auto;
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -moz-column-fill: auto;
+    column-count: 3;
+    column-gap: 15px;
+    column-fill: auto;
+}
+
+#repos h4 {
+    font-size: 12px;
+    color: #1b1f30;
+    margin-top: 0;
+    padding: 3px;
+    padding-top: 10px;
+}
+
+#repos h5 {
+    padding-left: 5px;
+}
+
+#repos p {
+    font-size: 10px;
+    padding: 5px;
+}
+
+.card h4 {
+    overflow: hidden;
+    color: #00649c;
+    font-size: 1em;
+    font-weight: 200;
+    width: 100%;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.card p {
+    color: #00b1ef;
+    font-size: 0.85em;
+    margin-top: 0;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+.card small {
+    font-size: .85em;
+}
+
+.org {
+    display: inline;
+    color: #333;
+    font-size: 0.75em;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.org a {
+    padding-left: 10px;
+    color: #aaa;
+}
+
+.org a:hover {
+    text-decoration: none;
+}
+
+.pin {
+    display: inline-block;
+    background: #FEFEFE;
+    border: 2px solid #FAFAFA;
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    padding: 15px;
+    padding-bottom: 5px;
+    background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+    opacity: 1;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.pin img {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+/*
+ * Adding / Overwriting Bootstrap Styles
+ */
+.jumbotron {
+    background: url('../assets/jumbotron_bg.jpg') center / cover no-repeat;
+    border-radius: 0;
+    color: #FFF;
+}
+
+.jumbotron .btn-primary {
+    background-color: transparent;
+    border-color: #FFF;
+}
+
+.ibm_repo_header .btn-primary {
+    min-width: 100%;
+}
