@@ -41,29 +41,26 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 56px;
     line-height: 60px;
-    /* background-color: #4278BE; */
-    background-color: #343a40;
 }
 
 .footer a {
-    color: #FFF;
+    color: rgb(163, 163, 163);
     text-decoration: none;
+    font-size: 1rem;
+    line-height: unset;
 }
 
 .footer p {
     color: #FFF;
+    font-size: 1rem;
+    line-height: unset;
 }
 
 .separator {
     clear: both;
 }
-
-/*
- * Ribbon
- */
-
 
 /*
  * List of repos
@@ -121,7 +118,6 @@ body {
 }
 
 #repos p {
-    /* font-family: Helvetica-Neue-Md; */
     font-size: 10px;
     padding: 5px;
 }
@@ -195,11 +191,6 @@ body {
     margin-bottom: 5px;
 }
 
-.nrepos {
-    vertical-align: middle;
-    padding: 5px;
-}
-
 /*
  * Adding / Overwriting Bootstrap Styles
  */
@@ -212,4 +203,8 @@ body {
 .jumbotron .btn-primary {
     background-color: transparent;
     border-color: #FFF;
+}
+
+.ibm_repo_header .btn-primary {
+    min-width: 100%;
 }
