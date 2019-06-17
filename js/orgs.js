@@ -336,6 +336,14 @@ var orgs = [
       "type": "repo"
   },
   {
+      "name": "razee-io",
+      "type": "org"
+  },
+  {
+      "name": "kabanero-io",
+      "type": "org"
+  },
+  {
       "name": "ibm-messaging",
       "type": "org"
   },
