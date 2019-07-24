@@ -4,9 +4,9 @@ This repository is rendered online at [http://ibm.github.io](http://ibm.github.i
 
 ### Adding a new repo to the listing
 
-In order to have your repository show up at [http://ibm.github.io](http://ibm.github.io), a minor change to [orgs.js](orgs.js) is required.
+In order to have your repository show up at [http://ibm.github.io](http://ibm.github.io), a minor change to [orgs.js](js/orgs.js) is required.
 
-* To add a single repository add a new entry to [orgs.js](orgs.js), specify the Github organization name and the repository name (separate them with a `/`), and set the `type` to `repo`, an example can be seen below:
+* To add a single repository add a new entry to [orgs.js](js/orgs.js), specify the Github organization name and the repository name (separate them with a `/`), and set the `type` to `repo`, an example can be seen below:
 
 ```
   {
@@ -15,7 +15,7 @@ In order to have your repository show up at [http://ibm.github.io](http://ibm.gi
   }
 ```
 
-* To add all the repositories in a Github organization add a new entry to [orgs.js](orgs.js), specify the Github organization name, and set the `type` to `org`, an example can be seen below:
+* To add all the repositories in a Github organization add a new entry to [orgs.js](js/orgs.js), specify the Github organization name, and set the `type` to `org`, an example can be seen below:
 
 ```
   {
