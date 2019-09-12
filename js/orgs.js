@@ -13,6 +13,10 @@ var orgs = [
       "link": "http://wasdev.github.io/"
   },
   {
+      "name": "IBMDeveloperUK",
+      "type": "org"
+  },
+  {
       "name": "acmeair",
       "type": "org"
   },
